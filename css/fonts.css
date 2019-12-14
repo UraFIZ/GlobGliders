@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf')
+}
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf')
+}
+@font-face {
+    font-family: OpenSens-Regular;
+    src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf')
+}
+@font-face {
+    font-family: OpenSens-SemiBold;
+    src: url('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf')
+}
+@font-face {
+    font-family: Nautilus;
+    src: url('../assets/fonts/nautilus-pompilius/Nautilus.otf')
+}
