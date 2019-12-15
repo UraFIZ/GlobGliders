@@ -1,0 +1,34 @@
+.site-banner {
+    position: relative;
+    top: -160px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: -1;
+}
+.site-banner-height {
+    height: 108.5vh;
+}
+.site-banner .title-width {
+max-width: 620px;
+}
+.site-banner .subtitle-width {
+    max-width: 870px;
+}
+/**js**/
+.js-sity-margin {
+    transition: all 0.7s;
+}
+
+@media(max-width: 1024px) {
+    /* .site-banner-height {
+        height:auto;
+    } */
+    .site-banner .title-width {
+    max-width: 100%;
+    }
+    .site-banner .subtitle-width {
+        max-width: 100%;
+    }
+}
