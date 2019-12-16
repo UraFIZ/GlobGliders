@@ -1,6 +1,4 @@
 .site-banner {
-    position: relative;
-    top: -160px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -20,7 +18,30 @@ max-width: 620px;
 .js-sity-margin {
     transition: all 0.7s;
 }
+/**********************************main description section********************************/
+.description-container {
+    max-width: 1367px;
+}
+.description-img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 571px;
+    height: 371px;
+}
+.description-img-wrapper > * {
+    width: 170px;
+    flex-basis: 170px;
+    height: 170px;
+    border-radius: 8px;
+    background-color: rgb(21, 156, 111);
+}
+.description-img-wrapper > *:not(:nth-child(3n + 0)) {
+    /* margin-right: 28px; */
+    margin-bottom: 28px;
+}
 
+/*************x******************end main description section******************x***********/
 @media(max-width: 1024px) {
     /* .site-banner-height {
         height:auto;

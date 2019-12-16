@@ -7,9 +7,6 @@ header, main, footer {
 a:hover {
     text-decoration: none;
 }
-header {
-    z-index: 10;
-}
 main {
     height: 0;
 }
@@ -19,6 +16,21 @@ div[class^="col-"] {
 }
 .grid-container {
     max-width: 1571px !important;
+}
+.grid-gap {
+    margin: 28px;
+}
+.grid-gap-r {
+    margin-right: 28px;
+}
+.grid-gap-l {
+    margin-left: 28px;
+}
+.grid-gap-t {
+    margin-top: 28px;
+}
+.grid-gap-b {
+    margin-bottom: 28px;
 }
 .heading-nautilus {
     font-family: Nautilus;
@@ -34,6 +46,14 @@ div[class^="col-"] {
     letter-spacing: 2.19px;
     color: white;
 }
+.heading-2-meb {
+    font-family: Montserrat-ExtraBold;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 1.37px;
+    color: #464457;
+}
 .heading-1-ossb {
     font-family: OpenSens-SemiBold;
     margin: 0;
@@ -41,7 +61,14 @@ div[class^="col-"] {
     line-height: 52px;
     letter-spacing: 1.37px;
     color: white;
-
+}
+.heading-2-ossb {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.55px;
+    color: #1b1b1b;
 }
 
 /* ************************buttons ******************************/

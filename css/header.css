@@ -1,4 +1,11 @@
 @import url(/css/common.css);
+.header {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    width: 100%;
+    z-index: 10;
+}
 .navbar {
     padding-right: 30px;
     padding-left: 30px;
