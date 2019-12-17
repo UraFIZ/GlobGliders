@@ -18,8 +18,8 @@ main {
     height: 0;
 }
 div[class^="col-"] {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    padding-right: 0;
+    padding-left: 0;
 }
 .grid-container {
     max-width: 1571px !important;
@@ -69,7 +69,7 @@ div[class^="col-"] {
     letter-spacing: 1.37px;
     color: white;
 }
-.heading-2-ossb {
+.heading-2-osr {
     font-family: OpenSens-Regular;
     margin: 0;
     font-size: 16px;
@@ -93,7 +93,7 @@ div[class^="col-"] {
 }
 .button-primary:hover {
     background-color: transparent;
-    color: white;
+    color: black;
 }
 .button-secondary {
     display: inline-block;
@@ -154,11 +154,27 @@ div[class^="col-"] {
 .mar-b-40 {
     margin-bottom: 40px;
 }
+.mar-b-15 {
+    margin-bottom: 15px;
+}
+.mar-r-20 {
+    margin-right: 20px;
+}
 /******************************end margins*******************************/
+/*******************************paddings**********************************/
+.pad-l-28 {
+    padding-left: 28px !important;
+}
 
+/*******************************end paddings*******************************/
+/*******************************color***************************************/
+.text-white {
+    color: white;
+}
+/************x*****************end color************************x*************/
 @media(max-width: 1024px) {
     div[class^="col-"] {
-        padding-right: 15px !important;
-        padding-left: 15px !important;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }

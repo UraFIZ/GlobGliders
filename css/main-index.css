@@ -1,3 +1,4 @@
+/**********************************site-banner section********************************/
 .site-banner {
     display: flex;
     align-items: center;
@@ -21,7 +22,13 @@ max-width: 620px;
 .js-sity-margin {
     transition: all 0.7s;
 }
-/**********************************main description section********************************/
+/******************x***************site-banner section******************x*************/
+
+/**********************************description section********************************/
+.description-section {
+    padding: 124px 0;
+    background-color: #fafafb;
+}
 .description-container {
     max-width: 1367px;
 }
@@ -36,41 +43,84 @@ max-width: 620px;
 }
 .description-img {
     width: 170px;
-    /* flex-basis: 170px; */
     height: 170px;
     border-radius: 8px;
     background-color: rgb(21, 156, 111);
 }
 .description-img-wrapper > *:not(:nth-child(3n + 0)) {
-    /* margin-right: 28px; */
     margin-bottom: 28px;
 }
 
-/*************x******************end main description section******************x***********/
+/*************x******************end description section******************x***********/
+
+/**********************************globe-components section********************************/
+.globe-components {
+    padding: 119px 0;
+    background-color: #fff;
+}
+.globe-container {
+    display: flex;
+    align-items: center;
+}
+.globe-live-wrapper, .globe-meet-wrapper {
+    max-width: 470px;
+}
+.globe-work-wrapper {
+    max-width: 446px;
+}
+.globe-img-wrapper {
+    max-width: 770px;
+    height: 428px;
+    background-color: rgb(21, 156, 111);
+}
+.globe-components .row > * {
+    margin-bottom: 150px;
+}
+/*************x******************end globe-components section******************x***********/
+
+
+/************************************||||||responsive section|||||||*************************************/
+
 @media(max-width: 1024px) {
-    /* .site-banner-height {
-        height:auto;
-    } */
+    /********************************** responsive (1024) site-banner section********************************/
     .site-banner .title-width {
     max-width: 100%;
     }
     .site-banner .subtitle-width {
         max-width: 100%;
     }
+    /*************x******************end responsive (1024) site-banner section******************x***********/
+
+    /********************************** responsive (1024) description section********************************/
+    .description-text-wrapper {
+        width: auto;
+    }
+    /*************x******************end responsive (1024) description section******************x***********/
+
+    /**********************************responsive (1024) globe-components section********************************/
+    .globe-live-wrapper {
+        max-width: 100%;
+    }
+    /**********************************end responsive (1024) globe-components section********************************/
 }
 @media(max-width: 992px) {
+    /********************************** responsive (992) description section********************************/
     .description-img-container {
         display: flex;
         justify-content: center;
     }
+     /*************x******************end responsive (992) description section******************x***********/
 }
 @media(max-width: 768px) {
+      /********************************** responsive (768) description section********************************/
     .description-img-container {
         display: flex;
         justify-content: center;
     }
+      /*************x******************end responsive (768) description section******************x***********/
 }
 @media(max-width: 576px) {
+    /********************************** responsive (576) description section********************************/
     .description-img-wrapper {
         justify-content: center;
     }
@@ -85,4 +135,58 @@ max-width: 620px;
         height: 183px;
         margin-bottom: 18px !important;
     }
+    /*************x******************end responsive (576) description section******************x***********/
 }
+@media(max-width: 426px) {
+     /********************************** responsive (426) description section********************************/
+    .description-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 18px !important;
+    }
+    /*************x******************end responsive (426) description section******************x***********/
+}
+@media(max-width: 414px) {
+    /********************************** responsive (414) description section********************************/
+    .description-img {
+        width: 183px;
+        height: 183px;
+        margin-bottom: 18px !important;
+    }
+    /*************x******************end responsive (414) description section******************x***********/
+}
+@media(max-width: 411px) {
+    /********************************** responsive (411) description section********************************/
+    .description-img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 18px !important;
+    }
+      /*************x******************end responsive (411) description section******************x***********/
+}
+@media(max-width: 375px) {
+    /********************************** responsive (375) description section********************************/
+    .description-img {
+        width: 163px;
+        height: 163px;
+        margin-bottom: 18px !important;
+    }
+    /*************x******************end responsive (375) description section******************x***********/
+}
+@media(max-width: 360px) {
+    .description-img {
+        width: 136px;
+        height: 153px;
+        margin-bottom: 18px !important;
+    }
+}
+@media(max-width: 320px) {
+     /********************************** responsive (320) description section********************************/
+    .description-img {
+        width: 136px;
+        height: 136px;
+        margin-bottom: 18px !important;
+    }
+    /*************x******************end responsive (320) description section******************x***********/
+}
+/**************x*********************end responsive section*************************x***********/
