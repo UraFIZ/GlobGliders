@@ -7,6 +7,13 @@ header, main, footer {
 a:hover {
     text-decoration: none;
 }
+ul {
+    padding: 0;
+}
+li {
+    list-style-position: inside;
+    padding: 0;
+}
 main {
     height: 0;
 }
@@ -143,6 +150,9 @@ div[class^="col-"] {
 /******************************margins***********************************/
 .mar-b-24 {
     margin-bottom: 24px;
+}
+.mar-b-40 {
+    margin-bottom: 40px;
 }
 /******************************end margins*******************************/
 
