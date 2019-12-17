@@ -61,6 +61,14 @@ div[class^="col-"] {
     letter-spacing: 1.37px;
     color: #464457;
 }
+.heading-2-mm {
+    font-family: Montserrat-Medium;
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.1px;
+    color: #464457;
+}
 .heading-1-ossb {
     font-family: OpenSens-SemiBold;
     margin: 0;
@@ -68,6 +76,14 @@ div[class^="col-"] {
     line-height: 52px;
     letter-spacing: 1.37px;
     color: white;
+}
+.heading-2-ossb {
+    font-family: OpenSens-SemiBold;
+    margin: 0;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.69px;
+    color: #464457;
 }
 .heading-2-osr {
     font-family: OpenSens-Regular;
@@ -148,11 +164,17 @@ div[class^="col-"] {
 }
 /*****************************end inputs ********************************/
 /******************************margins***********************************/
+.mar-b-22 {
+    margin-bottom: 22px;
+}
 .mar-b-24 {
     margin-bottom: 24px;
 }
 .mar-b-40 {
     margin-bottom: 40px;
+}
+.mar-b-45 {
+    margin-bottom: 45px;
 }
 .mar-b-15 {
     margin-bottom: 15px;

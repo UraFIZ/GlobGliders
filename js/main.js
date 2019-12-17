@@ -9,6 +9,7 @@ $(document).ready(function(){
         }
     })
     getInitiationOwlCarousal();
+    filterLocationItems();
       
 })
 function getInitiationOwlCarousal() {
@@ -26,4 +27,18 @@ function getInitiationOwlCarousal() {
             }
         })
     }
+}
+function filterLocationItems() {
+    var allLocationBtns = $(".location-type-container button");
+         allLocationBtns.click(function (e) {
+        $('.location-type-container button').removeClass('active');
+        e.target.classList.add('active');
+
+        let selector = $(e.target).attr('data-filter');
+        $('.location-grid').isotope({
+            filter: selector
+        });
+
+        return false;
+    })
 }

@@ -33,7 +33,7 @@ max-width: 620px;
     max-width: 1367px;
 }
 .description-text-wrapper {
-    width: 470px;
+    max-width: 470px;
 }
 .description-img-wrapper {
     display: flex;
@@ -78,6 +78,36 @@ max-width: 620px;
 }
 /*************x******************end globe-components section******************x***********/
 
+/*********************************instagram section*****************************************/
+.instagram-section {
+    width: 100%;
+    height: 540px;
+    background-color: rgb(21, 156, 111);
+    margin-bottom: 150px;
+}
+/**************x******************end instagram section****************************x************/
+/***********************************location-section*********************************************/
+.location-type-container button {
+    background: transparent;
+    border-radius: 8px;
+    border: solid 2px #f6f5f6;
+    padding: 5px 13px;
+}
+.location-type-container button + button{
+    margin-left: 10px;
+}
+.location-grid > * {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-bottom: 60px;
+}
+.grid-item {
+    max-width: 370px;
+    height: 282px;
+    object-fit: contain;
+    background-color: rgb(21, 156, 111);
+}
+/**************x*********************end location-section***************************x******************/
 
 /************************************||||||responsive section|||||||*************************************/
 
@@ -149,8 +179,8 @@ max-width: 620px;
         width: 36px;
         height: 36px;
         box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
-        background-color: #ffffff;
-        color: #adb5bd;
+        background-color: #ffffff !important;
+        color: #adb5bd !important;
         border-radius: 50%;
       }
       #addOwlCarousel > div.owl-nav > button.owl-next > span {
@@ -160,7 +190,7 @@ max-width: 620px;
       }
       .globe-components .owl-nav {
         position: absolute;
-        top: 22%;
+        top: 27%;
         right: 0;
       }
       /**************x******************end responsive (768) globe-components section *************x**************/

@@ -7,6 +7,10 @@
     src: url('../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf')
 }
 @font-face {
+    font-family: Montserrat-Medium;
+    src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf')
+}
+@font-face {
     font-family: OpenSens-Regular;
     src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf')
 }
