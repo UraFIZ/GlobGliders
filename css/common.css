@@ -178,3 +178,11 @@ div[class^="col-"] {
         padding-left: 15px;
     }
 }
+@media(max-width: 768px) {
+    /*********************************responsive (768) buttons ****************************/
+.responsive-btn {
+    display: flex;
+    justify-content: center;
+}
+    /**************x******************end responsive (768) buttons *************x**************/
+}

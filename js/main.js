@@ -8,5 +8,22 @@ $(document).ready(function(){
             $(".js-sity-margin").css("margin-top", "0");
         }
     })
+    getInitiationOwlCarousal();
       
 })
+function getInitiationOwlCarousal() {
+    if($(window).width() <= 768) {
+        $("#addOwlCarousel").addClass("owl-carousel");
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: false,
+            nav:true,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    }
+}

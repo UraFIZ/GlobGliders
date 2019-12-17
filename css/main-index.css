@@ -73,7 +73,7 @@ max-width: 620px;
     height: 428px;
     background-color: rgb(21, 156, 111);
 }
-.globe-components .row > * {
+.globe-components .row:not(:last-child) {
     margin-bottom: 150px;
 }
 /*************x******************end globe-components section******************x***********/
@@ -98,9 +98,7 @@ max-width: 620px;
     /*************x******************end responsive (1024) description section******************x***********/
 
     /**********************************responsive (1024) globe-components section********************************/
-    .globe-live-wrapper {
-        max-width: 100%;
-    }
+
     /**********************************end responsive (1024) globe-components section********************************/
 }
 @media(max-width: 992px) {
@@ -110,14 +108,62 @@ max-width: 620px;
         justify-content: center;
     }
      /*************x******************end responsive (992) description section******************x***********/
+     /*********************************responsive (992) globe-components section ****************************/
+           .live-row, .meet-row{
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          .work-row{
+            display: flex;
+            flex-direction: column;
+          }
+          .pad-l-28 {
+              padding-left: 15px !important;
+          }
+          .globe-live-wrapper, .globe-work-wrapper, .globe-meet-wrapper  {
+            max-width: 100%;
+        }
+        .globe-components {
+            padding: 0;
+        }
+          /**************x******************end responsive (992) globe-components section *************x**************/
 }
 @media(max-width: 768px) {
       /********************************** responsive (768) description section********************************/
+      .description-section {
+        padding: 60px 0;
+    }
     .description-img-container {
         display: flex;
         justify-content: center;
     }
       /*************x******************end responsive (768) description section******************x***********/
+      /*********************************responsive (768) globe-components section ****************************/
+      .globe-components .description-container {
+          position: relative;
+      }
+      .globe-components .owl-prev {
+        display: none;
+      }
+      .globe-components .owl-next {
+        width: 36px;
+        height: 36px;
+        box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+        background-color: #ffffff;
+        color: #adb5bd;
+        border-radius: 50%;
+      }
+      #addOwlCarousel > div.owl-nav > button.owl-next > span {
+        font-size: 40px;
+        height: 36px;
+        line-height: 0.7;
+      }
+      .globe-components .owl-nav {
+        position: absolute;
+        top: 22%;
+        right: 0;
+      }
+      /**************x******************end responsive (768) globe-components section *************x**************/
 }
 @media(max-width: 576px) {
     /********************************** responsive (576) description section********************************/
