@@ -170,6 +170,9 @@ max-width: 620px;
     color: black;
     font-weight: bold;
 }
+.work {
+    background-color: yellow !important;
+}
 /**************x*********************end location-section***************************x******************/
 
 /************************************||||||responsive section|||||||*************************************/
