@@ -88,6 +88,9 @@ max-width: 620px;
 }
 /**************x******************end instagram section****************************x************/
 /***********************************location-section*********************************************/
+.location-section {
+    margin-bottom: 71px;
+}
 .location-type-container {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -257,7 +260,15 @@ max-width: 620px;
         right: 0;
       }
       /**************x******************end responsive (768) globe-components section *************x**************/
-      /***************************************responsive location-section ***********/
+      /***************************************responsive (768)instagram-section *****************************************/
+      .instagram-section {
+        margin-bottom: 60px;
+      }
+      /******************x******************** end responsive (768) instagram-section **************x**********************/
+      /*************************************************responsive location-section**************************************/
+      .location-section {
+        margin-bottom: 0;
+    }
       .location-card-img {
         max-width: 100%;
         height: 226px;
@@ -265,7 +276,10 @@ max-width: 620px;
         background-color: rgb(21, 156, 111);
         border-radius: 8px;
     }
-          /***************************************end responsive location-section ***********/
+    /* .location-grid > * {
+        width: 768px;
+    } */
+        /***************************************end responsive location-section ***********/
 }
 @media(max-width: 576px) {
     /********************************** responsive (576) description section********************************/

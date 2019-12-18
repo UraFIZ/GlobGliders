@@ -2,7 +2,9 @@
 
 header, main, footer {
     max-width: 1920px;
-    margin: 0 auto;
+}
+.main {
+    padding: 10px ;
 }
 a:hover {
     text-decoration: none;
@@ -26,6 +28,9 @@ div[class^="col-"] {
 }
 .grid-container {
     max-width: 1571px !important;
+}
+.footer-container {
+    max-width: 1800px;
 }
 .grid-gap {
     margin: 28px;
@@ -63,6 +68,14 @@ div[class^="col-"] {
     line-height: 40px;
     letter-spacing: 1.37px;
     color: #464457;
+}
+.heading-2-mb {
+    font-family: Montserrat-Bold;
+    margin: 0;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.82px;
+    color: white;
 }
 .heading-3-mb {
     font-family: Montserrat-Bold;
@@ -219,6 +232,9 @@ div[class^="col-"] {
 }
 .mar-r-20 {
     margin-right: 20px;
+}
+.mar-r-36 {
+    margin-right: 36px;
 }
 .mar-l-35 {
     margin-left: 35px;

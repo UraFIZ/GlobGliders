@@ -40,7 +40,7 @@ function getInitiationOwlCarousalForLocationSection() {
             autoplay: false,
             nav:false,
             dots: false,
-            margin:10,
+            margin: -20,
             responsive: {
                 0: {
                     items: 1.5

@@ -1,0 +1,21 @@
+footer {
+    background-color: #464457;
+    margin: 0 auto;
+}
+.footer-join {
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+.footer-about-us {
+    padding: 30px 83px;
+    border-bottom: 1px solid white;
+}
+.footer-gg-co {
+    padding: 20px;
+}
+
+@media(max-width: 576px) {
+    .footer-join {
+        padding: 0;
+    }
+}
