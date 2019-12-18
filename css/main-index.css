@@ -71,6 +71,7 @@ max-width: 620px;
 .globe-img-wrapper {
     max-width: 770px;
     height: 428px;
+    border-radius: 8px;
     background-color: rgb(21, 156, 111);
 }
 .globe-components .row:not(:last-child) {
@@ -87,11 +88,20 @@ max-width: 620px;
 }
 /**************x******************end instagram section****************************x************/
 /***********************************location-section*********************************************/
+.location-type-container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
 .location-type-container button {
     background: transparent;
     border-radius: 8px;
     border: solid 2px #f6f5f6;
     padding: 5px 13px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+}
+.location-text-container > .col-12 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
 }
 .location-type-container button + button{
     margin-left: 10px;
@@ -101,11 +111,64 @@ max-width: 620px;
     padding-left: 15px !important;
     margin-bottom: 60px;
 }
-.grid-item {
+.location-card {
+   display: flex;
+   flex-direction: column;
+}
+.card-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-card-img {
     max-width: 370px;
-    height: 282px;
+    height: 226px;
     object-fit: contain;
     background-color: rgb(21, 156, 111);
+    border-radius: 8px;
+}
+.location-card-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: auto !important;
+}
+.location-card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: 16px 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.location-description-icon {
+    object-fit: contain;
+    width: auto !important;
+}
+.card-address-note {
+    position: relative;
+}
+.card-address-note::before {
+    content: "i";
+    position: absolute;
+    left: -18%;
+    display: flex;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
 /**************x*********************end location-section***************************x******************/
 
@@ -194,6 +257,15 @@ max-width: 620px;
         right: 0;
       }
       /**************x******************end responsive (768) globe-components section *************x**************/
+      /***************************************responsive location-section ***********/
+      .location-card-img {
+        max-width: 100%;
+        height: 226px;
+        object-fit: contain;
+        background-color: rgb(21, 156, 111);
+        border-radius: 8px;
+    }
+          /***************************************end responsive location-section ***********/
 }
 @media(max-width: 576px) {
     /********************************** responsive (576) description section********************************/

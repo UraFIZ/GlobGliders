@@ -7,6 +7,9 @@ header, main, footer {
 a:hover {
     text-decoration: none;
 }
+h1, h2, h3, h4, h5, p, div {
+    word-break: break-word;
+}
 ul {
     padding: 0;
 }
@@ -61,6 +64,14 @@ div[class^="col-"] {
     letter-spacing: 1.37px;
     color: #464457;
 }
+.heading-3-mb {
+    font-family: Montserrat-Bold;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.55px;
+    color: #464457;
+}
 .heading-2-mm {
     font-family: Montserrat-Medium;
     margin: 0;
@@ -85,6 +96,14 @@ div[class^="col-"] {
     letter-spacing: 0.69px;
     color: #464457;
 }
+.heading-3-osb {
+    font-family: OpenSens-Bold;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.55px;
+    color: white;
+}
 .heading-2-osr {
     font-family: OpenSens-Regular;
     margin: 0;
@@ -92,6 +111,22 @@ div[class^="col-"] {
     line-height: 28px;
     letter-spacing: 0.55px;
     color: #1b1b1b;
+}
+.heading-3-osr {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.55px;
+    color: #1b1b1b;
+}
+.heading-4-osr {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.41px;
+    color: white;
 }
 
 /* ************************buttons ******************************/
@@ -170,6 +205,9 @@ div[class^="col-"] {
 .mar-b-24 {
     margin-bottom: 24px;
 }
+.mar-b-30 {
+    margin-bottom: 30px;
+}
 .mar-b-40 {
     margin-bottom: 40px;
 }
@@ -181,6 +219,9 @@ div[class^="col-"] {
 }
 .mar-r-20 {
     margin-right: 20px;
+}
+.mar-l-35 {
+    margin-left: 35px;
 }
 /******************************end margins*******************************/
 /*******************************paddings**********************************/

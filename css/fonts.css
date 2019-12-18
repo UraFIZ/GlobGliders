@@ -7,6 +7,10 @@
     src: url('../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf')
 }
 @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf')
+}
+@font-face {
     font-family: Montserrat-Medium;
     src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf')
 }
@@ -17,6 +21,10 @@
 @font-face {
     font-family: OpenSens-SemiBold;
     src: url('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf')
+}
+@font-face {
+    font-family: OpenSens-Bold;
+    src: url('../assets/fonts/Open_Sans/OpenSans-Bold.ttf')
 }
 @font-face {
     font-family: Nautilus;

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="41" viewBox="0 0 42 41">
+    <defs>
+        <filter id="a" width="121.6%" height="208%" x="-10.8%" y="-54%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.105882353 0 0 0 0 0.105882353 0 0 0 0 0.105882353 0 0 0 0.104977054 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="b" d="M0 24h24V0H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(9 4)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#b"/>
+        </mask>
+        <path stroke="#464457" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 10h20L12 2zM9.5 22h5v-7.932h-5z" mask="url(#c)"/>
+        <path stroke="#464457" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 22h20V10H2z" mask="url(#c)"/>
+        <path stroke="#464457" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.047 21.98H9.5v-3H2.047z" mask="url(#c)"/>
+        <path stroke="#464457" stroke-linecap="round" stroke-linejoin="round" d="M4.773 15.667h2v-2h-2zM17.227 15.667h2v-2h-2z" mask="url(#c)"/>
+        <path stroke="#464457" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.5 21.98h7.454v-3H14.5z" mask="url(#c)"/>
+    </g>
+</svg>

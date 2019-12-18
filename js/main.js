@@ -9,8 +9,12 @@ $(document).ready(function(){
         }
     })
     getInitiationOwlCarousal();
+    getInitiationOwlCarousalForLocationSection();
     filterLocationItems();
-      
+    var owlItems = $(".grid-container .owl-item");
+    getCouruselLocatinSection(owlItems)
+   
+
 })
 function getInitiationOwlCarousal() {
     if($(window).width() <= 768) {
@@ -28,14 +32,43 @@ function getInitiationOwlCarousal() {
         })
     }
 }
+function getInitiationOwlCarousalForLocationSection() {
+    if($(window).width() <= 768) {
+        $("#addToLocationOwlCarousel").addClass("owl-carousel");
+        $('.grid-container .owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: false,
+            nav:false,
+            dots: false,
+            margin:10,
+            responsive: {
+                0: {
+                    items: 1.5
+                },
+            }
+        })
+    }
+}
+function getCouruselLocatinSection(data) {
+    var colgrid = $(".location-grid .col-12");
+    var listOfClass = [];
+    $(colgrid).each(function(inx, item){
+        listOfClass.push($(item).attr("class").split(" ")[3]);
+       })
+
+    $(data).each(function(inx, item) {
+       $(item).addClass(listOfClass[inx]);
+    })
+
+}
 function filterLocationItems() {
     var allLocationBtns = $(".location-type-container button");
          allLocationBtns.click(function (e) {
         $('.location-type-container button').removeClass('active');
         e.target.classList.add('active');
-
         let selector = $(e.target).attr('data-filter');
-        $('.location-grid').isotope({
+        var classForFilter = ($(window).width()<=768) ? ".location-grid .owl-stage" : ".location-grid";
+        $(classForFilter).isotope({
             filter: selector
         });
 
