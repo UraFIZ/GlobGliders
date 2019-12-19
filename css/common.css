@@ -26,6 +26,18 @@ div[class^="col-"] {
     padding-right: 0;
     padding-left: 0;
 }
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+    background: rgba(0, 0, 0, 0.425);
+}
 .grid-container {
     max-width: 1571px !important;
 }

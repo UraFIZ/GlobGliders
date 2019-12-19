@@ -8,13 +8,15 @@ $(document).ready(function(){
             $(".js-sity-margin").css("margin-top", "0");
         }
     })
+    navbarFixed();
     getInitiationOwlCarousal();
     getInitiationOwlCarousalForLocationSection();
     filterLocationItems();
     var owlItems = $(".grid-container .owl-item");
     getCouruselLocatinSection(owlItems)
-   
-
+    
+    // AOS Instance
+    AOS.init();
 })
 function getInitiationOwlCarousal() {
     if($(window).width() <= 768) {
@@ -36,7 +38,7 @@ function getInitiationOwlCarousalForLocationSection() {
     if($(window).width() <= 768) {
         $("#addToLocationOwlCarousel").addClass("owl-carousel");
         $('.grid-container .owl-carousel').owlCarousel({
-            loop: true,
+            loop: false,
             autoplay: false,
             nav:false,
             dots: false,
@@ -74,4 +76,21 @@ function filterLocationItems() {
 
         return false;
     })
+}
+let nav_offset_top = $('header').height() + 50;
+
+function navbarFixed() {
+    if ($('header').length) {
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            console.log(scroll)
+            if (scroll >= nav_offset_top) {
+                $('header').addClass('navbar_fixed');
+                $("header").removeClass("header");
+            } else {
+                $('.header').removeClass('navbar_fixed');
+                $("header").addClass("header");
+            }
+        })
+    }
 }
