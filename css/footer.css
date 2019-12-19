@@ -2,13 +2,53 @@ footer {
     background-color: #464457;
     margin: 0 auto;
 }
+footer .social {
+    display: flex;
+    align-items: center;
+}
+footer .main-container {
+    border-top: 1px solid white;
+}
 .footer-join {
     padding: 50px 0;
-    border-bottom: 1px solid white;
+}
+.social > a {
+    margin-right: 36px;
+}
+.social-icons {
+    display: flex;
+}
+.social-icons > a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 36px;
+     height: 36px;
+     border: 1px solid white;
+     border-radius: 50%;
+     color: white;
+     transition: background-color 0.5s;
+     margin-right: 17px;
+}
+.footer-join .social a:hover {
+    color: white;
+}
+.tagline {
+    position: relative;
+    left: 90px;
+    display: flex;
+    align-items: center;
+}
+.join {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-icons > a:hover {
+    background-color: rgba(0, 0, 0, 0.363);
 }
 .footer-about-us {
     padding: 30px 83px;
-    border-bottom: 1px solid white;
 }
 .footer-gg-co {
     padding: 20px;
@@ -16,6 +56,33 @@ footer {
 
 @media(max-width: 576px) {
     .footer-join {
+        padding: 0;
+        padding-bottom: 26px;
+    }
+    .tagline {
+        position: unset;
+        text-align: center;
+    }
+    .join {
+        display: flex;
+        justify-content: center;
+    }
+    .social {
+        padding: 30px 0;
+    }
+    footer .social {
+        justify-content: space-between;
+    }
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+    .social > a {
+        margin-right: 0;
+    }
+    .social .heading-nautilus {
+        font-size: 30px;
+    }
+    .footer-about-us {
         padding: 0;
     }
 }

@@ -1,10 +1,11 @@
 @import url(/css/fonts.css);
 
-header, main, footer {
+/* header, main, footer {
     max-width: 1920px;
-}
-.main {
-    padding: 10px ;
+} */
+.main-container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 a:hover {
     text-decoration: none;
@@ -30,10 +31,9 @@ div[class^="col-"] {
     position: fixed;
     width: 100%;
     top: -1px;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    box-shadow: var(--box-shadow);
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
     z-index: 999;
     transition: background 1s ease;
     background: rgba(0, 0, 0, 0.425);
@@ -264,6 +264,16 @@ div[class^="col-"] {
 }
 /************x*****************end color************************x*************/
 @media(max-width: 1024px) {
+    html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    .main-container {
+        max-width: 100%;
+        width: 100%;
+    }
     div[class^="col-"] {
         padding-right: 15px;
         padding-left: 15px;

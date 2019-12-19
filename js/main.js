@@ -83,7 +83,6 @@ function navbarFixed() {
     if ($('header').length) {
         $(window).scroll(function () {
             let scroll = $(window).scrollTop();
-            console.log(scroll)
             if (scroll >= nav_offset_top) {
                 $('header').addClass('navbar_fixed');
                 $("header").removeClass("header");
