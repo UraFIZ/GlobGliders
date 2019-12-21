@@ -48,6 +48,18 @@
     position: absolute;
     top: 100px;
 }
+@media(max-width: 1236px) {
+    footer .social {
+        flex-direction: column;
+    }
+}
+@media(max-width: 1024px) {
+    .footer-join {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media(max-width: 1200px) {
     .navbar {
         display: flex;

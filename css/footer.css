@@ -9,6 +9,9 @@ footer .social {
 footer .main-container {
     border-top: 1px solid white;
 }
+.footer-container a:hover {
+    color: white;
+}
 .footer-join {
     padding: 50px 0;
 }
@@ -48,12 +51,56 @@ footer .main-container {
     background-color: rgba(0, 0, 0, 0.363);
 }
 .footer-about-us {
-    padding: 30px 83px;
+    padding: 35px 0 95px 0;
+}
+.business-about-blog {
+    display: flex;
+}
+.business-about-blog > * {
+    padding-right: 43px;
+}
+.first-col-info ul, .second-col-info ul, .third-col-info ul {
+    padding: 0;
+}
+.first-col-info ul li, .second-col-info ul li, .third-col-info ul li {
+    list-style: none;
+    color: white;
 }
 .footer-gg-co {
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-
+.footer-contact-us {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-contact-us-wrapper {
+    max-width: 497px;
+}
+.newsletter-form {
+    margin-bottom: 30px;
+}
+.form-wrapper {
+    display: flex;
+}
+#email {
+    width: 352px;
+    height: 50px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid white;
+}
+.fa-envelope, .fa-life-ring {
+    color: white;
+    font-size: 18px;
+}
+@media(max-width: 1500px) {
+    .tagline {
+        position: unset;
+    }
+}
 @media(max-width: 576px) {
     .footer-join {
         padding: 0;

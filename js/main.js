@@ -15,6 +15,7 @@ $(document).ready(function(){
     var owlItems = $(".grid-container .owl-item");
     getCouruselLocatinSection(owlItems)
     
+    
     // AOS Instance
     AOS.init();
 })
@@ -93,3 +94,4 @@ function navbarFixed() {
         })
     }
 }
+

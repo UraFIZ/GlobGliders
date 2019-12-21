@@ -15,6 +15,14 @@
     src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf')
 }
 @font-face {
+    font-family: Montserrat-Regular;
+    src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf')
+}
+@font-face {
+    font-family: Montserrat-light;
+    src: url('../assets/fonts/Montserrat/Montserrat-Light.ttf')
+}
+@font-face {
     font-family: OpenSens-Regular;
     src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf')
 }

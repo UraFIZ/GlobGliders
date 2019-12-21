@@ -40,9 +40,11 @@ div[class^="col-"] {
 }
 .grid-container {
     max-width: 1571px !important;
+    margin: 0 auto;
 }
 .footer-container {
-    max-width: 1800px;
+    max-width: 93.7%;
+    margin: 0 auto;
 }
 .grid-gap {
     margin: 28px;
@@ -105,6 +107,32 @@ div[class^="col-"] {
     letter-spacing: 1.1px;
     color: #464457;
 }
+.heading-3-mm {
+    font-family: Montserrat-Medium;
+    margin: 0;
+    font-size: 12px;
+    line-height: 3.33;
+    letter-spacing: 0.41px;
+    color: white;
+}
+.heading-3-mr {
+    font-family: Montserrat-Regular;
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 0.82px;
+    color: white;
+}
+.heading-3-ml {
+    font-family: Montserrat-light;
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 0.82px;
+    color: white;
+}
 .heading-1-ossb {
     font-family: OpenSens-SemiBold;
     margin: 0;
@@ -127,6 +155,22 @@ div[class^="col-"] {
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.55px;
+    color: white;
+}
+.heading-15-osr {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.62px;
+    color: white;
+}
+.heading-15-osr-head {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 2px;
     color: white;
 }
 .heading-2-osr {
@@ -182,6 +226,25 @@ div[class^="col-"] {
     letter-spacing: 0.55px;
     border: 1px solid white;
     transition: all 0.5s;
+}
+.btn-subscribe, .btn-subscribe:active {
+    display: inline-block;
+    width: 132px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    border-radius: 8px;
+    background-color: #55bfd7;
+    font-family: OpenSens-Regular;
+    font-size: 16px;
+    letter-spacing: 0.55px;
+    border: 1px solid #55bfd7;
+    transition: all 0.5s;
+}
+.btn-subscribe:hover {
+    background-color: white;
+    color: #55bfd7;
 }
 .button-secondary:hover {
     color: white;
