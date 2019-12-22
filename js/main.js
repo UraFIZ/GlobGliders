@@ -11,13 +11,14 @@ $(document).ready(function(){
     navbarFixed();
     getInitiationOwlCarousal();
     getInitiationOwlCarousalForLocationSection();
+    limitedOfOwlCarousel();
     filterLocationItems();
     var owlItems = $(".grid-container .owl-item");
     getCouruselLocatinSection(owlItems)
     
-    
     // AOS Instance
     AOS.init();
+
 })
 function getInitiationOwlCarousal() {
     if($(window).width() <= 768) {
@@ -44,19 +45,22 @@ function getInitiationOwlCarousalForLocationSection() {
             nav:false,
             dots: false,
             margin: -20,
+            center:true,
+            rewind:true,
             responsive: {
                 0: {
-                    items: 1.5
+                    items: 1.3
                 },
             }
         })
     }
 }
+
 function getCouruselLocatinSection(data) {
-    var colgrid = $(".location-grid .col-12");
+    var colgrid = $(".location-grid .grid-item");
     var listOfClass = [];
     $(colgrid).each(function(inx, item){
-        listOfClass.push($(item).attr("class").split(" ")[3]);
+        listOfClass.push($(item).attr("class").split(" ")[5]);
        })
 
     $(data).each(function(inx, item) {
@@ -64,13 +68,31 @@ function getCouruselLocatinSection(data) {
     })
 
 }
+function limitedOfOwlCarousel() {
+    var owl = $('.grid-container .owl-carousel');
+
+    // Listen to owl events:
+    owl.on('initialize.owl.carousel', event => {
+        //get this var out???? 
+        var items = event.item.count
+        console.log(items-4)
+        //event handler
+        owl.trigger('to.owl.carousel', items)
+    })
+    owl.owlCarousel({
+        startPosition: 4
+    });
+}
 function filterLocationItems() {
     var allLocationBtns = $(".location-type-container button");
          allLocationBtns.click(function (e) {
         $('.location-type-container button').removeClass('active');
         e.target.classList.add('active');
         let selector = $(e.target).attr('data-filter');
+        
         var classForFilter = ($(window).width()<=768) ? ".location-grid .owl-stage" : ".location-grid";
+        var owl = $('.grid-container .owl-carousel');
+        owl.owlCarousel();
         $(classForFilter).isotope({
             filter: selector
         });
@@ -79,7 +101,6 @@ function filterLocationItems() {
     })
 }
 let nav_offset_top = $('header').height() + 50;
-
 function navbarFixed() {
     if ($('header').length) {
         $(window).scroll(function () {
@@ -94,4 +115,5 @@ function navbarFixed() {
         })
     }
 }
+
 

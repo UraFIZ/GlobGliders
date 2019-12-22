@@ -109,6 +109,9 @@ max-width: 620px;
 .location-type-container button + button{
     margin-left: 10px;
 }
+#addToLocationOwlCarousel .owl-stage-outer {
+    width: 100%;
+}
 .location-grid > * {
     padding-right: 15px !important;
     padding-left: 15px !important;
