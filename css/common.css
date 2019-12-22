@@ -271,7 +271,7 @@ div[class^="col-"] {
 }
 .input-sign-in {
     width: 96px;
-    height: 40px;
+    height: auto;
     border-color: white;
     color: white;
     transition: all 0.5s;
@@ -281,7 +281,7 @@ div[class^="col-"] {
 }
 .input-join {
     width: 75px;
-    height: 40px;
+    height: auto;
     color: white;
     transition: all 0.5s;
 }
