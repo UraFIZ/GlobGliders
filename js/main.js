@@ -11,10 +11,9 @@ $(document).ready(function(){
     navbarFixed();
     getInitiationOwlCarousal();
     getInitiationOwlCarousalForLocationSection();
-    limitedOfOwlCarousel();
     filterLocationItems();
     var owlItems = $(".grid-container .owl-item");
-    getCouruselLocatinSection(owlItems)
+    getCouruselLocatinSection(owlItems);
     
     // AOS Instance
     AOS.init();
@@ -37,7 +36,7 @@ function getInitiationOwlCarousal() {
     }
 }
 function getInitiationOwlCarousalForLocationSection() {
-    if($(window).width() <= 768) {
+    if($(window).width() <= 600) {
         $("#addToLocationOwlCarousel").addClass("owl-carousel");
         $('.grid-container .owl-carousel').owlCarousel({
             loop: false,
@@ -55,6 +54,25 @@ function getInitiationOwlCarousalForLocationSection() {
         })
     }
 }
+// function getInitLocationBtns() {
+//     if($(window).width() <= 600) {
+//         $(".location-type-container").addClass("owl-carousel");
+//         $('.location-type-container.owl-carousel').owlCarousel({
+//             loop: false,
+//             autoplay: false,
+//             nav:false,
+//             dots: false,
+//             margin: -20,
+//             center:true,
+//             startPosition: 1,
+//             responsive: {
+//                 0: {
+//                     items: 1.3
+//                 },
+//             }
+//         })
+//     }
+// }
 
 function getCouruselLocatinSection(data) {
     var colgrid = $(".location-grid .grid-item");
@@ -62,43 +80,58 @@ function getCouruselLocatinSection(data) {
     $(colgrid).each(function(inx, item){
         listOfClass.push($(item).attr("class").split(" ")[5]);
        })
-
     $(data).each(function(inx, item) {
        $(item).addClass(listOfClass[inx]);
     })
 
 }
-function limitedOfOwlCarousel() {
-    var owl = $('.grid-container .owl-carousel');
+// function getAttrOfBtnToMakeCarouser(data) {
+//     console.log(data);
+//     var locationBtns = $(".location-type-container button");
+//     var listOfAttrs = [];
+//     $(locationBtns).each(function(inx, item) {
+//         listOfAttrs.push($(item).attr("data-filter"));
+//     })
+//     $(data).each(function(inx, item) {
+//         $(item).attr("data-filter", listOfAttrs[inx]);
+//      })
+// }
 
-    // Listen to owl events:
-    owl.on('initialize.owl.carousel', event => {
-        //get this var out???? 
-        var items = event.item.count
-        console.log(items-4)
-        //event handler
-        owl.trigger('to.owl.carousel', items)
-    })
-    owl.owlCarousel({
-        startPosition: 4
-    });
-}
 function filterLocationItems() {
     var allLocationBtns = $(".location-type-container button");
          allLocationBtns.click(function (e) {
         $('.location-type-container button').removeClass('active');
         e.target.classList.add('active');
         let selector = $(e.target).attr('data-filter');
-        
-        var classForFilter = ($(window).width()<=768) ? ".location-grid .owl-stage" : ".location-grid";
-        var owl = $('.grid-container .owl-carousel');
-        owl.owlCarousel();
+        var classForFilter = ($(window).width()<=600) ? ".location-grid .owl-stage" : ".location-grid";
+
         $(classForFilter).isotope({
             filter: selector
         });
+        if($(window).width()<=600) {
+               var owl = $('.location-grid');
+               owl.trigger("to.owl.carousel", [0, 0, true]);
+                owl.owlCarousel();
+                $(".grid-container .owl-stage").width(setWidthOfItemOwlContainer(selector).width);
+                $(".grid-container .owl-stage").height(setWidthOfItemOwlContainer(selector).height);
+        }
 
         return false;
     })
+}
+function setWidthOfItemOwlContainer(selectItem) {
+    var widthOfContainer = 0;
+    var ownItems = $(".grid-container .owl-item").filter(selectItem);
+    var heightItem = 0;
+    var deltaWidth = ownItems.length;
+    $(ownItems).each(function(inx, item){
+        widthOfContainer += $(item).width();
+        heightItem = $(item).height();
+    })
+    return {
+        width: Math.floor(widthOfContainer - deltaWidth * 20),
+        height: heightItem
+    } 
 }
 let nav_offset_top = $('header').height() + 50;
 function navbarFixed() {
