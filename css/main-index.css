@@ -101,6 +101,9 @@ max-width: 620px;
     border: solid 2px #f6f5f6;
     padding: 5px 13px;
     box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    display: flex;
+    justify-content: space-evenly;
+    width: 240px;
 }
 .location-text-container > .col-12 {
     padding-right: 15px !important;
@@ -109,8 +112,14 @@ max-width: 620px;
 .location-type-container button + button{
     margin-left: 10px;
 }
+#addToLocationBtnOwlCarousel button img{
+    width: auto !important;
+}
 #addToLocationOwlCarousel .owl-stage-outer {
     width: 109%;
+}
+#addToLocationBtnOwlCarousel .owl-stage-outer {
+    width: 115%;
 }
 .location-grid > * {
     padding-right: 15px !important;
