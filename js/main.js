@@ -13,8 +13,9 @@ $(document).ready(function(){
     getInitiationOwlCarousalForLocationSection();
 
     // AOS Instance
-    AOS.init();
+  
    if($(window).width() <= 600) {
+    $("div[data-aos]").attr("data-aos", "huy")
     getInitLocationBtns();
     var owlItems = $("#addToLocationOwlCarousel .owl-item");
     getCouruselLocatinSection(owlItems);
@@ -23,8 +24,9 @@ $(document).ready(function(){
     filterLocationItems("#addToLocationBtnOwlCarousel > div.owl-stage-outer > div > div",".location-grid .owl-stage")
    }else{
     filterLocationItems(".location-type-container button", ".location-grid")
-   }
 
+   }
+   AOS.init();
 })
 function getInitiationOwlCarousal() {
     if($(window).width() <= 768) {
