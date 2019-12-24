@@ -11,14 +11,19 @@ $(document).ready(function(){
     navbarFixed();
     getInitiationOwlCarousal();
     getInitiationOwlCarousalForLocationSection();
+
+    // AOS Instance
+    AOS.init();
+   if($(window).width() <= 600) {
     getInitLocationBtns();
-    filterLocationItems();
     var owlItems = $("#addToLocationOwlCarousel .owl-item");
     getCouruselLocatinSection(owlItems);
     var owlItemsBtn = $("#addToLocationBtnOwlCarousel > div.owl-stage-outer > div > div");
     getAttrOfBtnToMakeCarouser(owlItemsBtn);
-    // AOS Instance
-    AOS.init();
+    filterLocationItems("#addToLocationBtnOwlCarousel > div.owl-stage-outer > div > div",".location-grid .owl-stage")
+   }else{
+    filterLocationItems(".location-type-container button", ".location-grid")
+   }
 
 })
 function getInitiationOwlCarousal() {
@@ -112,31 +117,27 @@ function getAttrOfBtnToMakeCarouser(data) {
 //         height: heightItem
 //     } 
 // }
-function filterLocationItems() {
-    if($(window).width()<=600) {
-        var owlItemsBtn = $("#addToLocationBtnOwlCarousel > div.owl-stage-outer > div > div");
+
+
+function filterLocationItems(btnsLocation, filterClass) {
+        var owlItemsBtn = $(btnsLocation);
         owlItemsBtn.click(function (e) {
-            $('#addToLocationBtnOwlCarousel > div.owl-stage-outer > div > div').removeClass('active');
+            $(btnsLocation).removeClass('active');
             e.target.classList.add('active');
             let selector = $(e.target).attr('data-filter');
-            var classForFilter = $(".location-grid .owl-stage");
+            var classForFilter = $(filterClass);
             $(classForFilter).isotope({
                 filter: selector
             });
             // console.log(setWidthOfItemOwlContainer(selector).width)
             // $("#addToLocationOwlCarousel .owl-stage").width(setWidthOfItemOwlContainer(selector).width);
-            var owl = $('.location-grid');
-            owl.trigger("to.owl.carousel", [0, 0, true]);
-            owl.owlCarousel();
-            var secandOwl = $('#addToLocationOwlCarousel');
-            console.log(secandOwl)
-            // secandOwl.on('initialize.owl.carousel', function(event) {})
-            // secandOwl.owlCarousel({
-            //     loop: false,
-            // });
+            if($(window).width() <= 600) {
+                var owl = $('.location-grid');
+                owl.trigger("to.owl.carousel", [0, 0, true]);
+                owl.owlCarousel();
+            }
              return false;
         })
-    }
     // var allLocationBtns = $(".location-type-container button");
     //      allLocationBtns.click(function (e) {
     //     $('.location-type-container button').removeClass('active');
