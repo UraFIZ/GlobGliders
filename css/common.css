@@ -81,6 +81,14 @@ div[class^="col-"] {
     letter-spacing: 2.19px;
     color: white;
 }
+.heading-15-meb {
+    font-family: Montserrat-ExtraBold;
+    margin: 0;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: 1.92px;
+    color: white;
+}
 .heading-2-meb {
     font-family: Montserrat-ExtraBold;
     margin: 0;

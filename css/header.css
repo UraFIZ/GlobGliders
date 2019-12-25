@@ -66,13 +66,12 @@
         flex-direction: column;
     }
 }
-@media(max-width: 992px) {
+
+@media(max-width: 768px) {
     .navbar {
         display: flex;
         flex-direction: row;
     }
-}
-@media(max-width: 768px) {
 #navbarSupportedContent {
  width: 101%;
  background-color: white;
