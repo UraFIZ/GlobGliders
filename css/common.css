@@ -42,6 +42,9 @@ div[class^="col-"] {
     max-width: 1571px !important;
     margin: 0 auto;
 }
+.description-container {
+    max-width: 1371px;
+}
 .footer-container {
     max-width: 93.7%;
     margin: 0 auto;
@@ -352,6 +355,9 @@ div[class^="col-"] {
 }
 .mar-b-30 {
     margin-bottom: 30px;
+}
+.mar-b-37 {
+    margin-bottom: 37px;
 }
 .mar-b-40 {
     margin-bottom: 40px;

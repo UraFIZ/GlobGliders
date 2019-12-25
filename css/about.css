@@ -20,6 +20,21 @@
     margin: 0 auto;
 }
 /******************x***************site-banner section******************x*************/
+/**********************************about-us-section********************************/
+.about-us-section {
+    padding: 150px 0;
+}
+.about-us-content-wrapper {
+    width: 472px;
+}
+.about-us-img {
+    margin-left: auto;
+    max-width: 770px;
+    height: 428px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+/******************x***************end about-us-section******************x*************/
 /*****************************************Responsiveness*****************************************/
 /*****************************************responsive (768)site about section*****************************************/
 @media(max-width: 768px) {
