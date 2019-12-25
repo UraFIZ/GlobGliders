@@ -55,9 +55,9 @@ function getInitiationOwlCarousal() {
 function getRidOfRubbishAtElfsightPlagin() {
     setTimeout(function(){
         $("#eapps-instagram-feed-1 > a").hide();
-        $(".eapps-instagram-feed-title-container").hide();
-       console.log($(".eapps-instagram-feed-posts-grid-load-more-container").hide())
-    }, 1000)
+        $("[eapps-link=titleContainer]").hide();
+        $(".eapps-instagram-feed-posts-grid-load-more-container").hide()
+    }, 1200)
 }
 function getInitiationOwlCarousalForLocationSection() {
     if($(window).width() <= 600) {

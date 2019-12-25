@@ -96,7 +96,7 @@ max-width: 620px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 865px;
+    width: 45.52%;
     height: 100%;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, rgba(104, 208, 227, 0.99) -37%, #37a3c3);
@@ -241,7 +241,12 @@ max-width: 620px;
 
     /**********************************responsive (1024) globe-components section********************************/
 
-    /**********************************end responsive (1024) globe-components section********************************/
+    /*************x********************end responsive (1024) globe-components section************x*******************/
+    /*********************************responsive (1024) instagram section*****************************************/
+    .instagram-section-info {
+        width: 50.5%;
+    }
+    /*************x******************* end responsive (1024) instagram section***********************x*****************/
 }
 @media(max-width: 992px) {
     /********************************** responsive (992) description section********************************/
@@ -274,6 +279,7 @@ max-width: 620px;
       /********************************** responsive (768) description section********************************/
       .description-section {
         padding: 60px 0;
+        margin-bottom: 60px;
     }
     .description-img-container {
         display: flex;
@@ -309,7 +315,14 @@ max-width: 620px;
       
       /***************************************responsive (768)instagram-section *****************************************/
       .instagram-section {
+        height: 1146px;
         margin-bottom: 60px;
+      }
+      .instagram-section-info {
+        bottom: 0;
+        width: 100% !important;
+        height: 50%;
+        top: 50%;
       }
       /******************x******************** end responsive (768) instagram-section **************x**********************/
       /*************************************************responsive location-section**************************************/
@@ -368,6 +381,15 @@ max-width: 620px;
         margin-bottom: 18px !important;
     }
     /*************x******************end responsive (576) description section******************x***********/
+       /************************************** responsive (576) instagram-section ************************************/
+    .instagram-section {
+        height: 811px;
+      }
+      .instagram-content-wrapper {
+          width: 100%;
+      }
+
+      /******************x******************** end responsive (576) instagram-section **************x**********************/
 }
 @media(max-width: 426px) {
      /********************************** responsive (426) description section********************************/
