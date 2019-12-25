@@ -81,11 +81,40 @@ max-width: 620px;
 
 /*********************************instagram section*****************************************/
 .instagram-section {
+    position: relative;
     width: 100%;
-    height: 540px;
     background-color: rgb(21, 156, 111);
     margin-bottom: 150px;
 }
+.instagram-section-info{
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 865px;
+    height: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(104, 208, 227, 0.99) -37%, #37a3c3);
+}
+.instagram-content-wrapper {
+    width: 409px;
+    text-align: center;
+}
+.instagram-section-title {
+    margin-bottom: 23px;
+}
+.instagram-content-wrapper h3 {
+    margin-bottom: 30px;
+}
+.instagram-content-wrapper p {
+    margin-bottom: 28px;
+}
+
 /**************x******************end instagram section****************************x************/
 /***********************************location-section*********************************************/
 .location-section {
@@ -103,24 +132,26 @@ max-width: 620px;
     box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 240px;
 }
 .location-text-container > .col-12 {
     padding-right: 15px !important;
     padding-left: 15px !important;
 }
+
 .location-type-container button + button{
     margin-left: 10px;
 }
 #addToLocationBtnOwlCarousel button img{
     width: auto !important;
 }
-#addToLocationOwlCarousel .owl-stage-outer {
+/* #addToLocationOwlCarousel .owl-stage-outer {
     width: 109%;
-}
-#addToLocationBtnOwlCarousel .owl-stage-outer {
+} */
+/* #addToLocationBtnOwlCarousel .owl-stage-outer {
     width: 115%;
-}
+} */
 .location-grid > * {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -275,6 +306,7 @@ max-width: 620px;
         right: 0;
       }
       /**************x******************end responsive (768) globe-components section *************x**************/
+      
       /***************************************responsive (768)instagram-section *****************************************/
       .instagram-section {
         margin-bottom: 60px;
@@ -297,6 +329,29 @@ max-width: 620px;
         /***************************************end responsive location-section ***********/
 }
 @media(max-width: 576px) {
+/********************************** responsive (576) site-banner section********************************/
+    .site-banner .heading-1-meb {
+        font-size: 44px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.27;
+        letter-spacing: 1.51px;
+        color: #ffffff;
+        }
+        .site-banner .heading-1-ossb {
+            font-size: 24px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: 0.82px;
+            color: #ffffff;
+            }
+            .site-banner .mar-b-24 {
+                margin-bottom: 30px;
+            }
+    /*************x******************end responsive (576) site-banner section******************x***********/
     /********************************** responsive (576) description section********************************/
     .description-img-wrapper {
         justify-content: center;
@@ -358,6 +413,25 @@ max-width: 620px;
     }
 }
 @media(max-width: 320px) {
+    /********************************** responsive (576) site-banner section********************************/
+    .site-banner .heading-1-meb {
+        font-size: 33px;
+        }
+        .site-banner .heading-1-ossb {
+            font-size: 18px;
+            }
+            .site-banner .mar-b-24 {
+                margin-bottom: 30px;
+            }
+    .site-banner .button-primary {
+        padding: 10px 19px;
+        font-size: 16px;
+    }
+    .site-banner .button-secondary {
+        padding: 10px 19px;
+        font-size: 16px;
+    }
+    /*************x******************end responsive (576) site-banner section******************x***********/
      /********************************** responsive (320) description section********************************/
     .description-img {
         width: 136px;

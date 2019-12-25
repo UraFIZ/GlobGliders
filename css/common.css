@@ -61,6 +61,12 @@ div[class^="col-"] {
 .grid-gap-b {
     margin-bottom: 28px;
 }
+.heading-nautilus-1 {
+    font-family: Nautilus;
+    font-size: 56px;
+    letter-spacing: 1.92px;
+    color: white;
+}
 .heading-nautilus {
     font-family: Nautilus;
     font-size: 36px;
@@ -82,6 +88,15 @@ div[class^="col-"] {
     line-height: 40px;
     letter-spacing: 1.37px;
     color: #464457;
+}
+.heading-2-meb-white {
+    font-family: Montserrat-ExtraBold;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    line-height: 1;
+    letter-spacing: 1.37px;
+    color: white;
 }
 .heading-2-mb {
     font-family: Montserrat-Bold;
@@ -133,6 +148,15 @@ div[class^="col-"] {
     letter-spacing: 0.82px;
     color: white;
 }
+.heading-1-oseb {
+    font-family: OpenSens-ExtraBold;
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.1px;
+    color: white;
+    text-align: center;
+}
 .heading-1-ossb {
     font-family: OpenSens-SemiBold;
     margin: 0;
@@ -140,6 +164,15 @@ div[class^="col-"] {
     line-height: 52px;
     letter-spacing: 1.37px;
     color: white;
+}
+.heading-1-ossbi {
+    font-family: OpenSens-SemiBold-Italic;
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.1px;
+    color: white;
+    text-align: center;
 }
 .heading-2-ossb {
     font-family: OpenSens-SemiBold;
@@ -266,15 +299,31 @@ div[class^="col-"] {
     background: transparent;
 }
 .input-search:focus {
-    color: white;
+    color: black;
     background: transparent;
 }
 .input-sign-in {
-    width: 96px;
+    width: auto;
     height: auto;
     border-color: white;
     color: white;
     transition: all 0.5s;
+    padding: 6px 16px;
+}
+.input-instagram {
+    width: auto;
+    height: auto;
+    border-color: white;
+    color: white;
+    transition: all 0.5s;
+    padding: 13px 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.input-instagram:hover {
+    color: rgba(104, 208, 227, 0.99);
+    background-color: white;
+    border: 1px solid white;
 }
 .input-sign-in::placeholder {
     color: white !important;
@@ -327,9 +376,9 @@ div[class^="col-"] {
 }
 /************x*****************end color************************x*************/
 @media(max-width: 1024px) {
-    html {
+    /* html {
         width: 100%;
-    }
+    } */
     body {
         width: 100%;
     }

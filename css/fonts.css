@@ -27,8 +27,16 @@
     src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf')
 }
 @font-face {
+    font-family: OpenSens-ExtraBold;
+    src: url('../assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf')
+}
+@font-face {
     font-family: OpenSens-SemiBold;
     src: url('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf')
+}
+@font-face {
+    font-family: OpenSens-SemiBold-Italic;
+    src: url('../assets/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf')
 }
 @font-face {
     font-family: OpenSens-Bold;

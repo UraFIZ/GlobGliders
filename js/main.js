@@ -1,21 +1,27 @@
 $(document).ready(function(){
+    getRidOfRubbishAtElfsightPlagin();
     $(".navbar-toggler").on('click', function(){
         console.log($(".navbar-collapse").hasClass("show"))
        if(!$(".navbar-collapse").hasClass("show")) {
             $("#navbarSupportedContent").addClass("custom-extend-navbar");
-            $(".js-sity-margin").css("margin-top", "400px");
-        }else{
-            $(".js-sity-margin").css("margin-top", "0");
         }
     })
+    $("input[type=search]").on("input", function(){
+        $(".fa-search").hide()
+    })
+    $("input[type=search]").on("blur", function(){
+        $(".fa-search").show()
+    })
+
     navbarFixed();
     getInitiationOwlCarousal();
     getInitiationOwlCarousalForLocationSection();
 
     // AOS Instance
-  
+    if($(window).width() <= 768) {
+        $("div[data-aos]").attr("data-aos", "huy")
+    }
    if($(window).width() <= 600) {
-    $("div[data-aos]").attr("data-aos", "huy")
     getInitLocationBtns();
     var owlItems = $("#addToLocationOwlCarousel .owl-item");
     getCouruselLocatinSection(owlItems);
@@ -28,6 +34,7 @@ $(document).ready(function(){
    }
    AOS.init();
 })
+
 function getInitiationOwlCarousal() {
     if($(window).width() <= 768) {
         $("#addOwlCarousel").addClass("owl-carousel");
@@ -44,6 +51,13 @@ function getInitiationOwlCarousal() {
             }
         })
     }
+}
+function getRidOfRubbishAtElfsightPlagin() {
+    setTimeout(function(){
+        $("#eapps-instagram-feed-1 > a").hide();
+        $(".eapps-instagram-feed-title-container").hide();
+       console.log($(".eapps-instagram-feed-posts-grid-load-more-container").hide())
+    }, 1000)
 }
 function getInitiationOwlCarousalForLocationSection() {
     if($(window).width() <= 600) {
@@ -72,7 +86,7 @@ function getInitLocationBtns() {
             autoplay: false,
             nav:false,
             dots: false,
-            margin: 30,
+            margin: -20,
             startPosition: 1,
             responsive: {
                 0: {
