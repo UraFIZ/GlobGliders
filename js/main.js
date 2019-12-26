@@ -18,7 +18,7 @@ $(document).ready(function(){
     getInitiationOwlCarousalForLocationSection();
 
     // AOS Instance
-    if($(window).width() <= 768) {
+    if($(window).width() <= 992) {
         $("div[data-aos]").attr("data-aos", "huy")
     }
    if($(window).width() <= 600) {

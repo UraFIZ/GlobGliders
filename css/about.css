@@ -18,14 +18,18 @@
 .site-container {
     width: 81.77%;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 /******************x***************site-banner section******************x*************/
 /**********************************about-us-section********************************/
 .about-us-section {
     padding: 150px 0;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .about-us-content-wrapper {
-    width: 472px;
+    max-width: 472px;
 }
 .about-us-img {
     margin-left: auto;
@@ -35,9 +39,27 @@
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 }
 /******************x***************end about-us-section******************x*************/
+/*********************************things-to-be-happy-section*******************************/
+
+/******************x***************end things-to-be-happy-section******************x*************/
 /*****************************************Responsiveness*****************************************/
-/*****************************************responsive (768)site about section*****************************************/
+@media(max-width: 992px) {
+/*****************************************responsive (992)site about section*****************************************/
+.about-us-section {
+    padding: 80px 0;
+}
+.about-us-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.about-us-img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+/*****************************************responsive end (992)site about section*****************************************/
+}
 @media(max-width: 768px) {
+/*****************************************responsive (768)site about section*****************************************/
     .site-container {
         width: 100%;
         margin: 0 auto;
@@ -46,8 +68,25 @@
         max-width: 100%;
     }
 }
-/*******************X********************* end responsive (768)site about section**********************X******************/
+/*******************x*********************end responsive (768)site about section********************x********************/
+/********************x********************end responsive (992)site about section************************x****************/
+
+@media(max-width: 768px) {
+    /*****************************************responsive (768)site about section*****************************************/
+    .site-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .site-banner-about .container {
+        max-width: 100%;
+    }
+    /*******************X********************* end responsive (768)site about section**********************X******************/
+}
+
 /*****************************************responsive (576)site about section*****************************************/
+@media(max-width: 576px) {
+
+}
 @media(max-width: 576px) {
     .site-banner-about-height {
         height: 36vh;
