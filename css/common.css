@@ -100,6 +100,14 @@ div[class^="col-"] {
     letter-spacing: 1.37px;
     color: #464457;
 }
+.heading-2-meb-height {
+    font-family: Montserrat-ExtraBold;
+    margin: 0;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 1.37px;
+    color: #464457;
+}
 .heading-2-meb-white {
     font-family: Montserrat-ExtraBold;
     margin: 0;
@@ -190,6 +198,14 @@ div[class^="col-"] {
     margin: 0;
     font-size: 20px;
     line-height: 40px;
+    letter-spacing: 0.69px;
+    color: #464457;
+}
+.heading-3-osb-1 {
+    font-family: OpenSens-Bold;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
     letter-spacing: 0.69px;
     color: #464457;
 }
