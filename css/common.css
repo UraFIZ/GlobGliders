@@ -117,6 +117,14 @@ div[class^="col-"] {
     letter-spacing: 1.37px;
     color: white;
 }
+.heading-1-mb {
+    font-family: Montserrat-Bold;
+    margin: 0;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 1.37px;
+    color: white;
+}
 .heading-2-mb {
     font-family: Montserrat-Bold;
     margin: 0;
@@ -167,6 +175,15 @@ div[class^="col-"] {
     letter-spacing: 0.82px;
     color: white;
 }
+.heading-1-oseb-1 {
+    font-family: OpenSens-ExtraBold;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 1ю37px;
+    color: white;
+    text-align: center;
+}
 .heading-1-oseb {
     font-family: OpenSens-ExtraBold;
     margin: 0;
@@ -201,6 +218,15 @@ div[class^="col-"] {
     letter-spacing: 0.69px;
     color: #464457;
 }
+.heading-3-ossb {
+    font-family: OpenSens-SemiBold;
+    margin: 0;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.55px;
+    color: white;
+    font-weight: 600;
+}
 .heading-3-osb-1 {
     font-family: OpenSens-Bold;
     margin: 0;
@@ -215,6 +241,14 @@ div[class^="col-"] {
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.55px;
+    color: white;
+}
+.heading-11-osr {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.82px;
     color: white;
 }
 .heading-15-osr {
@@ -264,15 +298,15 @@ div[class^="col-"] {
     padding: 13px 30px;
     color: white;
     border-radius: 8px;
-    background-color: #1ca880;
+    background-image: linear-gradient(to top, #1ca880 100%, #56bea0 -23%);
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.55px;
     border: 1px solid  #1ca880;
-    transition: all 0.5s;
+    transition: background-image 0.5s;
 }
 .button-primary:hover {
-    background-color: transparent;
+    background-image: linear-gradient(to top, white 100%, white);
     color: black;
 }
 .button-secondary {
@@ -301,6 +335,7 @@ div[class^="col-"] {
     letter-spacing: 0.55px;
     border: 1px solid #55bfd7;
     transition: all 0.5s;
+    line-height: 2.8;
 }
 .btn-subscribe:hover {
     background-color: white;
@@ -405,6 +440,10 @@ div[class^="col-"] {
     color: white;
 }
 /************x*****************end color************************x*************/
+video {
+    width: 100%;
+    height: auto;
+}
 @media(max-width: 1024px) {
     /* html {
         width: 100%;

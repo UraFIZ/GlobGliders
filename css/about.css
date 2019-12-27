@@ -49,29 +49,113 @@
 .things-to-be-happy-header {
     max-width: 100%;
     flex: 1 1 100%;
+    margin-bottom: 60px;
 }
 .things-to-be-happy-header > h2 {
     max-width: 815px;
 }
+.things-grid-item {
+    flex: 0 0 31.58%;
+    max-width: 31.58%;
+}
 .thing-item-wrapper {
  display: flex;
  flex-direction: column;
- justify-content: center;
+}
+.things-grid {
+    display: flex;
+    justify-content: space-between;
 }
 .thing-item-wrapper {
     max-width: 433px;
 }
 .things-to-be-happy-wrapper > div:nth-child(3){
-    margin-right: 17px;
-    margin-left: 17px;
+    margin-right: 36px;
+    margin-left: 36px;
 }
 .thing-item-img {
     max-width: 433px;
     height: 370px;
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    border-radius: 8px;
 }
+/*********************************our-vision-section*******************************/
+.our-vision-section {
+    margin-bottom: 150px;
+}
+.our-vision-text {
+    position: relative;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.our-vision-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 3px;
+    height: 100%;
+    background: #55bfd7;
+}
+/*********************************end our-vision-section*******************************/
+/*********************************our-mission-section*******************************/
+.our-mission-section {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 150px;
+}
+.our-mission-content-wrapper {
+    max-width: 472px;
+}
+.our-mission-img {
+    margin-left: auto;
+    max-width: 770px;
+    height: 428px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+/*********************************end our-mission-section*******************************/
+/*********************************our-support-section*******************************/
+.our-support-section {
+    margin-bottom: 150px;
+    padding: 65px 0;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.our-support-text {
+    max-width: 650px;
+}
+/************x********************end our-support-section**************x****************/
+/*********************************our-system-section*******************************/
+.our-system-section {
+    margin-bottom: 150px;
+}
+.our-system-video {
+    margin-bottom: 45px;
+}
+.our-system-text-content {
+    max-width: 710px;
+}
+/*********************************end our-system-section*******************************/
+/*********************************partner-section*******************************/
+.partner-section {
+    padding: 141px 0;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+.partner-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.partner-content-wrapper p {
+    text-align: center;
+}
+/****************x****************end partner-section*****************x*************/
 
-/******************x***************end things-to-be-happy-section******************x*************/
+
+
+
 /*****************************************Responsiveness*****************************************/
 @media(max-width: 992px) {
 /**********************************responsive (992) site-banner section********************************/
@@ -83,17 +167,6 @@
 .about-us-section {
     margin-bottom: 80px;
 }
-/**********************************end responsive (992) about-us-section********************************/
-/**********************************responsive (992) things-to-be-happy-section********************************/
-.things-to-be-happy-section {
-    margin-bottom: 80px;
-}
-/**********************************end responsive (992) things-to-be-happy-section********************************/
-
-/*****************************************responsive (992)site about section*****************************************/
-.about-us-section {
-
-}
 .about-us-wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -102,7 +175,53 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
-/*****************************************responsive end (992)site about section*****************************************/
+/**********************************end responsive (992) about-us-section********************************/
+/**********************************responsive (992) things-to-be-happy-section********************************/
+.things-to-be-happy-section {
+    margin-bottom: 80px;
+}
+.things-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.things-grid-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.things-to-be-happy-wrapper > div:nth-child(3){
+    margin-right: 0;
+    margin-left: 0;
+}
+/**********************************end responsive (992) things-to-be-happy-section********************************/
+
+/**********************************responsive (992) our-mission-section********************************/
+.our-mission-section {
+    margin-bottom: 80px;
+}
+.our-mission-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.our-mission-img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+/**********************************end responsive (992) our-mission-section********************************/
+/********************************** responsive (992) our-support-section********************************/
+.our-support-section {
+    margin-bottom: 80px;
+}
+/************x*********************end responsive (992) our-support-section******************x*************/
+/*********************************responsive (992) our-system-section*******************************/
+.our-system-section {
+    margin-bottom: 80px;
+}
+/************x********************responsive (992) our-system-section****************x**************/
+
 }
 @media(max-width: 768px) {
 /*****************************************responsive (768)site about section*****************************************/
@@ -115,19 +234,8 @@
     }
 }
 /*******************x*********************end responsive (768)site about section********************x********************/
-/********************x********************end responsive (992)site about section************************x****************/
+/********************x********************end responsive (768)site about section************************x****************/
 
-@media(max-width: 768px) {
-    /*****************************************responsive (768)site about section*****************************************/
-    .site-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .site-banner-about .container {
-        max-width: 100%;
-    }
-    /*******************X********************* end responsive (768)site about section**********************X******************/
-}
 
 /*****************************************responsive (576)site about section*****************************************/
 @media(max-width: 576px) {
