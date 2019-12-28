@@ -444,6 +444,22 @@ video {
     width: 100%;
     height: auto;
 }
+.owl-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin: 0 auto;
+}
+.owl-dot {
+    border: 1px solid !important;
+    padding: 0!important;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.owl-dot.active {
+    background-color: black !important;
+}
 @media(max-width: 1024px) {
     /* html {
         width: 100%;
