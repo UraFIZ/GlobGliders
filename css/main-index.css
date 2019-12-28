@@ -143,12 +143,7 @@ max-width: 620px;
 #addToLocationBtnOwlCarousel button img{
     width: auto !important;
 }
-/* #addToLocationOwlCarousel .owl-stage-outer {
-    width: 109%;
-} */
-/* #addToLocationBtnOwlCarousel .owl-stage-outer {
-    width: 115%;
-} */
+
 .location-grid > * {
     padding-right: 15px !important;
     padding-left: 15px !important;

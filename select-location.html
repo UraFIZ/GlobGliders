@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select location</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--------------------- font-awsome icons ---------------->
+<link rel="stylesheet" href="./css/all.css">
+<!--------------------- normalaize css ------------------>
+<link rel="stylesheet" href="./vendor/normalaize.css">
+<!--  Owl-carousel css file  -->
+<link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+<!-- ------------ AOS Library ------------------------- -->
+<link rel="stylesheet" href="./vendor/aos.js/aos.css">
+<!--------------------- my style ------------------------>
+<link rel="stylesheet" href="./css/select-location.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/footer.css">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header class="header main-container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand heading-nautilus" href="#">globegliders</a>
+            <div class="ml-auto"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navigation__icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Glide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Plans</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 nav-form-search">
+                    <input class="form-control input-search" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                    <button class="btn btn-outline-success my-2 my-sm-0 d-none" type="submit">Search</button>
+                </form>
+                <div class="my-2 my-lg-0">
+                    <a class="btn btn-outline-dark my-2 my-sm-0 input-sign-in mr-3" href="#">Sign In</a>
+                    <a class="btn btn-warning my-2 my-sm-0 input-join" href="#">Join</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="main-container">
+        <section class="site-banner-select-location site-banner-select-location-height">
+            <div class="grid-container select-container-width">
+                <h2 class="heading-15-meb mar-b-20">Select Location</h2>
+                <h3 class="heading-1-ossbi">Your homes in Manchester, UK</h3>
+            </div>
+        </section>
+        <section class="bred-crumb-section">
+            <div class="container grid-container select-container-width">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"> Data</li>
+                    </ol>
+                  </nav>
+            </div>
+        </section>
+        <section class="select-location-section">
+            <div class="container grid-container select-container-width">
+                <div class="availability-panel-wrapper mb-4">
+                    <form class="availability-panel">
+                        <input type="text" name="arrival-date" id="arrival-date" hidden>
+                        <input type="text" name="check-date" id="check-date" hidden> 
+                        <button class="button-primary" type="submit">Show Availability</button>
+                    </form>
+                </div>
+                <div class="location-type-container mar-b-30">
+                    <button type="button" class="heading-2-ossb" data-filter="*"><img
+                        src="./assets/img/icon-house.svg" alt="icon of Accommodation"> All</button>
+                    <button type="button" class="heading-2-ossb" data-filter=".accommodation"><img
+                            src="./assets/img/icon-house.svg" alt="icon of Accommodation"> Accommodation</button>
+                    <button type="button" class="heading-2-ossb" data-filter=".workspaces"> <img
+                            src="./assets/img/icon-workspace.svg" alt="icon of workspace"> Workspaces</button>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <footer class="main-container">
+        <div class="container footer-container">
+            <div class="row footer-join">
+                <div class="social">
+                    <a href="#" class="heading-nautilus">globegliders</a>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
+                <div class="tagline">
+                    <h2 class="heading-2-mb">Life is a journey. Come and explore untethered with Golobegliders.</h2>
+                </div>
+                <div class="join">
+                    <a class="btn btn-outline-dark my-2 my-sm-0 input-sign-in mr-3" href="#">Sign In</a>
+                    <a class="btn btn-warning my-2 my-sm-0 input-join" href="#">Join</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="container footer-container">
+                <div class="row footer-about-us">
+                    <div class="business-about-blog">
+                        <div class="first-col-info">
+                            <ul>
+                                <li><a class="heading-15-osr" href="#">Business Plans</a></li>
+                                <li><a class="heading-15-osr" href="#">Your Accommodation</a></li>
+                                <li><a class="heading-15-osr" href="#">Your Workspace </a></li>
+                            </ul>
+                        </div>
+                        <div class="second-col-info">
+                            <ul>
+                                <li><a class="heading-15-osr" href="#">About</a></li>
+                                <li><a class="heading-15-osr" href="#">Gilde</a></li>
+                                <li><a class="heading-15-osr" href="#">Services </a></li>
+                                <li><a class="heading-15-osr" href="#">Homes </a></li>
+                                <li><a class="heading-15-osr" href="#">Offices </a></li>
+                            </ul>
+                        </div>
+                        <div class="third-col-info">
+                            <ul>
+                                <li><a class="heading-15-osr" href="#">Blog</a></li>
+                                <li><a class="heading-15-osr" href="#">FAQ</a></li>
+                                <li><a class="heading-15-osr" href="#">Contact Us</a></li>
+                                <li><a class="heading-15-osr" href="#">T&A</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-contact-us">
+                        <div class="footer-contact-us-wrapper">
+                            <form action="#" class="newsletter-form">
+                                <label class="heading-3-mr mb-4" for="email">Get Our Newsletter:</label>
+                                <div class="form-wrapper">
+                                    <input type="email" name="email" id="email" placeholder="Your email here">
+                                    <button class="btn-subscribe" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                            <div class="contact-us-wrapper">
+                                <h3 class="heading-3-ml mb-3">Contact Us</h3>
+                                <div class="contact-us-email mb-1">
+                                    <i class="far fa-envelope"></i>
+                                    <strong class="heading-15-osr-head">Email:</strong>
+                                    <a class="heading-15-osr"
+                                        href="mailto:info@globegliders.com">info@globegliders.com</a>
+                                </div>
+                                <div class="contact-us-support">
+                                    <i class="fas fa-life-ring"></i>
+                                    <strong class="heading-15-osr-head">Support:</strong>
+                                    <a class="heading-15-osr"
+                                        href="mailto:support@globegliders.com">support@globegliders.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="container footer-container">
+                <div class="row footer-gg-co">
+                    <h4 class="heading-3-mm">©Globegliders</h4>
+                </div>
+            </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+<script src="./js/select-location.js"></script>
+<!--  isotope js library  -->
+<script src="./vendor/isotope/isotope.min.js"></script>
+<script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="./vendor/aos.js/aos.js"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html>

@@ -41,6 +41,8 @@ div[class^="col-"] {
 .grid-container {
     max-width: 1571px !important;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .description-container {
     max-width: 1371px;
@@ -208,7 +210,6 @@ div[class^="col-"] {
     line-height: 40px;
     letter-spacing: 1.1px;
     color: white;
-    text-align: center;
 }
 .heading-2-ossb {
     font-family: OpenSens-SemiBold;
@@ -227,6 +228,15 @@ div[class^="col-"] {
     color: white;
     font-weight: 600;
 }
+.heading-4-osrr {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.48px;
+    color: rgba(70, 68, 87, 0.8);
+}
+
 .heading-3-osb-1 {
     font-family: OpenSens-Bold;
     margin: 0;
@@ -398,6 +408,9 @@ div[class^="col-"] {
 }
 /*****************************end inputs ********************************/
 /******************************margins***********************************/
+.mar-b-20 {
+    margin-bottom: 20px;
+}
 .mar-b-22 {
     margin-bottom: 22px;
 }
@@ -459,6 +472,33 @@ video {
 }
 .owl-dot.active {
     background-color: black !important;
+}
+.breadcrumb {
+background-color: white;
+}
+.breadcrumb {
+    padding: 0;
+    margin: 0;
+}
+.breadcrumb-item:not(.active) {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.48px;
+    color: rgba(70, 68, 87, 0.8);
+}
+.breadcrumb-item a {
+    color: inherit;
+}
+.breadcrumb-item.active {
+    font-family: OpenSens-SemiBold;
+    margin: 0;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.48px;
+    color: #464457;
+    font-weight: 600;
 }
 @media(max-width: 1024px) {
     /* html {

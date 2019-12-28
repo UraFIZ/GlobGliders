@@ -1,0 +1,95 @@
+/**********************************site-banner section********************************/
+.site-banner-select-location {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding-bottom: 80px;
+    display: flex;
+    align-items: flex-end;
+}
+.select-container-width {
+    width: 81.82%;
+}
+.site-banner-select-location-height {
+    height: 38vh;
+}
+.padding-side {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/******************x***************end site-banner section******************x*************/
+
+/******************************************bred-crumb-section*******************************/
+.bred-crumb-section {
+    margin-bottom: 31px;
+}
+.bred-crumb-section {
+    padding: 27px 0;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: "|";
+}
+/******************x***********************end bred-crumb-section*************x*****************/
+/******************************************select-location-section*******************************/
+.availability-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 629px;
+    height: 82px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff;
+}
+.availability-panel button:nth-child(2) {
+    width: 173px;
+    height: 50px;
+    border: solid 1px #f3f3f4;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: white;
+    margin-right: -1px;
+    
+}
+.availability-panel button:nth-child(4) {
+    width: 173px;
+    height: 50px;
+    border: solid 1px #f3f3f4;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: white;
+    margin-right: 16px;
+}
+.location-type-container {
+    display: flex;
+}
+.location-type-container button {
+    background: transparent;
+    border-radius: 8px;
+    border: solid 2px #f6f5f6;
+    padding: 5px 13px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 240px;
+}
+.location-type-container button:nth-child(1) {
+    width: max-content;
+}
+.location-type-container button + button{
+    margin-left: 10px;
+}
+#addToLocationBtnOwlCarousel button img{
+    width: auto !important;
+}
+/******************x***********************end select-location-section**************x****************/
+
+
+/***************************************|||Responsiveness||||*********************************/
+@media (max-width: 768px) {
+    /**********************************responsive (768) site-banner section********************************/
+    .select-l-width {
+        width: 100%;
+    }
+    /*****************x****************end responsive (768) site-banner section****************x***************/
+
+}
