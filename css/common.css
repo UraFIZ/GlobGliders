@@ -46,6 +46,8 @@ div[class^="col-"] {
 }
 .description-container {
     max-width: 1371px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .footer-container {
     max-width: 93.7%;
