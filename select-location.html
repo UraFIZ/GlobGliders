@@ -16,7 +16,10 @@
 <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
 <!-- ------------ AOS Library ------------------------- -->
 <link rel="stylesheet" href="./vendor/aos.js/aos.css">
+<!-- ------------ Pagination ------------------------- -->
+<link rel="stylesheet" href="./vendor/pagination/simplePagination.css">
 <!--------------------- my style ------------------------>
+<link rel="stylesheet" href="./css/main-index.css">
 <link rel="stylesheet" href="./css/select-location.css">
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/header.css">
@@ -66,13 +69,13 @@
     </header>
     <section class="main-container">
         <section class="site-banner-select-location site-banner-select-location-height">
-            <div class="grid-container select-container-width">
+            <div class="select-container-width">
                 <h2 class="heading-15-meb mar-b-20">Select Location</h2>
                 <h3 class="heading-1-ossbi">Your homes in Manchester, UK</h3>
             </div>
         </section>
         <section class="bred-crumb-section">
-            <div class="container grid-container select-container-width">
+            <div class="container grid-container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -83,7 +86,7 @@
             </div>
         </section>
         <section class="select-location-section">
-            <div class="container grid-container select-container-width">
+            <div class="grid-container">
                 <div class="availability-panel-wrapper mb-4">
                     <form class="availability-panel">
                         <input type="text" name="arrival-date" id="arrival-date" hidden>
@@ -91,7 +94,7 @@
                         <button class="button-primary" type="submit">Show Availability</button>
                     </form>
                 </div>
-                <div class="location-type-container mar-b-30">
+                <div class="location-type-container mar-b-30 no-padding">
                     <button type="button" class="heading-2-ossb" data-filter="*"><img
                         src="./assets/img/icon-house.svg" alt="icon of Accommodation"> All</button>
                     <button type="button" class="heading-2-ossb" data-filter=".accommodation"><img
@@ -99,8 +102,593 @@
                     <button type="button" class="heading-2-ossb" data-filter=".workspaces"> <img
                             src="./assets/img/icon-workspace.svg" alt="icon of workspace"> Workspaces</button>
                 </div>
-            </div>
+                <div class="row location-grid">
+                    <!-- don't add any class here without editind function getCouruselLocatinSection this part listOfClass.push($(item).attr("class").split(" ")[5]) -->
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon accommodation"
+                                        src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="Accommodation">
+                                    <div class="location-card-description">
+                                        <img class="location-description-icon pl-2 pr-2"
+                                            src="./assets/img/location-2.png"
+                                            srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                            alt="location of the place">
+                                        <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                        <div class="card-address-info-wrapper">
+                                            <div class="card-address-info mr-2">i
+                                                <div class="card-reserved-info">
+                                                    <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                    <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="heading-4-osr">Your Office for 3 days</h5>
 
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img work select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="workspaces">
+                                        <div class="location-card-description">
+                                            <img class="location-description-icon pl-2 pr-2"
+                                                src="./assets/img/location-2.png"
+                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                                alt="location of the place">
+                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                            <div class="card-address-info-wrapper">
+                                                <div class="card-address-info mr-2">i
+                                                    <div class="card-reserved-info">
+                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
+    
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon accommodation"
+                                        src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="Accommodation">
+                                    <div class="location-card-description">
+                                        <img class="location-description-icon pl-2 pr-2"
+                                            src="./assets/img/location-2.png"
+                                            srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                            alt="location of the place">
+                                        <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                        <div class="card-address-info-wrapper">
+                                            <div class="card-address-info mr-2">i
+                                                <div class="card-reserved-info">
+                                                    <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                    <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="heading-4-osr">Your Office for 3 days</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img work select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="workspaces">
+                                        <div class="location-card-description">
+                                            <img class="location-description-icon pl-2 pr-2"
+                                                src="./assets/img/location-2.png"
+                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                                alt="location of the place">
+                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                            <div class="card-address-info-wrapper">
+                                                <div class="card-address-info mr-2">i
+                                                    <div class="card-reserved-info">
+                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
+    
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon accommodation"
+                                        src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="Accommodation">
+                                    <div class="location-card-description">
+                                        <img class="location-description-icon pl-2 pr-2"
+                                            src="./assets/img/location-2.png"
+                                            srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                            alt="location of the place">
+                                        <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                        <div class="card-address-info-wrapper">
+                                            <div class="card-address-info mr-2">i
+                                                <div class="card-reserved-info">
+                                                    <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                    <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="heading-4-osr">Your Office for 3 days</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img work select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="workspaces">
+                                        <div class="location-card-description">
+                                            <img class="location-description-icon pl-2 pr-2"
+                                                src="./assets/img/location-2.png"
+                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                                alt="location of the place">
+                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                            <div class="card-address-info-wrapper">
+                                                <div class="card-address-info mr-2">i
+                                                    <div class="card-reserved-info">
+                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
+    
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon accommodation"
+                                        src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="Accommodation">
+                                    <div class="location-card-description">
+                                        <img class="location-description-icon pl-2 pr-2"
+                                            src="./assets/img/location-2.png"
+                                            srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                            alt="location of the place">
+                                        <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                        <div class="card-address-info-wrapper">
+                                            <div class="card-address-info mr-2">i
+                                                <div class="card-reserved-info">
+                                                    <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                    <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="heading-4-osr">Your Office for 3 days</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img work select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="workspaces">
+                                        <div class="location-card-description">
+                                            <img class="location-description-icon pl-2 pr-2"
+                                                src="./assets/img/location-2.png"
+                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                                alt="location of the place">
+                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                            <div class="card-address-info-wrapper">
+                                                <div class="card-address-info mr-2">i
+                                                    <div class="card-reserved-info">
+                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
+    
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon accommodation"
+                                        src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="Accommodation">
+                                    <div class="location-card-description">
+                                        <img class="location-description-icon pl-2 pr-2"
+                                            src="./assets/img/location-2.png"
+                                            srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                            alt="location of the place">
+                                        <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                        <div class="card-address-info-wrapper">
+                                            <div class="card-address-info mr-2">i
+                                                <div class="card-reserved-info">
+                                                    <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                    <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="heading-4-osr">Your Office for 3 days</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img work select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="workspaces">
+                                        <div class="location-card-description">
+                                            <img class="location-description-icon pl-2 pr-2"
+                                                src="./assets/img/location-2.png"
+                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                                alt="location of the place">
+                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                            <div class="card-address-info-wrapper">
+                                                <div class="card-address-info mr-2">i
+                                                    <div class="card-reserved-info">
+                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
+    
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon accommodation"
+                                        src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="Accommodation">
+                                    <div class="location-card-description">
+                                        <img class="location-description-icon pl-2 pr-2"
+                                            src="./assets/img/location-2.png"
+                                            srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                            alt="location of the place">
+                                        <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                        <div class="card-address-info-wrapper">
+                                            <div class="card-address-info mr-2">i
+                                                <div class="card-reserved-info">
+                                                    <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                    <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                </div>
+                                            </div>
+                                            <h5 class="heading-4-osr">Your Office for 3 days</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                        <div class="location-card">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img work select-card-img border-bottom-rad-none"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="workspaces">
+                                        <div class="location-card-description">
+                                            <img class="location-description-icon pl-2 pr-2"
+                                                src="./assets/img/location-2.png"
+                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                                alt="location of the place">
+                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                            <div class="card-address-info-wrapper">
+                                                <div class="card-address-info mr-2">i
+                                                    <div class="card-reserved-info">
+                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
+    
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-content">
+                                <div class="grid-item-text mb-2">
+                                    <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                    <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                                </div>
+                                <div class="grid-item-desc mb-2">
+                                    <p class="card-text-desc heading-2-osr-black">Selinsum dolor sit amet kjkj elit. Eaque, dolorum! Lorem ipsum dolor sit amet. the hottest neighborhood in Manchester. Famed for its <span class="read-less">Read less</span> </p>
+                                    <div class="read-more"><span class="dots">...</span>Read more</div>
+                                </div>
+                                <div class="grid-item-plushky">
+                                    <div class="plushka-item">Restaurant</div>
+                                    <div class="plushka-item">Bar</div>
+                                    <div class="plushka-item">Movie Room</div>
+                                    <div class="plushka-item">Parties and Social Events</div>
+                                    <div class="plushka-item">Near by offices (2)</div>
+                                    <div class="plushka-item">Near by Gyms (4)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pagination-container"></div>
         </section>
     </section>
     <footer class="main-container">
@@ -200,12 +788,15 @@
     crossorigin="anonymous"></script>
 <script src="./js/main.js"></script>
 <script src="./js/select-location.js"></script>
-<!--  isotope js library  -->
-<script src="./vendor/isotope/isotope.min.js"></script>
+
 <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
 <script src="./vendor/aos.js/aos.js"></script>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./vendor/pagination/jquery.simplePagination.js"></script>
+<!--  isotope js library  -->
+<script src="./vendor/isotope/isotope.min.js"></script>
+
 </body>
 </html>

@@ -124,8 +124,8 @@ max-width: 620px;
     margin-bottom: 71px;
 }
 .location-type-container {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .location-type-container button {
     background: transparent;
@@ -158,6 +158,9 @@ max-width: 620px;
 .location-card {
    display: flex;
    flex-direction: column;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+   background-color: #ffffff;
 }
 .card-img-wrapper {
     display: flex;
@@ -169,6 +172,29 @@ max-width: 620px;
     display: flex;
     flex-direction: column;
 }
+.grid-item-content {
+    padding: 14px 16px 22px 14px;
+}
+.grid-item-desc {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 94px;
+    overflow: hidden;
+}
+
+.plushka-item {
+    display: inline-block;
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.41px;
+    color: #464457;
+}
+.grid-item-plushky > *:not(:last-child)::after {
+    content: "|";
+    margin-left: 5px;
+}
 
 .location-card-img {
     max-width: 370px;
@@ -176,6 +202,9 @@ max-width: 620px;
     object-fit: contain;
     background-color: rgb(21, 156, 111);
     border-radius: 8px;
+}
+.select-card-img {
+     height: 279px;
 }
 .location-card-icon {
     position: absolute;
@@ -198,21 +227,41 @@ max-width: 620px;
     object-fit: contain;
     width: auto !important;
 }
-.card-address-note {
+.card-address-info-wrapper {
     position: relative;
-}
-.card-address-note::before {
-    content: "i";
-    position: absolute;
-    left: -18%;
     display: flex;
-    justify-content: center;
+}
+.card-address-info {
+    position: relative;
+    display: inline-block;
     width: 17px;
     height: 17px;
     border-radius: 50%;
     background-color: white;
     color: black;
     font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+}
+.card-address-info:hover .card-reserved-info {
+    display: block;
+}
+.card-reserved-info {
+    position: absolute;
+    display: none;
+    transition: 0.5s all;
+    bottom: 12px;
+    right: -114px;
+    text-align: center;
+    width: 160px;
+    height: 145px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 32% 86%, 23% 100%, 18% 87%, 0 87%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 32% 86%, 23% 100%, 18% 87%, 0 87%);
+    
+    padding: 16px 11px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .work {
     background-color: yellow !important;

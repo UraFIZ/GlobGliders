@@ -5,9 +5,6 @@
     display: flex;
     align-items: flex-end;
 }
-.select-container-width {
-    width: 81.82%;
-}
 .site-banner-select-location-height {
     height: 38vh;
 }
@@ -80,6 +77,9 @@
 }
 #addToLocationBtnOwlCarousel button img{
     width: auto !important;
+}
+.select-location-section {
+    margin-bottom: 100px;
 }
 /******************x***********************end select-location-section**************x****************/
 

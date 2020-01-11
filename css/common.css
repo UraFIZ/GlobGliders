@@ -41,8 +41,6 @@ div[class^="col-"] {
 .grid-container {
     max-width: 1571px !important;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 .description-container {
     max-width: 1371px;
@@ -230,6 +228,32 @@ div[class^="col-"] {
     color: white;
     font-weight: 600;
 }
+.heading-3-ossb-black {
+    font-family: OpenSens-SemiBold;
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.55px;
+    color: #464457;
+    font-weight: 600;
+}
+.heading-4-ossb-black {
+    font-family: OpenSens-SemiBold;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    color: #464457;
+}
+.heading-4-ossb-gray {
+    font-family: OpenSens-SemiBold;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    color: #908f9a;
+    text-decoration: underline;
+}
 .heading-4-osrr {
     font-family: OpenSens-Regular;
     margin: 0;
@@ -254,6 +278,14 @@ div[class^="col-"] {
     line-height: 16px;
     letter-spacing: 0.55px;
     color: white;
+}
+.heading-3-osb-black {
+    font-family: OpenSens-Bold;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.55px;
+    color: #464457;
 }
 .heading-11-osr {
     font-family: OpenSens-Regular;
@@ -286,6 +318,14 @@ div[class^="col-"] {
     line-height: 28px;
     letter-spacing: 0.55px;
     color: #1b1b1b;
+}
+.heading-2-osr-black {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.55px;
+    color: #464457;
 }
 .heading-3-osr {
     font-family: OpenSens-Regular;
@@ -448,6 +488,9 @@ div[class^="col-"] {
 .pad-l-28 {
     padding-left: 28px !important;
 }
+.no-padding {
+    padding: 0;
+}
 
 /*******************************end paddings*******************************/
 /*******************************color***************************************/
@@ -458,6 +501,87 @@ div[class^="col-"] {
 video {
     width: 100%;
     height: auto;
+}
+.read-more {
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.55px;
+    color: #e53935;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fff;
+}
+.dots {
+    color: black;
+}
+.box-shadow-no {
+    box-shadow: unset;
+}
+.border-bottom-rad-none {
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+a.page-link.prev {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+a.page-link.next {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #667;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+	color: #464457;
+	background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+	background: white;
+}
+.read-less {
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.55px;
+    color: #e53935;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fff;
 }
 .owl-dots {
     display: flex;
@@ -517,6 +641,10 @@ background-color: white;
         padding-right: 15px;
         padding-left: 15px;
     }
+    .grid-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media(max-width: 768px) {
     /*********************************responsive (768) buttons ****************************/
@@ -524,5 +652,6 @@ background-color: white;
     display: flex;
     justify-content: center;
 }
+
     /**************x******************end responsive (768) buttons *************x**************/
 }
