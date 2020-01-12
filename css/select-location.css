@@ -26,6 +26,24 @@
 }
 /******************x***********************end bred-crumb-section*************x*****************/
 /******************************************select-location-section*******************************/
+.select-container-width {
+    width: 82.86%;
+    margin: 0 auto;
+}
+.select-location-section .location-grid {
+    transition: 0.5s all;
+    display: none;
+}
+.select-location-section .location-grid.active {
+    display: flex;
+}
+.location-type-container button.active {
+    box-shadow: 0 4px 10px 0 #555;
+    outline: none;
+}
+.location-type-container button:focus {
+    box-shadow: 0 4px 10px 0 #555;
+}
 .availability-panel {
     display: flex;
     justify-content: center;
@@ -36,7 +54,7 @@
     box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
     background-color: #ffffff;
 }
-.availability-panel button:nth-child(2) {
+.availability-panel div button:nth-child(2) {
     width: 173px;
     height: 50px;
     border: solid 1px #f3f3f4;
@@ -46,7 +64,7 @@
     margin-right: -1px;
     
 }
-.availability-panel button:nth-child(4) {
+.availability-panel div button:nth-child(4) {
     width: 173px;
     height: 50px;
     border: solid 1px #f3f3f4;
@@ -90,6 +108,130 @@
     .select-l-width {
         width: 100%;
     }
+    .select-container-width {
+        width: 100%;
+        text-align: center;
+    }
+    .select-container-width .heading-15-meb {
+        font-family: Montserrat-Bold;
+        font-size: 40px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.37px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .select-container-width .heading-1-ossbi {
+        font-family: OpenSens-SemiBold;
+        font-size: 24px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 44px;
+        letter-spacing: 0.82px;
+        text-align: center;
+        color: #ffffff;
+    }
     /*****************x****************end responsive (768) site-banner section****************x***************/
+
+}
+@media (max-width: 600px){
+    /**********************************responsive (600) site-banner section********************************/
+    .site-banner-select-location-height {
+        height: 75vh;
+        display: flex;
+        align-items: center;
+    }
+    .select-container-width .heading-1-ossbi {
+        font-size: 21px;
+    }
+    .site-banner-select-location {
+        padding-bottom: 0;
+    }
+     /********************************** end responsive (600) site-banner section********************************/
+    /********************************* responsive (600) bred-crumb-section*******************************/
+    .bred-crumb-section {
+        padding: 0;
+        margin-bottom: 0;
+        position: relative;
+        top: -30px;
+    }
+    .breadcrumb {
+        background: transparent !important;
+        display: flex;
+        justify-content: center;
+    }
+    .breadcrumb-item {
+        color: white !important;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: "|";
+        color: white;
+    }
+        /**********************************end responsive (600) bred-crumb-section********************************/
+    /********************************* responsive (600) select-location-section*******************************/
+    .select-location-section {
+        margin-top: -29px;
+        margin-bottom: 0;
+    }
+    .availability-panel {
+        flex-direction: column;
+        width: 100%;
+        height: 171px;
+        border-radius: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .grid-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .owl-carousel .owl-item img {
+        width: auto !important;
+    }
+    .location-type-container button:nth-child(1) {
+        width: inherit;
+    }
+    .availability-input-wrapper {
+        margin-bottom: 20px;
+    }
+    .availability-panel div button:nth-child(2) {
+        width: auto;
+        padding-left: 30px;
+    }
+    .availability-panel div button:nth-child(4) {
+        margin-right: 0;
+        padding-right: 30px;
+        width: auto;
+    }
+    .availability-panel .button-primary {
+        width: 100%;
+    }
+    .select-card-img {
+        height: 279px;
+    }
+    .select-location-section .owl-nav {
+        position: absolute;
+        top: 21%;
+        right: -33px;
+    }
+    .select-location-section .owl-next {
+        width: 36px;
+        height: 36px;
+        box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+        background-color: #ffffff !important;
+        color: #adb5bd !important;
+        border-radius: 50%;
+    }
+    .select-location-section .owl-nav > button.owl-next > span {
+        font-size: 40px;
+        height: 36px;
+        line-height: 0.7;
+    }
+    .select-location-section .owl-prev {
+        display: none;
+    }
+    /*********************************end  responsive (600) select-location-section*******************************/
 
 }

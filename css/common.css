@@ -626,6 +626,12 @@ background-color: white;
     color: #464457;
     font-weight: 600;
 }
+@media (max-width: 1600px) {
+    .grid-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 @media(max-width: 1024px) {
     /* html {
         width: 100%;
@@ -641,10 +647,7 @@ background-color: white;
         padding-right: 15px;
         padding-left: 15px;
     }
-    .grid-container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+
 }
 @media(max-width: 768px) {
     /*********************************responsive (768) buttons ****************************/

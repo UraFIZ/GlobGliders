@@ -9,9 +9,15 @@ $(document).ready(function () {
         showOn: "button",
         buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>Check Out Date</span>'
     });
-    filterLocationItems(".select-location-section .location-type-container button", ".select-location-section .location-grid")
+    getInitiationOwlCarousalForSelectLocationSection();
+    getInitSelectLocationBtns();
     onExpendTextBlock();
-    getPagination();
+    if($(window).width() <= 600) {
+        getNewTab(".select-location-section .location-type-container .owl-item", ".location-grid", true)
+    }else{
+        getPagination();
+        getNewTab(".select-location-section .location-type-container button", ".location-grid", false)
+    }
  
 });
 
@@ -30,14 +36,14 @@ function onExpendTextBlock() {
                 })
             })
         }else{
-            $(this).siblings().hide();
+            // $(this).siblings().hide();
         }
     })
 }
 function getPagination() {
-    var items = $(".select-location-section .location-grid .grid-item");
+    var items = $(".select-location-section .location-grid.active .grid-item");
     var numItems = items.length;
-    var perPage = 8;
+    var perPage = 4;
 
     items.slice(perPage).hide();
 
@@ -53,24 +59,62 @@ function getPagination() {
         }
     });
 }
-function filterLocationItems(btnsLocation, filterClass) {
-    var owlItemsBtn = $(btnsLocation);
-    owlItemsBtn.click(function (e) {
-        $(btnsLocation).removeClass('active');
-        e.target.classList.add('active');
-        let selector = $(e.target).attr('data-filter');
-        
-        var classForFilter = $(filterClass);
-        $(classForFilter).isotope({
-            filter: selector
-        });
-        // console.log(setWidthOfItemOwlContainer(selector).width)
-        // $("#addToLocationOwlCarousel .owl-stage").width(setWidthOfItemOwlContainer(selector).width);
-        if($(window).width() <= 600) {
-            var owl = $('.location-grid');
-            owl.trigger("to.owl.carousel", [0, 0, true]);
-            owl.owlCarousel();
+
+
+function getNewTab(btnClass, cardClass, isResponsive) {
+    $(btnClass).on('click', function() {
+        if(isResponsive) {
+            var btnsIndex = $(this).index()-2
+            if($(this).index()-2 == 3) {
+                btnsIndex = 0;
+            }
+        }else{
+            var btnsIndex = $(this).index()
         }
-         return false;
-    })
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('.select-location-section .grid-container').find(cardClass).removeClass('active').eq(btnsIndex).addClass('active');
+          onExpendTextBlock();
+        if($(window).width() <= 600) {
+            getInitiationOwlCarousalForSelectLocationSection();
+        }else{
+             getPagination();
+        }
+      });
+}
+function getInitiationOwlCarousalForSelectLocationSection() {
+    if($(window).width() <= 600) {
+        $(".select-location-section .location-grid.active").addClass("owl-carousel");
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            autoplay: false,
+            nav:true,
+            startPosition: 0,
+            dots: false,
+            margin: 5,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    }
+}
+function getInitSelectLocationBtns() {
+    if($(window).width() <= 600) {
+        $("#addToSelectLocationBtnOwlCarousel").addClass("owl-carousel");
+        $('#addToSelectLocationBtnOwlCarousel').owlCarousel({
+            loop: true,
+            autoplay: false,
+            nav:false,
+            dots: false,
+            margin: 10,
+            startPosition: 0,
+            responsive: {
+                0: {
+                    items: 1.3
+                },
+            }
+        })
+    }
 }

@@ -118,21 +118,6 @@ function getAttrOfBtnToMakeCarouser(data) {
         $(item).attr("data-filter", listOfAttrs[inx]);
      })
 }
-// function setWidthOfItemOwlContainer(selectItem) {
-//     var widthOfContainer = 0;
-//     var ownItems = $(".location-grid .owl-item").filter(selectItem);
-//     console.log(ownItems);
-//     var heightItem = 0;
-//     var deltaWidth = ownItems.length;
-//     $(ownItems).each(function(inx, item){
-//         widthOfContainer += $(item).width();
-//         heightItem = $(item).height();
-//     })
-//     return {
-//         width: Math.floor(widthOfContainer - deltaWidth * 20),
-//         height: heightItem
-//     } 
-// }
 
 
 function filterLocationItems(btnsLocation, filterClass) {
@@ -154,26 +139,6 @@ function filterLocationItems(btnsLocation, filterClass) {
             }
              return false;
         })
-    // var allLocationBtns = $(".location-type-container button");
-    //      allLocationBtns.click(function (e) {
-    //     $('.location-type-container button').removeClass('active');
-    //     e.target.classList.add('active');
-    //     let selector = $(e.target).attr('data-filter');
-    //     var classForFilter = ($(window).width()<=600) ? ".location-grid .owl-stage" : ".location-grid";
-
-    //     $(classForFilter).isotope({
-    //         filter: selector
-    //     });
-    //     if($(window).width()<=600) {
-    //            var owl = $('.location-grid');
-    //            owl.trigger("to.owl.carousel", [0, 0, true]);
-    //             owl.owlCarousel();
-    //             $(".grid-container .owl-stage").width(setWidthOfItemOwlContainer(selector).width);
-    //             $(".grid-container .owl-stage").height(setWidthOfItemOwlContainer(selector).height);
-    //     }
-
-    //     return false;
-    // })
 }
 
 let nav_offset_top = $('header').height() + 50;
