@@ -9,16 +9,12 @@ $(document).ready(function () {
         showOn: "button",
         buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>Check Out Date</span>'
     });
+    getNewTab(".select-location-section .location-type-container button", ".location-grid")
     getInitiationOwlCarousalForSelectLocationSection();
-    getInitSelectLocationBtns();
     onExpendTextBlock();
-    if($(window).width() <= 600) {
-        getNewTab(".select-location-section .location-type-container .owl-item", ".location-grid", true)
-    }else{
+    if($(window).width() >= 600) {
         getPagination();
-        getNewTab(".select-location-section .location-type-container button", ".location-grid", false)
     }
- 
 });
 
 function onExpendTextBlock() {
@@ -61,16 +57,9 @@ function getPagination() {
 }
 
 
-function getNewTab(btnClass, cardClass, isResponsive) {
+function getNewTab(btnClass, cardClass) {
     $(btnClass).on('click', function() {
-        if(isResponsive) {
-            var btnsIndex = $(this).index()-2
-            if($(this).index()-2 == 3) {
-                btnsIndex = 0;
-            }
-        }else{
-            var btnsIndex = $(this).index()
-        }
+        var btnsIndex = $(this).index()
         $(this)
           .addClass('active').siblings().removeClass('active')
           .closest('.select-location-section .grid-container').find(cardClass).removeClass('active').eq(btnsIndex).addClass('active');
@@ -100,21 +89,4 @@ function getInitiationOwlCarousalForSelectLocationSection() {
         })
     }
 }
-function getInitSelectLocationBtns() {
-    if($(window).width() <= 600) {
-        $("#addToSelectLocationBtnOwlCarousel").addClass("owl-carousel");
-        $('#addToSelectLocationBtnOwlCarousel').owlCarousel({
-            loop: true,
-            autoplay: false,
-            nav:false,
-            dots: false,
-            margin: 10,
-            startPosition: 0,
-            responsive: {
-                0: {
-                    items: 1.3
-                },
-            }
-        })
-    }
-}
+

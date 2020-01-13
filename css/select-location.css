@@ -192,9 +192,35 @@
     }
     .location-type-container button:nth-child(1) {
         width: inherit;
+        display: flex;
+        justify-content: center;
     }
     .availability-input-wrapper {
         margin-bottom: 20px;
+    }
+    .location-type-container {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px !important;
+    }
+    .location-type-container button {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 3px;
+        box-shadow: none !important;
+        width: 33% !important;
+        justify-content: space-around;
+    }
+    .location-type-container button.active {
+        background-color: #1ca880;
+        color: white;
+    }
+    .location-type-container button + button {
+        margin-left: 5px;
+    }
+    .location-type-container button.heading-2-ossb {
+        line-height: 15px;
+        font-size: 13px;
     }
     .availability-panel div button:nth-child(2) {
         width: auto;
@@ -205,6 +231,7 @@
         padding-right: 30px;
         width: auto;
     }
+
     .availability-panel .button-primary {
         width: 100%;
     }
@@ -214,7 +241,10 @@
     .select-location-section .owl-nav {
         position: absolute;
         top: 21%;
-        right: -33px;
+        right: -13px;
+        padding: 0 !important;
+        margin: 0;
+        outline: none;
     }
     .select-location-section .owl-next {
         width: 36px;
@@ -233,5 +263,16 @@
         display: none;
     }
     /*********************************end  responsive (600) select-location-section*******************************/
+
+}
+@media (max-width: 320px){
+     /*********************************responsive (320) select-location-section*******************************/
+     .availability-panel div button:nth-child(2) {
+        padding-left: 20px;
+     }
+     .availability-panel div button:nth-child(4) {
+        padding-right: 20px;
+     }
+      /*********************************end  responsive (320) select-location-section*******************************/
 
 }

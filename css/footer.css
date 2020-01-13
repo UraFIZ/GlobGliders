@@ -242,4 +242,7 @@ footer .main-container {
     .business-about-blog > *:not(:last-child) {
         padding-right: 15px;
     }
+    .business-about-blog .heading-15-osr {
+        font-size: 12px
+    }
 }
