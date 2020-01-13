@@ -135,6 +135,14 @@ div[class^="col-"] {
     letter-spacing: 0.82px;
     color: white;
 }
+.heading-2-mb-black {
+    font-family: Montserrat-Bold;
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.82px;
+    color: #1b1b1b;
+}
 .heading-3-mb {
     font-family: Montserrat-Bold;
     margin: 0;
@@ -334,6 +342,14 @@ div[class^="col-"] {
     line-height: 16px;
     letter-spacing: 0.55px;
     color: #1b1b1b;
+}
+.heading-35-osr {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    color: #464457;
 }
 .heading-4-osr {
     font-family: OpenSens-Regular;

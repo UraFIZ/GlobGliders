@@ -1,0 +1,115 @@
+/**********************************site-banner section********************************/
+.site-banner-select-location {
+    padding-bottom: 80px;
+    display: flex;
+    align-items: flex-end;
+}
+.site-banner-apartments-bg {
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+.site-banner-select-location-height {
+    height: 38vh;
+}
+.site-banner-width {
+    width: 82.86%;
+    margin: 0 auto;
+}
+.padding-side {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/******************x***************end site-banner section******************x*************/
+
+/******************************************bred-crumb-section*******************************/
+.bred-crumb-section {
+    margin-bottom: 31px;
+}
+.bred-crumb-section {
+    padding: 27px 0;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: "|";
+}
+/******************x***********************end bred-crumb-section*************x*****************/
+
+/***************************************|||Responsiveness||||*********************************/
+@media (max-width: 768px) {
+    /**********************************responsive (768) site-banner section********************************/
+    .select-l-width {
+        width: 100%;
+    }
+    .site-banner-width {
+        width: 100%;
+        text-align: center;
+    }
+    .site-banner-width .heading-15-meb {
+        font-family: Montserrat-Bold;
+        font-size: 40px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.37px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .site-banner-width .heading-1-ossbi {
+        font-family: OpenSens-SemiBold;
+        font-size: 24px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 44px;
+        letter-spacing: 0.82px;
+        text-align: center;
+        color: #ffffff;
+    }
+    /*****************x****************end responsive (768) site-banner section****************x***************/
+
+}
+@media (max-width: 600px){
+    /**********************************responsive (600) site-banner section********************************/
+    .site-banner-select-location-height {
+        height: 75vh;
+        display: flex;
+        align-items: center;
+    }
+    .site-banner-width .heading-1-ossbi {
+        font-size: 21px;
+    }
+    .site-banner-select-location {
+        padding-bottom: 0;
+    }
+     /********************************** end responsive (600) site-banner section********************************/
+    /********************************* responsive (600) bred-crumb-section*******************************/
+    .bred-crumb-section {
+        padding: 0;
+        margin-bottom: 0;
+        position: relative;
+        top: -30px;
+    }
+    .breadcrumb {
+        background: transparent !important;
+        display: flex;
+        justify-content: center;
+    }
+    .breadcrumb-item {
+        color: white !important;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: "|";
+        color: white;
+    }
+        /**********************************end responsive (600) bred-crumb-section********************************/
+    /********************************* responsive (600) select-location-section*******************************/
+    .grid-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /*********************************end  responsive (600) select-location-section*******************************/
+
+}
+@media (max-width: 320px){
+
+
+}

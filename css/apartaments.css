@@ -1,0 +1,51 @@
+/**********************************site-banner section********************************/
+.site-banner-apartments-bg {
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+/******************x***************end site-banner section******************x*************/
+
+/*************************************apartment-description*******************************/
+.apartment-text-wrapper {
+    max-width: 470px;
+}
+.apartment-carousel-wrapper {
+    max-width: 770px;
+    height: 446px;
+    background-color: #ff9a9e;
+    border-radius: 8px;
+}
+.apartment-description {
+    margin: 0 auto;
+}
+.amenities-wrapper {
+    margin-top: 23px;
+}
+.apartment-description .isApartmentAvailable {
+    padding: 13px 0;
+}
+.availability-panel {
+    display: flex;
+}
+.apartment-description .availability-panel div button:nth-child(2) {
+    width: 173px;
+    height: 50px;
+    border: solid 1px #f3f3f4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    margin-right: -5px;
+    
+}
+.apartment-description .availability-panel div button:nth-child(4) {
+    width: 173px;
+    height: 50px;
+    border: solid 1px #f3f3f4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    margin-right: 16px;
+}
+.apartment-btn-width {
+    width: 410px;
+}
+/*************************************end apartment-description*******************************/

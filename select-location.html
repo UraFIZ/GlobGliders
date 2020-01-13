@@ -24,6 +24,8 @@
 <link rel="stylesheet" href="./css/main-index.css">
 <link rel="stylesheet" href="./css/select-location.css">
 <link rel="stylesheet" href="./css/common.css">
+<!-- for shared components -->
+<link rel="stylesheet" href="./css/shared.css"> 
 <link rel="stylesheet" href="./css/header.css">
 <link rel="stylesheet" href="./css/footer.css">
 
@@ -71,7 +73,7 @@
     </header>
     <section class="main-container">
         <section class="site-banner-select-location site-banner-select-location-height">
-            <div class="select-container-width">
+            <div class="site-banner-width">
                 <h2 class="heading-15-meb mar-b-20">Select Location</h2>
                 <h3 class="heading-1-ossbi">Your homes in Manchester, UK</h3>
             </div>
@@ -80,9 +82,9 @@
             <div class="container grid-container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item"><a href="#">Library</a></li>
-                      <li class="breadcrumb-item active" aria-current="page"> Data</li>
+                      <li class="breadcrumb-item"><a href="#"> Home Page</a></li>
+                      <li class="breadcrumb-item"><a href="#">Start Your Glide</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"> Location</li>
                     </ol>
                   </nav>
             </div>
@@ -98,7 +100,7 @@
                         <button class="button-primary" type="submit">Show Availability</button>
                     </form>
                 </div>
-                <div class="location-type-container mar-b-30 no-padding" id="addToSelectLocationBtnOwlCarousel">
+                <div class="location-type-container mar-b-30 no-padding">
                     <button type="button" class="heading-2-ossb active" data-filter="*"><img
                         src="./assets/img/icon-house.svg" alt="icon of Accommodation"> All</button>
                     <button type="button" class="heading-2-ossb" data-filter=".accommodation"><img
@@ -1378,6 +1380,7 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 <!-- <script src="./js/main.js"></script> -->
+<script src="./js/shared.js"></script>
 <script src="./js/select-location.js"></script>
 
 
