@@ -9,7 +9,7 @@ $(document).ready(function () {
         showOn: "button",
         buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>Check Out Date</span>'
     });
-    getNewTab(".select-location-section .location-type-container button", ".location-grid")
+    getNewTab(".select-location-section .location-type-container button",'.select-location-section .grid-container', ".location-grid", getNewTabFancForSelectLocation)
     getInitiationOwlCarousalForSelectLocationSection();
     onExpendTextBlock();
     if($(window).width() >= 600) {
@@ -57,24 +57,27 @@ function getPagination() {
 }
 
 
-function getNewTab(btnClass, cardClass) {
+function getNewTab(btnClass, containerClass, cardClass, func) {
     $(btnClass).on('click', function() {
         var btnsIndex = $(this).index()
         $(this)
           .addClass('active').siblings().removeClass('active')
-          .closest('.select-location-section .grid-container').find(cardClass).removeClass('active').eq(btnsIndex).addClass('active');
-          onExpendTextBlock();
-        if($(window).width() <= 600) {
-            getInitiationOwlCarousalForSelectLocationSection();
-        }else{
-             getPagination();
-        }
+          .closest(containerClass).find(cardClass).removeClass('active').eq(btnsIndex).addClass('active');
+          func();
       });
+}
+function getNewTabFancForSelectLocation() {
+    onExpendTextBlock();
+    if($(window).width() <= 600) {
+        getInitiationOwlCarousalForSelectLocationSection();
+    }else{
+         getPagination();
+    }
 }
 function getInitiationOwlCarousalForSelectLocationSection() {
     if($(window).width() <= 600) {
         $(".select-location-section .location-grid.active").addClass("owl-carousel");
-        $('.owl-carousel').owlCarousel({
+        $('.select-location-section .owl-carousel').owlCarousel({
             loop: false,
             autoplay: false,
             nav:true,

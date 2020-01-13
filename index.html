@@ -207,13 +207,13 @@
                             Buenos aires, endless adventures are waiting for you!</h3>
                     </div>
                 </div>
-                <div class="row location-type-container mar-b-30" id="addToLocationBtnOwlCarousel">
-                    <button type="button" class="heading-2-ossb" data-filter=".accommodation"><img
+                <div class="row location-type-container mar-b-30">
+                    <button type="button" class="heading-2-ossb active"><img
                             src="./assets/img/icon-house.svg" alt="icon of Accommodation"> Accommodation</button>
-                    <button type="button" class="heading-2-ossb" data-filter=".workspaces"> <img
+                    <button type="button" class="heading-2-ossb"> <img
                             src="./assets/img/icon-workspace.svg" alt="icon of workspace"> Workspaces</button>
                 </div>
-                <div class="row location-grid" id="addToLocationOwlCarousel">
+                <div class="row location-grid accommodation active">
                     <!-- don't add any class here without editind function getCouruselLocatinSection this part listOfClass.push($(item).attr("class").split(" ")[5]) -->
                     <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
                         <div class="location-card box-shadow-no">
@@ -250,14 +250,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
                         <div class="location-card box-shadow-no">
                             <div class="card-img-wrapper mb-3">
                                 <div class="card-img">
-                                    <div class="location-card-img work"></div>
-                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                    <div class="location-card-img"></div>
+                                    <img class="location-card-icon accommodation"
+                                        src="./assets/img/icon-accomondation.png"
                                         srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
-                                        alt="workspaces">
+                                        alt="Accommodation">
                                         <div class="location-card-description">
                                             <img class="location-description-icon pl-2 pr-2"
                                                 src="./assets/img/location-2.png"
@@ -319,40 +320,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
-                        <div class="location-card box-shadow-no">
-                            <div class="card-img-wrapper mb-3">
-                                <div class="card-img">
-                                    <div class="location-card-img work"></div>
-                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
-                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
-                                        alt="workspaces">
-                                        <div class="location-card-description">
-                                            <img class="location-description-icon pl-2 pr-2"
-                                                src="./assets/img/location-2.png"
-                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
-                                                alt="location of the place">
-                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
-                                            <div class="card-address-info-wrapper">
-                                                <div class="card-address-info mr-2">i
-                                                    <div class="card-reserved-info">
-                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
-                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
-                                                    </div>
-                                                </div>
-                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
-    
-                                            </div>
-                                        </div>
-                                </div>
-
-                            </div>
-                            <div class="grid-item-text">
-                                <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
-                                <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
-                            </div>
-                        </div>
-                    </div>
                     <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
                         <div class="location-card box-shadow-no">
                             <div class="card-img-wrapper mb-3">
@@ -388,6 +355,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row location-grid workspaces">
                     <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
                         <div class="location-card box-shadow-no">
                             <div class="card-img-wrapper mb-3">
@@ -422,15 +391,48 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 accommodation">
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
                         <div class="location-card box-shadow-no">
                             <div class="card-img-wrapper mb-3">
                                 <div class="card-img">
-                                    <div class="location-card-img"></div>
-                                    <img class="location-card-icon accommodation"
-                                        src="./assets/img/icon-accomondation.png"
+                                    <div class="location-card-img work"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
                                         srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
-                                        alt="Accommodation">
+                                        alt="workspaces">
+                                        <div class="location-card-description">
+                                            <img class="location-description-icon pl-2 pr-2"
+                                                src="./assets/img/location-2.png"
+                                                srcset="/assets/img/location-2.png 1x, /assets/img/location-2@2x.png 2x, /assets/img/location-2@3x.png 3x"
+                                                alt="location of the place">
+                                            <h4 class="heading-3-osb card-address mr-3">Portugal, Lisabon</h4>
+                                            <div class="card-address-info-wrapper">
+                                                <div class="card-address-info mr-2">i
+                                                    <div class="card-reserved-info">
+                                                        <p class="heading-4-ossb-black">Reserved for you: <span class="heading-3-osb-black d-block pt-2 pb-2">11.12.2019- 13.12.2019</span></p>
+                                                        <p class="heading-4-ossb-gray">I wish to cancel</p>
+                                                    </div>
+                                                </div>
+                                                <h5 class="heading-4-osr">Your Office for 3 days</h5>
+    
+                                            </div>
+                                        </div>
+                                </div>
+
+                            </div>
+                            <div class="grid-item-text">
+                                <h3 class="heading-3-mb mb-2">Selina NQ1 Manchester </h3>
+                                <h4 class="heading-3-osr">15 Hilton St, Manchester M1 1JJ, UK</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item col-sm-12 col-md-4 col-lg-4 col-xl-3 workspaces">
+                        <div class="location-card box-shadow-no">
+                            <div class="card-img-wrapper mb-3">
+                                <div class="card-img">
+                                    <div class="location-card-img work"></div>
+                                    <img class="location-card-icon workspaces" src="./assets/img/icon-accomondation.png"
+                                        srcset="./assets/img/icon-accomondation.png 1x, ./assets/img/icon-accomondation@2x.png 2x, ./assets/img/icon-accomondation@3x.png 3x"
+                                        alt="workspaces">
                                         <div class="location-card-description">
                                             <img class="location-description-icon pl-2 pr-2"
                                                 src="./assets/img/location-2.png"
@@ -590,7 +592,7 @@
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <!--  isotope js library  -->
-    <script src="./vendor/isotope/isotope.min.js"></script>
+    <!-- <script src="./vendor/isotope/isotope.min.js"></script> -->
     <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="./vendor/aos.js/aos.js"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>

@@ -127,6 +127,20 @@ max-width: 620px;
     padding-right: 15px;
     padding-left: 15px;
 }
+.location-section .location-grid {
+    transition: 0.5s all;
+    display: none;
+}
+.location-section .location-grid.active {
+    display: flex;
+}
+.location-type-container button.active {
+    box-shadow: 0 4px 10px 0 #555;
+    outline: none;
+}
+.location-type-container button:focus {
+    box-shadow: 0 4px 10px 0 #555;
+}
 .location-type-container button {
     background: transparent;
     border-radius: 8px;
@@ -388,6 +402,32 @@ max-width: 620px;
         width: 768px;
     } */
         /***************************************end responsive location-section ***********/
+}
+@media(max-width: 600px){
+    .location-section .location-type-container {
+        width: 96%;
+        margin: 0 auto;
+        margin-bottom: 10px !important;
+    }
+    .location-section .location-type-container button {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 3px;
+        box-shadow: none !important;
+        width: 48% !important;
+        justify-content: space-around;
+    }
+    .location-type-container button.active {
+        background-color: #1ca880;
+        color: white;
+    }
+    .location-type-container button + button {
+        margin-left: 5px;
+    }
+    .location-type-container button.heading-2-ossb {
+        line-height: 15px;
+        font-size: 13px;
+    }
 }
 @media(max-width: 576px) {
 /********************************** responsive (576) site-banner section********************************/

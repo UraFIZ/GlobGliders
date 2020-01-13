@@ -22,15 +22,9 @@ $(document).ready(function(){
         $("div[data-aos]").attr("data-aos", "huy")
     }
    if($(window).width() <= 600) {
-    getInitLocationBtns();
-    var owlItems = $("#addToLocationOwlCarousel .owl-item");
-    getCouruselLocatinSection(owlItems);
-    var owlItemsBtn = $("#addToLocationBtnOwlCarousel > div.owl-stage-outer > div > div");
-    getAttrOfBtnToMakeCarouser(owlItemsBtn);
-    filterLocationItems("#addToLocationBtnOwlCarousel > div.owl-stage-outer > div > div",".location-grid .owl-stage")
+    getNewTab(".location-section .location-type-container button",'.location-section .grid-container', ".location-grid", getInitiationOwlCarousalForLocationSection)
    }else{
-    filterLocationItems(".location-type-container button", ".location-grid")
-
+    getNewTab(".location-section .location-type-container button",'.location-section .grid-container', ".location-grid")
    }
    AOS.init();
 })
@@ -61,8 +55,8 @@ function getRidOfRubbishAtElfsightPlagin() {
 }
 function getInitiationOwlCarousalForLocationSection() {
     if($(window).width() <= 600) {
-        $("#addToLocationOwlCarousel").addClass("owl-carousel");
-        $('#addToLocationOwlCarousel').owlCarousel({
+        $(".location-section .location-grid.active").addClass("owl-carousel");
+        $('.location-section .owl-carousel').owlCarousel({
             loop: false,
             autoplay: false,
             nav:false,
@@ -78,69 +72,19 @@ function getInitiationOwlCarousalForLocationSection() {
         })
     }
 }
-function getInitLocationBtns() {
-    if($(window).width() <= 600) {
-        $("#addToLocationBtnOwlCarousel").addClass("owl-carousel");
-        $('#addToLocationBtnOwlCarousel').owlCarousel({
-            loop: true,
-            autoplay: false,
-            nav:false,
-            dots: false,
-            margin: -20,
-            startPosition: 1,
-            responsive: {
-                0: {
-                    items: 1.3
-                },
-            }
-        })
-    }
+
+
+function getNewTab(btnClass, containerClass, cardClass, func) {
+    $(btnClass).on('click', function() {
+        var btnsIndex = $(this).index()
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest(containerClass).find(cardClass).removeClass('active').eq(btnsIndex).addClass('active');
+          if(func) {
+            func();
+          }
+      });
 }
-
-function getCouruselLocatinSection(data) {
-    var colgrid = $(".location-grid .grid-item");
-    var listOfClass = [];
-    $(colgrid).each(function(inx, item){
-        listOfClass.push($(item).attr("class").split(" ")[5]);
-       })
-    $(data).each(function(inx, item) {
-       $(item).addClass(listOfClass[inx]);
-    })
-
-}
-function getAttrOfBtnToMakeCarouser(data) {
-    var locationBtns = $(".location-type-container button");
-    var listOfAttrs = [];
-    $(locationBtns).each(function(inx, item) {
-        listOfAttrs.push($(item).attr("data-filter"));
-    })
-    $(data).each(function(inx, item) {
-        $(item).attr("data-filter", listOfAttrs[inx]);
-     })
-}
-
-
-function filterLocationItems(btnsLocation, filterClass) {
-        var owlItemsBtn = $(btnsLocation);
-        owlItemsBtn.click(function (e) {
-            $(btnsLocation).removeClass('active');
-            e.target.classList.add('active');
-            let selector = $(e.target).attr('data-filter');
-            var classForFilter = $(filterClass);
-            $(classForFilter).isotope({
-                filter: selector
-            });
-            // console.log(setWidthOfItemOwlContainer(selector).width)
-            // $("#addToLocationOwlCarousel .owl-stage").width(setWidthOfItemOwlContainer(selector).width);
-            if($(window).width() <= 600) {
-                var owl = $('.location-grid');
-                owl.trigger("to.owl.carousel", [0, 0, true]);
-                owl.owlCarousel();
-            }
-             return false;
-        })
-}
-
 let nav_offset_top = $('header').height() + 50;
 function navbarFixed() {
     if ($('header').length) {

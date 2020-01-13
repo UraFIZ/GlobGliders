@@ -195,9 +195,7 @@
         display: flex;
         justify-content: center;
     }
-    .availability-input-wrapper {
-        margin-bottom: 20px;
-    }
+
     .location-type-container {
         width: 90%;
         margin: 0 auto;
@@ -221,6 +219,9 @@
     .location-type-container button.heading-2-ossb {
         line-height: 15px;
         font-size: 13px;
+    }
+    .availability-input-wrapper {
+        margin-bottom: 20px;
     }
     .availability-panel div button:nth-child(2) {
         width: auto;
