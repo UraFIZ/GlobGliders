@@ -9,10 +9,7 @@
     max-width: 470px;
 }
 .apartment-carousel-wrapper {
-    max-width: 770px;
-    height: 446px;
-    background-color: #ff9a9e;
-    border-radius: 8px;
+position: relative;
 }
 .apartment-description {
     margin: 0 auto;
@@ -47,5 +44,67 @@
 }
 .apartment-btn-width {
     width: 410px;
+}
+#big .apartment-img {
+    max-width: 770px;
+    height: 446px;
+    border-radius: 8px;
+}
+#big > div.owl-stage-outer > div > div:nth-child(1) > div {
+    background-color: #ff9a9e;
+}
+#big > div.owl-stage-outer > div > div:nth-child(2) > div{
+    background-color: #9affb3;
+}
+#big > div.owl-stage-outer > div > div:nth-child(3) > div {
+    background-color: #c19aff;
+}
+#big > div.owl-stage-outer > div > div:nth-child(4) > div {
+    background-color: #dcff9a;
+}
+#big > div.owl-stage-outer > div > div:nth-child(5) > div {
+    background-color: #ffba9a;
+}
+#thumbs {
+    position: absolute;
+    bottom: 70px;
+    width: 360px;
+    right: 220px;
+}
+#thumbs .owl-item {
+    width: 69px !important;
+    height: 69px !important;
+    border-radius: 8px; 
+    border: 1px solid white;
+}
+#thumbs .owl-stage {
+    display: flex;
+    justify-content: space-evenly;
+}
+#thumbs > div.owl-stage-outer > div > div.owl-item {
+    background-color: #ff9a9e;
+}
+#thumbs > div.owl-stage-outer > div > div:nth-child(2) {
+    background-color: #9affb3;
+}
+#thumbs > div.owl-stage-outer > div > div:nth-child(3) {
+    background-color: #c19aff;
+}
+#thumbs > div.owl-stage-outer > div > div:nth-child(4) {
+    background-color: #dcff9a;
+}
+#thumbs > div.owl-stage-outer > div > div:nth-child(5) div{
+    background-color: #ffc79a;
+}
+#big {
+display: flex;
+justify-content: center;
+}
+#big .owl-nav {
+    position: absolute;
+    top: 210px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
 }
 /*************************************end apartment-description*******************************/
