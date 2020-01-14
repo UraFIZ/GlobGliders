@@ -127,6 +127,13 @@ div[class^="col-"] {
     letter-spacing: 1.37px;
     color: white;
 }
+.heading-1-mb-black {
+    font-family: Montserrat-Bold;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 1.37px;
+    color: #464457;
+}
 .heading-2-mb {
     font-family: Montserrat-Bold;
     margin: 0;
@@ -137,7 +144,6 @@ div[class^="col-"] {
 }
 .heading-2-mb-black {
     font-family: Montserrat-Bold;
-    margin: 0;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.82px;
@@ -148,6 +154,14 @@ div[class^="col-"] {
     margin: 0;
     font-size: 16px;
     line-height: 16px;
+    letter-spacing: 0.55px;
+    color: #464457;
+}
+.heading-31-mb {
+    font-family: Montserrat-Bold;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: 0.55px;
     color: #464457;
 }
@@ -227,6 +241,14 @@ div[class^="col-"] {
     letter-spacing: 0.69px;
     color: #464457;
 }
+.heading-2-ossb-white {
+    font-family: OpenSens-SemiBold;
+    margin: 0;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.69px;
+    color: #464457;
+}
 .heading-3-ossb {
     font-family: OpenSens-SemiBold;
     margin: 0;
@@ -234,6 +256,23 @@ div[class^="col-"] {
     line-height: normal;
     letter-spacing: 0.55px;
     color: white;
+    font-weight: 600;
+}
+.heading-32-ossb-black {
+    font-family: OpenSens-SemiBold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.55px;
+    color: #464457;
+    font-weight: 600;
+}
+.heading-3-osb-black {
+    font-family: OpenSens-Bold;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.55px;
+    color: #464457;
     font-weight: 600;
 }
 .heading-3-ossb-black {
@@ -262,6 +301,13 @@ div[class^="col-"] {
     color: #908f9a;
     text-decoration: underline;
 }
+.heading-5-ossb-gray {
+    font-family: OpenSens-SemiBold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    color: #908f9a;
+}
 .heading-4-osrr {
     font-family: OpenSens-Regular;
     margin: 0;
@@ -289,7 +335,6 @@ div[class^="col-"] {
 }
 .heading-3-osb-black {
     font-family: OpenSens-Bold;
-    margin: 0;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.55px;
@@ -412,6 +457,15 @@ div[class^="col-"] {
 .button-secondary:hover {
     color: white;
      border: 1px solid rgba(34, 33, 33, 0.404);
+}
+.super-link {
+    padding: 11px 25px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* ************************end buttons ******************************/
 
@@ -673,4 +727,14 @@ background-color: white;
 }
 
     /**************x******************end responsive (768) buttons *************x**************/
+}
+@media(max-width: 375px) {
+    .super-link{
+        padding: 11px 18px;   
+    }
+}
+@media(max-width: 320px) {
+    .super-link{
+        padding: 8px 12px;   
+    }
 }

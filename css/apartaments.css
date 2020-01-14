@@ -10,15 +10,22 @@
 }
 .apartment-carousel-wrapper {
 position: relative;
+display: flex;
+justify-content: center;
+margin-bottom: 40px;
 }
 .apartment-description {
     margin: 0 auto;
+    margin-bottom: 157px;
 }
 .amenities-wrapper {
     margin-top: 23px;
 }
 .apartment-description .isApartmentAvailable {
     padding: 13px 0;
+}
+.apartment-description .availability-input-wrapper {
+    display: flex;
 }
 .availability-panel {
     display: flex;
@@ -69,7 +76,6 @@ position: relative;
     position: absolute;
     bottom: 70px;
     width: 360px;
-    right: 220px;
 }
 #thumbs .owl-item {
     width: 69px !important;
@@ -80,6 +86,9 @@ position: relative;
 #thumbs .owl-stage {
     display: flex;
     justify-content: space-evenly;
+        height: 80px;
+        align-items: center;
+
 }
 #thumbs > div.owl-stage-outer > div > div.owl-item {
     background-color: #ff9a9e;
@@ -96,6 +105,9 @@ position: relative;
 #thumbs > div.owl-stage-outer > div > div:nth-child(5) div{
     background-color: #ffc79a;
 }
+#thumbs .owl-item.active.current {
+    box-shadow: 2px 3px 8px #28a745;
+}
 #big {
 display: flex;
 justify-content: center;
@@ -107,4 +119,364 @@ justify-content: center;
     display: flex;
     justify-content: space-between;
 }
-/*************************************end apartment-description*******************************/
+/*****************z*******************end apartment-description*****************z*************/
+/*************************************city-description*******************************/
+.city-description {
+    margin: 0 auto;
+}
+.city-description-title {
+    margin-bottom: 25px;
+    display: block;
+    border-bottom: 2px solid #f3f3f4;
+    padding-bottom: 18px;
+}
+.city-description-text-wrapper {
+    margin-bottom: 60px;
+}
+.city-description-text {
+    max-width: 670px;
+}
+.city-description > div > div:nth-child(2) > p {
+    margin-left: auto;
+}
+
+.city-description-weather {
+    margin-bottom: 60px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.city-description-weather .weatherInfo {
+    background: rebeccapurple;
+}
+/*****************x********************end city-descriptionn*****************x*************/
+/*************************************useful-resources*******************************/
+.useful-resources {
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.useful-resources-title {
+    margin-bottom: 24px;
+}
+.link-restaurant {
+    background-image: url('../assets/img/restorant.jpg');
+
+}
+.link-events {
+    background-image: url('../assets/img/true-events.jpg');
+}
+.link-nightlife {
+    background-image: url('../assets/img/events.jpg');
+}
+.event-links a {
+    margin-right: 15px;
+}
+/******************x*******************end useful-resources*******************x***********/
+/******************************************thing-to-do**************************************/
+.thing-to-do {
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.thing-to-do-title {
+    margin-bottom: 30px;
+}
+.thing-to-do-item {
+    width: 246px;
+    height: 246px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff;
+}
+.thing-to-do-item .owl-item:not(:last-child) {
+    margin-right: 35px !important;
+}
+.thing-to-do-img {
+   height: 123px;
+   background-color: thistle;
+   border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.thing-to-do-content-wrapper{
+    height: 123px;
+    padding: 18px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rate-wrapper {
+    display: flex;
+    align-items: center;
+}
+.rate-amount {
+    margin-right: 5px !important;
+}
+.rate-stars {
+    margin-right: 5px;
+    padding-bottom: 6px;
+}
+.star {
+    font-size: 25px;
+}
+.gold-star {
+    color: #efb628;
+}
+.empty-star {
+    color: gray;
+}
+.thing-to-do-item-wrapper .owl-stage {
+    height: 250px;
+}
+.thing-to-do-item-wrapper .owl-nav {
+    position: absolute;
+    top: 41%;
+    right: -46px;
+}
+.thing-to-do-item-wrapper .owl-prev {
+    display: none;
+}
+.thing-to-do-item-wrapper .owl-next {
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff !important;
+    color: #adb5bd !important;
+    border-radius: 50%;
+}
+.thing-to-do > div > div.owl-nav > button.owl-next > span {
+    font-size: 40px;
+    height: 36px;
+    line-height: 0.7;
+}
+/*******************x*********************end thing-to-do*********************x*************/
+/******************************************travel-articles**************************************/
+.travel-articles-title {
+    margin-bottom: 30px;
+}
+.travel-articles {
+    margin: 0 auto;
+    margin-bottom: 163px;
+}
+.travel-articles-item {
+    width: 246px;
+    height: 246px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff;
+}
+.travel-articles-item .owl-item:not(:last-child) {
+    margin-right: 35px !important;
+}
+.travel-item-img {
+   height: 103px;
+   background-color: rgb(255, 192, 239);
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+.travel-item-content-wrapper{
+    height: 143px;
+    padding: 18px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.best-in-city {
+    margin-bottom: 12px;
+}
+.travel-item-wrapper .owl-stage {
+    height: 250px;
+}
+.travel-item-wrapper .owl-nav {
+    position: absolute;
+    top: 41%;
+    right: -46px;
+}
+.travel-item-wrapper .owl-prev {
+    display: none;
+}
+.travel-item-wrapper .owl-next {
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff !important;
+    color: #adb5bd !important;
+    border-radius: 50%;
+}
+.travel-articles > div > div.owl-nav > button.owl-next > span {
+    font-size: 40px;
+    height: 36px;
+    line-height: 0.7;
+}
+/********************x**********************end travel-articles*******************x*******************/
+/**************************************|||Responsiveness||||*********************************/
+@media(max-width: 1024px) {
+    /*************************************(1024) apartment-description*******************************/
+    #big .apartment-img {
+        max-width: 100%;
+    }
+    .apartment-text-wrapper {
+        max-width: 100%;
+    }
+    .apartment-description .pad-l-28 {
+        padding-left: 15px !important;
+    }
+    .amenities-wrapper {
+        margin-bottom: 30px;
+    }
+   .apartment-description .availability-panel {
+       margin: 0 auto;
+   }
+   .apartment-btn-width {
+       width: auto;
+   }
+    /*************************************end (1024) apartment-description*******************************/
+        /*************************************(1024) things-to-do*******************************/
+
+        .thing-to-do-item-wrapper .owl-nav {
+            right: -19px;
+        }
+        .travel-item-wrapper .owl-nav {
+            right: -19px;
+        }
+        /***************x**********************(1024) end things-to-do*********************x**********/
+
+    }
+@media(max-width: 992px) {
+/*************************************(992) apartment-description*******************************/
+.apartment-description .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#big .apartment-img {
+    max-width: 100%;
+}
+/*************************************end (992) apartment-description*******************************/
+}
+@media(max-width: 768px) {
+/*************************************(768) apartment-description*******************************/
+.apartment-description .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.apartment-description {
+    margin-bottom: 50px;
+}
+
+/*************************************end (768) apartment-description*******************************/
+}
+@media(max-width: 600px) {
+    /*************************************(600) apartment-description*******************************/
+    .apartment-carousel-wrapper {
+        flex-direction: column;
+    }
+    .apartment-description .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .apartment-description .availability-panel {
+        flex-direction: column;
+    }
+    .apartment-description .availability-panel div button:nth-child(2) {
+        width: 50%;
+        margin-right: -1px;
+    }
+    .apartment-description .availability-panel div button:nth-child(4) {
+        width: 50%;
+        margin-right: 0;
+    }
+    #thumbs {
+        position: unset;
+        margin: 14px auto;
+    }
+    #thumbs .owl-stage {
+        height: 50px;
+        align-items: center;
+    }
+    #thumbs .owl-item {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .thing-to-do-item-wrapper .owl-stage {
+        margin-left: 15px;
+    }
+    .travel-item-wrapper .owl-stage {
+        margin-left: 15px;
+    }
+    .owl-carousel .owl-stage:after {
+        display: none;
+    }
+    /*************************************end (600) apartment-description*******************************/
+         /*************************************(600) city-description*******************************/
+         .city-description-text-wrapper {
+            margin-bottom: 20px;
+        }
+     /************x*************************(600) end city-description********************x***********/
+              /*************************************(600) city-description-weather*******************************/
+              .city-description-weather {
+                margin-bottom: 40px;
+            }
+         /************x*************************(600) end city-description-weather********************x***********/
+     /*************************************(600) useful-resources*******************************/
+     .event-links a {
+        margin-right: 3px;
+    }
+    .event-links .heading-2-ossb-white {
+        font-size: 14px ;
+    }
+    .useful-resources {
+        margin-bottom: 40px;
+    }
+     /***********x*************************(600) end useful-resources******************x************/
+      /*************************************(600) things-to-do*******************************/
+      .thing-to-do-item, .travel-articles-item {
+        width: 210px;
+        height: 210px;
+    }
+    .thing-to-do-img {
+        height: 105px;
+    }
+    .thing-to-do {
+        margin-bottom: 45px;
+    }
+    .travel-item-img {
+        height: 88px;
+    }
+    .thing-to-do-content-wrapper {
+        height: 105px;
+        padding: 8px;
+    }
+    .travel-item-content-wrapper {
+        height: 122px;
+        padding: 8px;
+    }
+    .star {
+        font-size: 22px;
+    }
+      /*************x************************(600)end things-to-do****************x***************/
+    .travel-articles {
+        margin-bottom: 71px;
+    }
+}
+@media (max-width: 375px){
+
+    #thumbs .owl-stage, #thumbs {
+        width: auto !important;
+    }
+    #thumbs > div.owl-stage-outer > div > div.owl-item {
+        margin-right: 20px;
+    }
+    #thumbs > div.owl-stage-outer > div > div.owl-item:last-child {
+        margin-right: 5px;
+    }
+         /*************************************(375) useful-resources*******************************/
+         .event-links a {
+            margin-right: 2px;
+        }
+        .event-links .heading-2-ossb-white {
+            font-size: 13px ;
+        }
+        .useful-resources {
+            margin-bottom: 40px;
+        }
+         /***********x*************************(375) end useful-resources******************x************/
+}

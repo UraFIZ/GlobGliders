@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    $("#arrival-date").datepicker({
-        dateFormat: "dd/mm/yy",
-        showOn: "button",
-        buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>Arrival Date</span>'
-    });
-    $("#check-date").datepicker({
-        dateFormat: "dd/mm/yy",
-        showOn: "button",
-        buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>Check Out Date</span>'
-    });
+    // $("#arrival-date").datepicker({
+    //     dateFormat: "dd/mm/yy",
+    //     showOn: "button",
+    //     buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>Arrival Date</span>'
+    // });
+    // $("#check-date").datepicker({
+    //     dateFormat: "dd/mm/yy",
+    //     showOn: "button",
+    //     buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>Check Out Date</span>'
+    // });
     getNewTab(".select-location-section .location-type-container button",'.select-location-section .grid-container', ".location-grid", getNewTabFancForSelectLocation)
     getInitiationOwlCarousalForSelectLocationSection();
     onExpendTextBlock();
