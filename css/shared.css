@@ -4,9 +4,7 @@
     display: flex;
     align-items: flex-end;
 }
-.site-banner-apartments-bg {
-    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-}
+
 .site-banner-select-location-height {
     height: 38vh;
 }

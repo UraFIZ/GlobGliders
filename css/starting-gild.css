@@ -1,0 +1,13 @@
+/**********************************site-banner section********************************/
+.site-banner-apartments-bg {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+/******************x***************end site-banner section******************x*************/
+/**********************************entering-location********************************/
+.entering-location {
+    margin: 0 auto;
+}
+.entering-location-title {
+    margin-bottom: 28px;
+}
+/*******************x*************** end entering-locationn********************x************/
