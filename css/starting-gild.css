@@ -10,4 +10,118 @@
 .entering-location-title {
     margin-bottom: 28px;
 }
+#location {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 2px #f3f3f4;
+    outline: none;
+    padding: 0 20px;
+    margin: 28px 0;
+}
+#location:focus {
+    box-shadow: 1px 1px 7px rgb(0, 162, 255);
+}
+#location::placeholder {
+    background-image: url(../assets/img/pin.png);
+    background-repeat: no-repeat;
+    padding: 0 25px;
+    padding-bottom: 8px;
+}
+.search-wrapper {
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+}
+.popular-link-title {
+    margin-bottom: 15px;
+}
+.popular-location-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.popular-location-item:hover {
+    background-color: #55bfd7;
+    color: white;
+}
+.popular-location-wrapper {
+    margin-bottom: 100px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.popular-location-wrapper >:not(:last-child) {
+    margin-right: 15px;
+}
+.popular-location-wrapper > div > i {
+    padding-right: 8px;
+}
+.divider-wrapper {
+    position: relative;
+    margin-bottom: 80px;
+    height: 20px;
+
+}
+.divider {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #f3f3f4;
+}
+.divider-text {
+    position: absolute;
+    top: -187%;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #e6e6e8;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.select-continent-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+.select-continent-item-wrapper > :not(:last-child) {
+    margin-right: 30px;
+}
+.select-continent-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 8px;
+    padding: 17px 50px;
+    border: 2px solid #f3f3f4;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s all;
+    
+}
+.select-continent-item:hover {
+    background-color: #55bfd7;
+    color: white;
+}
+.select-continent-title {
+    margin-bottom: 23px;
+}
+.select-continent-map {
+    max-width: 670px;
+    height: 301px;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
 /*******************x*************** end entering-locationn********************x************/

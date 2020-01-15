@@ -243,7 +243,6 @@ div[class^="col-"] {
 }
 .heading-2-ossb-white {
     font-family: OpenSens-SemiBold;
-    margin: 0;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.69px;
@@ -266,6 +265,7 @@ div[class^="col-"] {
     color: #464457;
     font-weight: 600;
 }
+
 .heading-3-osb-black {
     font-family: OpenSens-Bold;
     margin: 0;

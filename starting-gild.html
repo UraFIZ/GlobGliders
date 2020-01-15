@@ -85,7 +85,7 @@
             </div>
         </section>
         <section class="description-container entering-location">
-            <form action="#">
+            <form action="#" id="starting-gild-form">
             <div class="row">
                 <div class="col-12">
                     <label class="heading-2-ossb-white entering-location-title" for="location">
@@ -94,8 +94,45 @@
                 </div>
             </div>
                 <div class="row">
+                    <div class="col-12 search-wrapper">
+                          <input type="text" name="location" id="location" placeholder="Enter City, Country or Location...">
+                          <img class="search-icon" src="./assets/img/search.png" alt="search">
+                    </div>
+                </div>
+                <div class="row popular-link-title">
                     <div class="col-12">
-                          <input type="text" name="location" id="location">
+                        <h3 class="heading-32-ossb-black">Popular Location:</h3>
+                    </div>
+                </div>
+                <div class="row popular-location-wrapper">
+                    <div class="popular-location-item heading-32-ossb-black mar-b-15"><i class="fas fa-map-marker-alt"></i>London, UK</div>
+                    <div class="popular-location-item heading-32-ossb-black mar-b-15"><i class="fas fa-map-marker-alt"></i>Rio De Janeiro</div>
+                    <div class="popular-location-item heading-32-ossb-black mar-b-15"><i class="fas fa-map-marker-alt"></i>Paris, France</div>
+                    <div class="popular-location-item heading-32-ossb-black mar-b-15"><i class="fas fa-map-marker-alt"></i>Raipur, India</div>
+                    <div class="popular-location-item heading-32-ossb-black mar-b-15"><i class="fas fa-map-marker-alt"></i>Tel-Aviv, Israel</div>
+                    <div class="popular-location-item heading-32-ossb-black mar-b-15"><i class="fas fa-map-marker-alt"></i>Amsterdam, Netherlands</div>
+                </div>
+                <div class="row">
+                    <div class="col-12 divider-wrapper">
+                        <div class="divider-text">Or</div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-12 select-continent-wrapper">
+                        <h2 class="heading-2-ossb-white select-continent-title">Select Continent:</h2>
+                        <div class="select-continent-item-wrapper">
+                            <div class="select-continent-item mar-b-30">N.America</div>
+                            <div class="select-continent-item mar-b-30">Eurasia</div>
+                            <div class="select-continent-item mar-b-30">S.America</div>
+                            <div class="select-continent-item mar-b-30">Avstralia</div>
+                            <div class="select-continent-item mar-b-30">Africa</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-12">
+                        <div class="select-continent-map-wrapper">
+                            <div class="select-continent-map">Map</div>
+                        </div>
                     </div>
                 </div>
             </form>
