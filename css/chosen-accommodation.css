@@ -1,0 +1,80 @@
+/**********************************site-banner section********************************/
+.site-banner-apartments-bg {
+    background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+}
+.chosen-accommodation .heading-15-meb {
+    font-family: Montserrat-ExtraBold;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 1.37px;
+    color: white;
+}
+.chosen-accommodation {
+    padding-bottom: 70px !important;
+}
+/******************x***************end site-banner section******************x*************/
+/***********************************accommodation-content**********************************/
+.accommodation-content {
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.chosen-room-date-wrapper p, .how-to-get-wrapper p {
+    margin-bottom: 0;
+}
+.accommodation-address-wrapper {
+    margin-bottom: 25px;
+}
+.chosen-room-date-wrapper {
+    margin-bottom: 25px;
+    position: relative;
+    left: 23px;
+}
+.how-to-get-wrapper {
+    position: relative;
+    left: 23px;
+    margin-bottom: 30px;
+}
+.chosen-room-date-wrapper::before {
+    content: "\263B";
+    position: absolute;
+    left: -23px;
+    color: gray;
+}
+.how-to-get-wrapper::before {
+    content: "\263B";
+    position: absolute;
+    left: -23px;
+    color: gray;
+
+}
+.accommodation-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.accommodation-carousel {
+    position: relative;
+    left: 30px;
+}
+
+.view-home {
+    border-bottom: 1px solid #a2a1aa;
+    width: 279px;
+    padding-bottom: 10px;
+}
+.accommodation-btn {
+    width: 770px;
+}
+.accommodation-btn2 {
+    padding: 13px 30px;
+    border-radius: 8px !important;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.55px;
+    margin-top: 10px;
+}
+.accommodation-content .glide-thumb-carousel-wrapper {
+    margin-bottom: 15px !important;
+}
+
+/******************x*****************end accommodation-content*****************x*****************/

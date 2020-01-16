@@ -24,6 +24,7 @@
 }
 .breadcrumb-item {
     font-size: 12px !important;
+    text-transform: capitalize;
 }
 .bred-crumb-section {
     padding: 27px 0;
@@ -32,7 +33,81 @@
     content: ">";
 }
 /******************x***********************end bred-crumb-section*************x*****************/
-
+/*********************************************carousel-thumb*************************************/
+.glide-thumb-carousel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    }
+    #big .apartment-img {
+        max-width: 770px;
+        height: 446px;
+        border-radius: 8px;
+    }
+    #big > div.owl-stage-outer > div > div:nth-child(1) > div {
+        background-color: #ff9a9e;
+    }
+    #big > div.owl-stage-outer > div > div:nth-child(2) > div{
+        background-color: #9affb3;
+    }
+    #big > div.owl-stage-outer > div > div:nth-child(3) > div {
+        background-color: #c19aff;
+    }
+    #big > div.owl-stage-outer > div > div:nth-child(4) > div {
+        background-color: #dcff9a;
+    }
+    #big > div.owl-stage-outer > div > div:nth-child(5) > div {
+        background-color: #ffba9a;
+    }
+    #thumbs {
+        position: absolute;
+        bottom: 70px;
+        width: 360px;
+    }
+    #thumbs .owl-item {
+        width: 69px !important;
+        height: 69px !important;
+        border-radius: 8px; 
+        border: 1px solid white;
+    }
+    #thumbs .owl-stage {
+        display: flex;
+        justify-content: space-evenly;
+            height: 80px;
+            align-items: center;
+    
+    }
+    #thumbs > div.owl-stage-outer > div > div.owl-item {
+        background-color: #ff9a9e;
+    }
+    #thumbs > div.owl-stage-outer > div > div:nth-child(2) {
+        background-color: #9affb3;
+    }
+    #thumbs > div.owl-stage-outer > div > div:nth-child(3) {
+        background-color: #c19aff;
+    }
+    #thumbs > div.owl-stage-outer > div > div:nth-child(4) {
+        background-color: #dcff9a;
+    }
+    #thumbs > div.owl-stage-outer > div > div:nth-child(5) div{
+        background-color: #ffc79a;
+    }
+    #thumbs .owl-item.active.current {
+        box-shadow: 2px 3px 8px #28a745;
+    }
+    #big {
+    display: flex;
+    justify-content: center;
+    }
+    #big .owl-nav {
+        position: absolute;
+        top: 210px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+/*********************************************carousel-thumb*************************************/
 /***************************************|||Responsiveness||||*********************************/
 @media (max-width: 1024px) {
     /**********************************responsive (768) site-banner section********************************/ 
@@ -42,6 +117,12 @@
         align-items: flex-end;
     }
     /*****************x****************end responsive (768) site-banner section****************x***************/
+    /***********************************************carouser****************************************************/
+    #big .apartment-img {
+        max-width: 100%;
+    }
+    /***********************************************end carouser****************************************************/
+
 }
 @media (max-width: 768px) {
     /**********************************responsive (768) site-banner section********************************/
@@ -122,7 +203,23 @@
     }
 
     /*********************************end  responsive (600) select-location-section*******************************/
-
+    /**********************************************************carousel********************************************/
+    .glide-thumb-carousel-wrapper {
+        flex-direction: column;
+    }
+    #thumbs {
+        position: unset;
+        margin: 14px auto;
+    }
+    #thumbs .owl-stage {
+        height: 50px;
+        align-items: center;
+    }
+    #thumbs .owl-item {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    /**********************************************************end carousel********************************************/
 }
 @media (max-width: 414px){
     .site-banner-select-location {
@@ -142,3 +239,14 @@
     }
 
 }
+ /**********************************************************carousel********************************************/
+ #thumbs .owl-stage, #thumbs {
+    width: auto !important;
+}
+#thumbs > div.owl-stage-outer > div > div.owl-item {
+    margin-right: 20px;
+}
+#thumbs > div.owl-stage-outer > div > div.owl-item:last-child {
+    margin-right: 5px;
+}
+ /**********************************************************end carousel********************************************/

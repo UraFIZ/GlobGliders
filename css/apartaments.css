@@ -8,12 +8,6 @@
 .apartment-text-wrapper {
     max-width: 470px;
 }
-.apartment-carousel-wrapper {
-position: relative;
-display: flex;
-justify-content: center;
-margin-bottom: 40px;
-}
 .apartment-description {
     margin: 0 auto;
     margin-bottom: 157px;
@@ -52,73 +46,7 @@ margin-bottom: 40px;
 .apartment-btn-width {
     width: 410px;
 }
-#big .apartment-img {
-    max-width: 770px;
-    height: 446px;
-    border-radius: 8px;
-}
-#big > div.owl-stage-outer > div > div:nth-child(1) > div {
-    background-color: #ff9a9e;
-}
-#big > div.owl-stage-outer > div > div:nth-child(2) > div{
-    background-color: #9affb3;
-}
-#big > div.owl-stage-outer > div > div:nth-child(3) > div {
-    background-color: #c19aff;
-}
-#big > div.owl-stage-outer > div > div:nth-child(4) > div {
-    background-color: #dcff9a;
-}
-#big > div.owl-stage-outer > div > div:nth-child(5) > div {
-    background-color: #ffba9a;
-}
-#thumbs {
-    position: absolute;
-    bottom: 70px;
-    width: 360px;
-}
-#thumbs .owl-item {
-    width: 69px !important;
-    height: 69px !important;
-    border-radius: 8px; 
-    border: 1px solid white;
-}
-#thumbs .owl-stage {
-    display: flex;
-    justify-content: space-evenly;
-        height: 80px;
-        align-items: center;
 
-}
-#thumbs > div.owl-stage-outer > div > div.owl-item {
-    background-color: #ff9a9e;
-}
-#thumbs > div.owl-stage-outer > div > div:nth-child(2) {
-    background-color: #9affb3;
-}
-#thumbs > div.owl-stage-outer > div > div:nth-child(3) {
-    background-color: #c19aff;
-}
-#thumbs > div.owl-stage-outer > div > div:nth-child(4) {
-    background-color: #dcff9a;
-}
-#thumbs > div.owl-stage-outer > div > div:nth-child(5) div{
-    background-color: #ffc79a;
-}
-#thumbs .owl-item.active.current {
-    box-shadow: 2px 3px 8px #28a745;
-}
-#big {
-display: flex;
-justify-content: center;
-}
-#big .owl-nav {
-    position: absolute;
-    top: 210px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
 /*****************z*******************end apartment-description*****************z*************/
 /*************************************city-description*******************************/
 .city-description {
@@ -311,9 +239,6 @@ justify-content: center;
 /**************************************|||Responsiveness||||*********************************/
 @media(max-width: 1024px) {
     /*************************************(1024) apartment-description*******************************/
-    #big .apartment-img {
-        max-width: 100%;
-    }
     .apartment-text-wrapper {
         max-width: 100%;
     }
@@ -347,9 +272,6 @@ justify-content: center;
     display: flex;
     flex-direction: column-reverse;
 }
-#big .apartment-img {
-    max-width: 100%;
-}
 /*************************************end (992) apartment-description*******************************/
 }
 @media(max-width: 768px) {
@@ -366,9 +288,7 @@ justify-content: center;
 }
 @media(max-width: 600px) {
     /*************************************(600) apartment-description*******************************/
-    .apartment-carousel-wrapper {
-        flex-direction: column;
-    }
+
     .apartment-description .row {
         display: flex;
         flex-direction: column-reverse;
@@ -383,18 +303,6 @@ justify-content: center;
     .apartment-description .availability-panel div button:nth-child(4) {
         width: 50%;
         margin-right: 0;
-    }
-    #thumbs {
-        position: unset;
-        margin: 14px auto;
-    }
-    #thumbs .owl-stage {
-        height: 50px;
-        align-items: center;
-    }
-    #thumbs .owl-item {
-        width: 40px !important;
-        height: 40px !important;
     }
     .thing-to-do-item-wrapper .owl-stage {
         margin-left: 15px;
@@ -459,15 +367,6 @@ justify-content: center;
 }
 @media (max-width: 375px){
 
-    #thumbs .owl-stage, #thumbs {
-        width: auto !important;
-    }
-    #thumbs > div.owl-stage-outer > div > div.owl-item {
-        margin-right: 20px;
-    }
-    #thumbs > div.owl-stage-outer > div > div.owl-item:last-child {
-        margin-right: 5px;
-    }
          /*************************************(375) useful-resources*******************************/
          .event-links a {
             margin-right: 2px;

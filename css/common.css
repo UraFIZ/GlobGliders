@@ -149,6 +149,13 @@ div[class^="col-"] {
     letter-spacing: 0.82px;
     color: #1b1b1b;
 }
+.heading-22-mb-black {
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.82px;
+    color: #1b1b1b;
+}
 .heading-3-mb {
     font-family: Montserrat-Bold;
     margin: 0;
@@ -165,12 +172,26 @@ div[class^="col-"] {
     letter-spacing: 0.55px;
     color: #464457;
 }
+.heading-32-mb {
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.55px;
+    color: #464457;
+}
 .heading-2-mm {
     font-family: Montserrat-Medium;
     margin: 0;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 1.1px;
+    color: #464457;
+}
+.heading-25-mm {
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.55px;
     color: #464457;
 }
 .heading-3-mm {
@@ -308,6 +329,13 @@ div[class^="col-"] {
     letter-spacing: 0.48px;
     color: #908f9a;
 }
+.heading-5-ossb-gray2 {
+    font-family: OpenSens-SemiBold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.55px;
+    color: #a2a1aa;
+}
 .heading-4-osrr {
     font-family: OpenSens-Regular;
     margin: 0;
@@ -374,7 +402,6 @@ div[class^="col-"] {
 }
 .heading-2-osr-black {
     font-family: OpenSens-Regular;
-    margin: 0;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.55px;
@@ -571,6 +598,9 @@ div[class^="col-"] {
 video {
     width: 100%;
     height: auto;
+}
+.width-full {
+    width: 100%;
 }
 .read-more {
     position: absolute;
