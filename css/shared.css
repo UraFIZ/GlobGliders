@@ -22,6 +22,9 @@
 .bred-crumb-section {
     margin-bottom: 31px;
 }
+.breadcrumb-item {
+    font-size: 12px !important;
+}
 .bred-crumb-section {
     padding: 27px 0;
 }
@@ -42,6 +45,17 @@
 }
 @media (max-width: 768px) {
     /**********************************responsive (768) site-banner section********************************/
+    .site-banner-select-location {
+        padding-bottom: 25px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .site-banner-select-location-height {
+        height: 25vh;
+    }
+    .site-banner-width .mar-b-20 {
+        margin-bottom: 4px !important;
+    }
     .select-l-width {
         width: 100%;
     }
@@ -72,10 +86,10 @@
     }
     /*****************x****************end responsive (768) site-banner section****************x***************/
     .bred-crumb-section {
-        margin-bottom: 0;
+        margin-bottom: 30px;
     }
     .bred-crumb-section {
-        padding: 5px 15px;
+        padding: 5px 0;
     }
 
     

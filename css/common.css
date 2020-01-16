@@ -696,12 +696,21 @@ background-color: white;
     color: #464457;
     font-weight: 600;
 }
+
 @media (max-width: 1600px) {
     .grid-container {
         padding-left: 15px;
         padding-right: 15px;
     }
+
 }
+@media (max-width: 1400px) {
+    div[class^="col-"] {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
 @media(max-width: 1024px) {
     /* html {
         width: 100%;
@@ -713,10 +722,7 @@ background-color: white;
         max-width: 100%;
         width: 100%;
     }
-    div[class^="col-"] {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+
 
 }
 @media(max-width: 768px) {
