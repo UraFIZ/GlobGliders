@@ -77,8 +77,7 @@ function getInitiationOwlCarousalInOneLine4tems(id) {
             items: 1,
           },
           300: {
-            items: 2,
-            margin: 100
+            items: 1,
           }
       }
   })

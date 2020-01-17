@@ -183,5 +183,34 @@
 .how-to-get-wrapper .heading-2-osr-black  {
     font-size: 15px !important;
 }
+.chosen-room-date-wrapper {
+    position: unset;
+    left: unset;
+}
+.how-to-get-wrapper {
+    position: unset;
+    left: unset;
+}
+.workspace-near-accommodation-title {
+    padding-left: 15px !important;
+}
+.workspace-near-accommodation-item-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
     /***********************************end accommodation-content**********************************/
+}
+@media (max-width: 375px) {
+        /*****************************************(375)site-banner*******************************************/
+        .chosen-accommodation {
+            height: 35vh !important;
+            padding-bottom: 10px !important;
+        }
+        .chosen-accommodation .heading-15-meb {
+            font-size: 18px !important;
+        }
+        /*****************************************end site-banner*******************************************/
+        .accommodation-btn {
+            font-size: 13px;
+        }
 }
