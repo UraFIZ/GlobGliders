@@ -54,6 +54,9 @@ function getInitiationOwlCarousalInOneLine4tems(id) {
       margin: 20,
       rewind:true,
       responsive: {
+          1300: {
+            items: 4
+          },
           1200: {
               items: 4
           },

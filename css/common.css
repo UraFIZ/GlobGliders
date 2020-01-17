@@ -39,7 +39,7 @@ div[class^="col-"] {
     background: rgba(0, 0, 0, 0.425);
 }
 .grid-container {
-    max-width: 1571px !important;
+    max-width: 1571px;
     margin: 0 auto;
 }
 .description-container {
@@ -727,17 +727,15 @@ background-color: white;
     font-weight: 600;
 }
 
-@media (max-width: 1600px) {
-    .grid-container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-}
 @media (max-width: 1400px) {
     div[class^="col-"] {
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .grid-container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -781,5 +779,10 @@ background-color: white;
 @media(max-width: 320px) {
     .super-link{
         padding: 8px 12px;   
+    }
+}
+@media (max-height: 700px) and (min-width: 1100px) {
+    .site-banner-select-location {
+        padding-bottom: 20px !important;
     }
 }
