@@ -752,6 +752,14 @@ background-color: white;
         max-width: 100%;
         width: 100%;
     }
+    .grid-container {
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .description-container {
+        max-width: 100%;
+        width: 100%;
+    }
 
 
 }

@@ -95,6 +95,3 @@ function navbarFixed() {
         })
     }
 }
-function getOwlCarouserToGlideThumb(big, little) {
-
-}

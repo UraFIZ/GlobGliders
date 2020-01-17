@@ -78,3 +78,110 @@
 }
 
 /******************x*****************end accommodation-content*****************x*****************/
+/*************************************workspace-near-accommodation-section************************/
+.workspace-near-accommodation-section {
+    display: flex;
+    align-items: center;
+    height: 477px;
+    background-color: #f8f8f8;
+}
+.workspace-near-accommodation-title {
+    margin-bottom: 28px;
+}
+.workspace-near-accommodation-title::before {
+    content: url("../assets/img/icon-workspace.svg");
+    padding-right: 7px;
+    vertical-align: middle;
+}
+/*************************************end workspace-near-accommodation-section************************/
+/*****************************************owl-carousel-arrows*****************************************/
+.workspace-near-accommodation-item-wrapper .owl-nav {
+    position: absolute;
+    top: 35%;
+    right: 44px;
+}
+.workspace-near-accommodation-item-wrapper .owl-prev {
+    display: none;
+}
+.workspace-near-accommodation-item-wrapper .owl-next {
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff !important;
+    color: #adb5bd !important;
+    border-radius: 50%;
+}
+.workspace-near-accommodation-section > div > div > div > div.owl-nav > button.owl-next > span {
+    font-size: 40px;
+    height: 36px;
+    line-height: 0.7;
+}
+/*****************************************end owl-carousel-arrows*****************************************/
+/***********************************************Responsiveness********************************************/
+@media (max-width: 1420px) {
+    /***********************************(1420)accommodation-content**********************************/
+    .accommodation-carousel {
+        position: unset;
+        left: unset;
+    }
+    .accommodation-btn {
+        width: 100%;
+    }
+    /***********************************end accommodation-content**********************************/
+}
+@media (max-width: 992px) {
+    /***********************************(992)accommodation-content**********************************/
+ .accommodation-content .row {
+    display: flex;
+    flex-direction: column-reverse;
+ }
+    /***********************************end accommodation-content**********************************/
+}
+@media (max-width: 768px) {
+    /*****************************************(768)site-banner*******************************************/
+    .chosen-accommodation {
+        height: 35vh !important;
+        padding-bottom: 40px !important;
+    }
+    /*****************************************(768)site-banner*******************************************/
+    /***********************************(768)accommodation-content**********************************/
+ .accommodation-content .row {
+    display: flex;
+    flex-direction: column-reverse;
+ }
+ .accommodation-content {
+     margin-bottom: 30px;
+ }
+    /***********************************end accommodation-content**********************************/
+}
+@media (max-width: 600px) {
+    /*****************************************(600)site-banner*******************************************/
+    .chosen-accommodation {
+        height: 35vh !important;
+        padding-bottom: 10px !important;
+    }
+    .chosen-accommodation .heading-15-meb {
+        font-size: 30px !important;
+    }
+    /*****************************************end site-banner*******************************************/
+    /***********************************(600)accommodation-content**********************************/
+.accommodation-address-wrapper .heading-22-mb-black {
+    font-size: 20px !important;
+}
+.accommodation-address-wrapper .heading-25-mm {
+    font-size: 15px !important;
+}
+.chosen-room-date-wrapper .heading-32-mb {
+    font-size: 15px !important;
+}
+.chosen-room-date-wrapper .heading-2-osr-black  {
+    font-size: 15px !important;
+}
+.how-to-get-wrapper .heading-32-mb {
+    font-size: 15px !important;
+}
+.how-to-get-wrapper .heading-2-osr-black  {
+    font-size: 15px !important;
+}
+    /***********************************end accommodation-content**********************************/
+}

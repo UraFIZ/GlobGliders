@@ -169,23 +169,6 @@ max-width: 620px;
     padding-left: 15px !important;
     margin-bottom: 60px;
 }
-.location-card {
-   display: flex;
-   flex-direction: column;
-   border-radius: 8px;
-   box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
-   background-color: #ffffff;
-}
-.card-img-wrapper {
-    display: flex;
-    flex-direction: column;
-    
-}
-.card-img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
 .grid-item-content {
     padding: 14px 16px 22px 14px;
 }
@@ -208,74 +191,6 @@ max-width: 620px;
 .grid-item-plushky > *:not(:last-child)::after {
     content: "|";
     margin-left: 5px;
-}
-
-.location-card-img {
-    max-width: 370px;
-    height: 226px;
-    object-fit: contain;
-    background-color: rgb(21, 156, 111);
-    border-radius: 8px;
-}
-.select-card-img {
-     height: 279px;
-}
-.location-card-icon {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: auto !important;
-}
-.location-card-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    padding: 16px 5px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.247);
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-.location-description-icon {
-    object-fit: contain;
-    width: auto !important;
-}
-.card-address-info-wrapper {
-    position: relative;
-    display: flex;
-}
-.card-address-info {
-    position: relative;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    line-height: 15px;
-    cursor: pointer;
-}
-.card-address-info:hover .card-reserved-info {
-    display: block;
-}
-.card-reserved-info {
-    position: absolute;
-    display: none;
-    transition: 0.5s all;
-    bottom: 12px;
-    right: -114px;
-    text-align: center;
-    width: 160px;
-    height: 145px;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 32% 86%, 23% 100%, 18% 87%, 0 87%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 32% 86%, 23% 100%, 18% 87%, 0 87%);
-    
-    padding: 16px 11px;
-    background-color: #ffffff;
-    border-radius: 8px;
 }
 .work {
     background-color: yellow !important;
