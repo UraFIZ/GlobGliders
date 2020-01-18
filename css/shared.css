@@ -194,13 +194,12 @@
 /*************************************************end location-card***********************************/
 /***************************************|||Responsiveness||||*********************************/
 @media (max-width: 1024px) {
-    /**********************************responsive (768) site-banner section********************************/ 
+    /**********************************responsive (1024) site-banner section********************************/ 
     .site-banner-select-location {
-        padding-bottom: 165px;
         display: flex;
         align-items: flex-end;
     }
-    /*****************x****************end responsive (768) site-banner section****************x***************/
+    /*****************x****************end responsive (1024) site-banner section****************x***************/
     /***********************************************carouser****************************************************/
     #big .apartment-img {
         max-width: 100%;
@@ -334,3 +333,21 @@
     margin-right: 5px;
 }
  /**********************************************************end carousel********************************************/
+ @media (max-height: 700px) and (min-width: 1100px) {
+    .site-banner-select-location {
+        padding-bottom: 20px;
+    }
+}
+@media (max-height: 700px) and (max-width: 1200px) {
+    .site-banner-select-location {
+        padding-bottom: 20px;
+    }
+    .site-banner-select-location h1 {
+        font-size: 200%;
+        margin-bottom: 0px;
+    }
+    .site-banner-select-location h2 {
+        font-size: 180%;
+        margin-bottom: 0px;
+    }
+}
