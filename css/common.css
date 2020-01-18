@@ -284,6 +284,13 @@ div[class^="col-"] {
     letter-spacing: 0.82px;
     color: #464457;
 }
+.heading-15-ossb-black {
+    font-family: OpenSens-SemiBold;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.82px;
+    color: #1b1b1b;
+}
 
 .heading-2-ossb {
     font-family: OpenSens-SemiBold;
@@ -299,7 +306,7 @@ div[class^="col-"] {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.69px;
-    color: white;
+    color: black;
 }
 .heading-2-ossb-white-lite {
     font-family: OpenSens-SemiBold;
@@ -325,23 +332,52 @@ div[class^="col-"] {
     color: #464457;
     font-weight: 600;
 }
-
+.heading-32-ossb-green {
+    font-family: OpenSens-SemiBold;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.55px;
+    color: #1ca880;
+    font-weight: 600;
+}
+.heading-28-osb-black {
+    font-family: OpenSens-Bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.69px;
+    color: #464457;
+    font-weight: 600;
+}
 .heading-3-osb-black {
     font-family: OpenSens-Bold;
-    margin: 0;
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.55px;
     color: #464457;
     font-weight: 600;
 }
+.heading-31-osb-black {
+    font-family: OpenSens-Bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.55px;
+    color: #464457;
+    font-weight: 600;
+}
 .heading-3-ossb-black {
     font-family: OpenSens-SemiBold;
-    margin: 0;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.55px;
     color: #464457;
+    font-weight: 600;
+}
+.heading-3-ossb-grey {
+    font-family: OpenSens-SemiBold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.55px;
+    color: #908f9a;
     font-weight: 600;
 }
 .heading-4-ossb-black {
@@ -374,6 +410,22 @@ div[class^="col-"] {
     line-height: 32px;
     letter-spacing: 0.41px;
     color: #efb628;
+}
+.heading-5-ossb-gray {
+    display: inline-block;
+    font-family: OpenSens-SemiBold;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0.41px;
+    color: #908f9a;
+    cursor: pointer;
+}
+.heading-5-ossb-black {
+    font-family: OpenSens-SemiBold;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0.41px;
+    color: #1b1b1b;
 }
 .heading-5-ossb-gray2 {
     font-family: OpenSens-SemiBold;
