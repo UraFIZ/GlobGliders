@@ -314,6 +314,13 @@ div[class^="col-"] {
     letter-spacing: 0.69px;
     color: black;
 }
+.heading-2-ossb-black {
+    font-family: OpenSens-SemiBold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.69px;
+    color: #464457;
+}
 .heading-2-ossb-white-lite {
     font-family: OpenSens-SemiBold;
     font-size: 20px;
@@ -328,6 +335,14 @@ div[class^="col-"] {
     line-height: normal;
     letter-spacing: 0.55px;
     color: white;
+    font-weight: 600;
+}
+.heading-3-ossb-grey {
+    font-family: OpenSens-SemiBold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.55px;
+    color: #908f9a;
     font-weight: 600;
 }
 .heading-32-ossb-black {

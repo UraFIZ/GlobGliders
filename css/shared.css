@@ -191,6 +191,54 @@
 .card-address-info:hover .card-reserved-info {
     display: block;
 }
+/****************************************************show notificatin modal window ********************/
+.showNotification-wrapper {
+    width: 448px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.showNotification-content-wrapper {
+    padding: 24px;
+}
+#showNotificationTitle {
+    font-family: Nautilus;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.82;
+    letter-spacing: 1.17px;
+    text-align: center;
+    color: #55bfd7;
+    text-align: center;
+}
+.show-notification-title-wrapper {
+    margin: 0 auto;
+    border-bottom: none;
+}
+.showNotification-content-wrapper .modal-header, .showNotification-content-wrapper .modal-body, .showNotification-content-wrapper .modal-footer {
+    padding: 0;
+}
+.showNotification-content-wrapper .modal-header {
+    margin-bottom: 24px;
+}
+.showNotification-content-wrapper .modal-body {
+    margin-bottom: 24px;
+    text-align: center;
+}
+.showNotification-content-wrapper .modal-footer {
+    border-top: none;
+    margin: 0 auto;
+}
+.showNotification-content-wrapper .modal-footer .button-primary {
+    border-radius: 8px;
+    padding: 12px 60px;
+}
+.showNotification-content-wrapper .modal-footer .btn-secondary {
+    border-radius: 8px;
+    padding: 10px 60px;
+}
+/****************************************************end show notificatin modal window ********************/
 /*************************************************end location-card***********************************/
 /***************************************|||Responsiveness||||*********************************/
 @media (max-width: 1024px) {
