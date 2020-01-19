@@ -710,7 +710,7 @@ div[class^="col-"] {
 /******************************end margins*******************************/
 /*******************************paddings**********************************/
 .pad-l-28 {
-    padding-left: 28px !important;
+    padding-left: 28px;
 }
 .no-padding {
     padding: 0;

@@ -1,7 +1,6 @@
 $(document).ready(function(){
     getRidOfRubbishAtElfsightPlagin();
     $(".navbar-toggler").on('click', function(){
-        console.log($(".navbar-collapse").hasClass("show"))
        if(!$(".navbar-collapse").hasClass("show")) {
             $("#navbarSupportedContent").addClass("custom-extend-navbar");
         }
@@ -12,6 +11,15 @@ $(document).ready(function(){
     $("input[type=search]").on("blur", function(){
         $(".fa-search").show()
     })
+    if($(window).width()<= 992) {
+        $(".main-container").click(function(e){
+            if($(".navbar-collapse").hasClass("show") && !$(e.target).is(".navbar-toggler")) {
+                $(".navbar-collapse").removeClass("show");
+              $(".navbar-toggler").attr("aria-expanded", false);
+            }
+        })
+    }
+
 
     navbarFixed();
     getInitiationOwlCarousal();
@@ -37,12 +45,8 @@ function getInitiationOwlCarousal() {
             autoplay: false,
             nav:true,
             dots: true,
-            margin: 5,
-            responsive: {
-                0: {
-                    items: 1
-                }
-            }
+            margin: 20,
+            items: 1
         })
     }
 }

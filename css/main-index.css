@@ -90,7 +90,7 @@ max-width: 620px;
     margin-bottom: 150px;
 }
 .instagram-section-info{
-    z-index: 1000;
+    z-index: 100;
     position: absolute;
     top: 0;
     right: 50%;
@@ -343,6 +343,10 @@ max-width: 620px;
         line-height: 15px;
         font-size: 13px;
     }
+    .location-text-container {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 @media(max-width: 576px) {
 /********************************** responsive (576) site-banner section********************************/
@@ -354,6 +358,44 @@ max-width: 620px;
         line-height: 1.27;
         letter-spacing: 1.51px;
         color: #ffffff;
+        }
+        .description-section {
+            margin-bottom: 0;
+            padding: 55px 0;
+        }
+.globe-components {
+    margin-bottom: 30px;
+}
+.globe-components #addOwlCarousel > div.owl-stage-outer {
+    margin-bottom: 13px;
+}
+#addOwlCarousel > div.owl-stage-outer > div > div.owl-item.active > div > div.pad-l-28 {
+    padding: 0 !important;
+}
+.globe-components .owl-dot.active {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    border-radius: 50%;
+    border: none !important;
+    background-color: #a2a1aa !important;
+}
+.globe-components .owl-dot {
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+    border-radius: 50%;
+    border: none !important;
+    background-color: #a2a1aa !important;
+}
+        .globe-img-wrapper {
+            max-width: 100%;
+        }
+        .description-text-wrapper .heading-2-meb {
+            font-size: 32px;
+        }
+        .description-text-wrapper .mar-b-24, .mar-b-40 {
+            margin-bottom: 14px !important;
         }
         .site-banner .heading-1-ossb {
             font-size: 24px;
@@ -367,6 +409,19 @@ max-width: 620px;
             .site-banner .mar-b-24 {
                 margin-bottom: 30px;
             }
+            .location-text-container .heading-2-meb {
+                font-size: 31px;
+                margin-bottom: 12px !important;
+            }
+            .location-text-container .heading-2-mm {
+                font-size: 20px;
+                line-height: 31px;
+                margin-bottom: 20px !important;
+            }
+            .business-about-blog > *:not(:last-child) {
+                padding-right: 12px !important;
+            }
+
     /*************x******************end responsive (576) site-banner section******************x***********/
     /********************************** responsive (576) description section********************************/
     .description-img-wrapper {
@@ -432,18 +487,16 @@ max-width: 620px;
 }
 @media(max-width: 360px) {
     .description-img {
-        width: 136px;
-        height: 153px;
+        width: 155px;
+        height: 155px;
         margin-bottom: 18px !important;
     }
-}
-@media(max-width: 320px) {
-    /********************************** responsive (576) site-banner section********************************/
     .site-banner .heading-1-meb {
-        font-size: 33px;
+        font-size: 37px;
         }
         .site-banner .heading-1-ossb {
             font-size: 18px;
+            line-height: 1.60;
             }
             .site-banner .mar-b-24 {
                 margin-bottom: 30px;
@@ -456,6 +509,12 @@ max-width: 620px;
         padding: 10px 19px;
         font-size: 16px;
     }
+}
+@media(max-width: 320px) {
+    /********************************** responsive (576) site-banner section********************************/
+    .site-banner .heading-1-meb {
+        font-size: 32px;
+        }
     /*************x******************end responsive (576) site-banner section******************x***********/
      /********************************** responsive (320) description section********************************/
     .description-img {
