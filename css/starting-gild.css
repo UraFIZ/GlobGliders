@@ -64,7 +64,7 @@
 .popular-location-wrapper >:not(:last-child) {
     margin-right: 15px;
 }
-.popular-location-wrapper > div > i {
+.popular-location-wrapper > a > i {
     padding-right: 8px;
 }
 .divider-wrapper {
