@@ -104,11 +104,17 @@ div[class^="col-"] {
 }
 .heading-2-meb-height {
     font-family: Montserrat-ExtraBold;
-    margin: 0;
     font-size: 40px;
     line-height: 52px;
     letter-spacing: 1.37px;
     color: #464457;
+}
+.heading-2-meb-grey {
+    font-family: Montserrat-ExtraBold;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 1.37px;
+    color: #a2a1aa;
 }
 .heading-2-meb-white {
     font-family: Montserrat-ExtraBold;
@@ -497,6 +503,14 @@ div[class^="col-"] {
     line-height: 28px;
     letter-spacing: 0.55px;
     color: #1b1b1b;
+}
+.heading-21-osr {
+    font-family: OpenSens-Regular;
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.55px;
+    color: #464457;
 }
 .heading-2-osr-black {
     font-family: OpenSens-Regular;
