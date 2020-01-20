@@ -1,0 +1,248 @@
+.join-container {
+    background-image: url('../assets/img/glide.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-wrapper {
+    max-width: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.join-step-one .join-label {
+    width: 27%;
+}
+.form-steps {
+    margin-bottom: 16px;
+}
+.step-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.step-subtitle {
+    margin-bottom: 26px;
+}
+.join-step-form {
+    display: flex;
+    flex-direction: column;
+    width: 466px;
+    align-items: center;
+}
+.join-step-form .input-join-wrapper:not(:last-child) {
+    margin-bottom: 10px;
+}
+.input-join-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.step-input {
+    width: 80%;
+    height: 50px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #ffffff;
+    padding: 0 20px;
+    border: none;
+}
+
+.iti--allow-dropdown {
+    width: 100% !important;
+    margin-bottom: 5px;
+}
+.step-input-no-label {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 0 20px;
+    border: none;
+}
+.join-label {
+    width: 20%;
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.prof-label {
+  width: 23%;
+}
+.prof-input {
+    width: 77%;
+}
+.label-three {
+    width: 38%;
+}
+.policy-label {
+    margin: 0;
+}
+.policy-wrapper {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 15px !important;
+    flex-wrap: wrap;
+}
+.forget-password-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 15px !important;
+}
+.forget-password-wrapper label {
+    margin: 0;
+}
+.sign-in-btn {
+    margin-bottom: 21px;
+}
+/**********************************************step 4 *****************************/
+.join-step-four .join-label {
+    width: 45%;
+}
+/**********************************************end step 4 *****************************/
+/***********************************responsiveness********************************/
+ @media (max-width: 520px) {
+    .join-step-form {
+        width: 100%;
+    }
+    .join-wrapper .heading-11 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    .join-wrapper .heading-2-meb-white {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .join-wrapper .heading-11-ossb {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .join-label {
+        font-size: 14px !important;
+        line-height: 16px !important;
+        margin-right: -2px;
+        width: 22%;
+    }
+    .join-step-three .join-step-form .heading-32-ossb-black {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .join-step-form button {
+        width: 100%;
+    }
+    .iti__country-list {
+        position: absolute;
+        z-index: 2;
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        margin: 0 0 0 -1px;
+        box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+        background-color: #fff;
+        border: 1px solid #ccc;
+        white-space: nowrap;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+    .join-step-form .input-join-wrapper:not(:last-child) {
+        margin-bottom: 6px;
+    }
+    .prof-label {
+        width: 28%;
+    }
+    .join-step-one .join-label {
+      width: 32%;
+    }
+    .join-step-four .join-label {
+        width: 23%;
+    }
+    a.button-primary {
+        width: 100%;
+    }
+    .login .join-label {
+        width: 35%;
+    }
+ }
+ @media (max-width: 420px) {
+    .join-step-four .join-label {
+        width: 28%;
+    }
+    .policy-label {
+        line-height: 13px !important;
+        font-size: 13px !important;
+    }
+    .heading-32-ossb-blue {
+        font-size: 13px !important;
+         line-height: 22px !important;
+    }
+
+ }
+ @media (max-width: 375px) {
+    .join-wrapper .heading-11 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+    .join-wrapper .heading-2-meb-white {
+        font-size: 32px;
+        margin-bottom: 7px;
+    }
+    .join-wrapper .heading-11-ossb {
+        font-size: 28px;
+        margin-bottom: 18px;
+        line-height: 36px;
+    }
+    .join-step-form .heading-32-ossb-black {
+        font-size: 14px;
+    }
+    .input-join-wrapper .heading-32-ossb-black {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .join-step-four .join-label {
+        width: 38%;
+    }
+    .policy-label {
+        line-height: 12px !important;
+        font-size: 12px !important;
+    }
+    .heading-32-ossb-blue {
+        font-size: 12px !important;
+         line-height: 20px !important;
+    }
+ }
+
+ @media (max-width: 320px) {
+    .join-wrapper .heading-11 {
+        font-size: 20px;
+    }
+    .join-wrapper .heading-2-meb-white {
+        font-size: 28px;
+        margin-bottom: 2px;
+    }
+    .join-wrapper .heading-11-ossb {
+        font-size: 23px;
+        margin-bottom: 14px;
+        line-height: 29px;
+    }
+    .join-step-form .heading-32-ossb-black {
+        font-size: 14px;
+    }
+    .join-step-three .join-step-form .heading-32-ossb-black {
+        font-size: 11px;
+    }
+    .join-step-three .join-label {
+        height: 38px;
+        width: 31% !important;
+    }
+
+ }

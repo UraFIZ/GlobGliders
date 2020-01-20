@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  if($(window).width()<= 992) {
+    $(".main-container").click(function(e){
+        if($(".navbar-collapse").hasClass("show") && !$(e.target).is(".navbar-toggler")) {
+            $(".navbar-collapse").removeClass("show");
+          $(".navbar-toggler").attr("aria-expanded", false);
+        }
+    })
+}
     var bigimage = $("#big");
     var thumbs = $("#thumbs");
     //var totalslides = 10;

@@ -11,14 +11,7 @@ $(document).ready(function(){
     $("input[type=search]").on("blur", function(){
         $(".fa-search").show()
     })
-    if($(window).width()<= 992) {
-        $(".main-container").click(function(e){
-            if($(".navbar-collapse").hasClass("show") && !$(e.target).is(".navbar-toggler")) {
-                $(".navbar-collapse").removeClass("show");
-              $(".navbar-toggler").attr("aria-expanded", false);
-            }
-        })
-    }
+
 
 
     navbarFixed();
