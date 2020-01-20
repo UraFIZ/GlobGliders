@@ -1,0 +1,16 @@
+/**********************************site-banner section********************************/
+.site-banner-select-location {
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+}
+.contact-us-banner {
+    padding-bottom: 50px !important; 
+}
+.contact-us-banner .heading-15-meb{
+    margin-bottom: 10px !important;
+}
+.contact-us-banner .heading-15-ossb-white {
+    max-width: 1031px;
+}
+/******************x***************end site-banner section******************x*************/
+
+/*************************************responsiveness*****************************************/
