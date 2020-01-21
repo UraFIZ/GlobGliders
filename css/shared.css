@@ -1,5 +1,5 @@
 
-.personal-data-btn {
+#navbarSupportedContent > div.personal-data-btn {
     display: none;
 }
 /**********************************site-banner section********************************/

@@ -65,6 +65,7 @@
 @media (max-width: 450px) {
     .showNotification-wrapper {
         width: 100% !important;
+        padding-right: 13px;
     }
     .showNotification-content-wrapper .modal-footer {
         display: flex;
