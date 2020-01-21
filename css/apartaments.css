@@ -334,6 +334,12 @@
     .useful-resources {
         margin-bottom: 40px;
     }
+    .travel-articles-item {
+        height: max-content !important;
+    }
+    .travel-item-content-wrapper {
+        height: max-content !important;
+    }
      /***********x*************************(600) end useful-resources******************x************/
       /*************************************(600) things-to-do*******************************/
       .thing-to-do-item, .travel-articles-item {
@@ -376,6 +382,19 @@
         }
         .useful-resources {
             margin-bottom: 40px;
+        }
+        .thing-to-do-img .heading-31-mb {
+            font-size: 14px;
+        }
+        .gold-star {
+            font-size: 20px;
+        }
+        .travel-item-content-wrapper .heading-32-ossb-black{
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .best-in-city {
+            margin-bottom: 8px;
         }
          /***********x*************************(375) end useful-resources******************x************/
 }

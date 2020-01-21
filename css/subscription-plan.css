@@ -116,3 +116,27 @@
         margin-right: auto;
     }
 }
+@media (max-width: 500px) {
+.subscription-plan .heading-15-meb {
+    font-size: 24px !important;
+}
+.subscription-plan .heading-1-ossbi{
+    line-height: 27px !important;
+}
+.subscription-plan-advantages-wrapper {
+    margin-top: 11px;
+}
+.subscription-plan-advantages-wrapper > p:not(:last-child) {
+    margin-bottom: 8px;
+}
+.subscription-plan-advantages-wrapper p {
+    position: relative;
+    left: 12px;
+}
+.subscription-plan-advantages-wrapper .heading-32-mb-black {
+    font-size: 14px;
+    line-height: 28px;
+}
+}
+@media (max-width: 380px) {
+}

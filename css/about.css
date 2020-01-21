@@ -247,10 +247,47 @@
     }
     .site-banner-about {
         padding-top: 142px;
+        margin-bottom: 50px;
     }
 .site-banner-about .heading-15-meb {
     font-size: 42px;
     line-height: 50px;
+}
+.things-to-be-happy-header .heading-2-meb-height {
+    font-size: 30px;
+    line-height: 36px;
+}
+.about-us-section {
+    margin-bottom: 30px;
+}
+.things-to-be-happy-header {
+    margin-bottom: 25px;
+}
+.things-to-be-happy-section {
+    margin-bottom: 50px;
+}
+.our-vision-text .heading-2-mm {
+    font-size: 24px;
+    line-height: 35px;
+}
+.our-support-text .heading-1-mb {
+    font-size: 30px;
+    line-height: 37px;
+}
+.our-mission-section {
+    margin-bottom: 50px;
+}
+.our-support-section {
+    margin-bottom: 50px;
+}
+.our-vision-section {
+    margin-bottom: 50px;
+}
+.our-system-section {
+    margin-bottom: 50px;
+}
+.partner-section {
+    padding: 50px 0;
 }
 }
 /*******************X********************* end responsive (576)site about section**********************X******************/

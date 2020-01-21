@@ -1,9 +1,12 @@
 $(document).ready(function(){
+  isHiddenJoinBtn()
   if($(window).width()<= 992) {
     $(".main-container").click(function(e){
         if($(".navbar-collapse").hasClass("show") && !$(e.target).is(".navbar-toggler")) {
+          if($(e.target).is("#navbarSupportedContent")) {
             $(".navbar-collapse").removeClass("show");
-          $(".navbar-toggler").attr("aria-expanded", false);
+            $(".navbar-toggler").attr("aria-expanded", false);
+          }
         }
     })
 }
@@ -102,4 +105,13 @@ function navbarFixed() {
             }
         })
     }
+}
+function isHiddenJoinBtn() {
+  var isFinishJoining = localStorage.getItem("finish");
+  var userName = localStorage.getItem("name");
+  if(isFinishJoining){
+      $("#navbarSupportedContent > div").hide();
+      $("#user-name").text(userName);
+      $(".personal-data-btn").show();
+  }
 }

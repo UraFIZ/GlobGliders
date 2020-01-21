@@ -62,3 +62,15 @@
         padding-bottom: 96px !important;
     }
 }
+@media (max-width: 450px) {
+    .showNotification-wrapper {
+        width: 100% !important;
+    }
+    .showNotification-content-wrapper .modal-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .how-it-works {
+        padding-bottom: 57px !important;
+    }
+}
