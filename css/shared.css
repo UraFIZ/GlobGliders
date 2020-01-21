@@ -1,6 +1,8 @@
 
 #navbarSupportedContent > div.personal-data-btn {
     display: none;
+    margin: 0 auto;
+    text-align: center;
 }
 /**********************************site-banner section********************************/
 .site-banner-select-location {

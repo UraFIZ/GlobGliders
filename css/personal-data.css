@@ -209,4 +209,17 @@ div.my-glides-card-footer > div > div > button:nth-child(4) {
     .glide-left-header-part {
         flex-direction: column;
     }
+    .personal-btn-wrapper .heading-31-osb-black {
+        font-size: 14px;
+    }
+    .personal-btn {
+        padding: 12px 22px;
+    }
+    #profile-form {
+        width: 100%;
+    }
+    .personal-data {
+        padding-bottom: 60px !important;
+        margin-bottom: 30px;
+    }
 }
