@@ -24,8 +24,9 @@ if(!!name && !!lastName) {
     localStorage.setItem("name", name);
     localStorage.setItem("last-name", lastName);
     // window.location.href = "http://127.0.0.1:5502/join-step-two.html";
-}
     window.location.href = "https://infallible-boyd-0f87d8.netlify.com/join-step-two.html"
+}
+   
  })
 }
 function getToLocalStorageData5(cls) {
