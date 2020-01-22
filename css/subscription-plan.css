@@ -34,6 +34,9 @@
     box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
     background-color: #ffffff;
 }
+.subscription-plan-item a {
+    text-align: center;
+}
 .subscription-plan-item:nth-child(1) {
     margin-right: 30px;
 }
