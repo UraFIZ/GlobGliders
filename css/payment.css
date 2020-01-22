@@ -1,0 +1,33 @@
+/**********************************site-banner section********************************/
+.payment-banner {
+    background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
+    margin-bottom: 60px;
+}
+
+/******************x***************end site-banner section******************x*************/
+/****************************************payment-container*********************************/
+.payment-container {
+    width: 82.86%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    margin-bottom: 134px;
+}
+.payment-title {
+    padding-bottom: 14px;
+    border-bottom: 2px solid #f3f3f4;
+}
+.payment-method-wrapper, .payment-details-wrapper {
+    max-width: 374px;
+}
+.payment-title {
+    margin-bottom: 21px;
+}
+.payment-details-wrapper p {
+    margin: 0;
+    margin-bottom: 6px;
+}
+.payment-details-wrapper .heading-3-osl{
+    letter-spacing: 0.55px
+}
+/****************************************end payment-container*********************************/
