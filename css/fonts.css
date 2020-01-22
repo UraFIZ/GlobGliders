@@ -43,6 +43,10 @@
     src: url('../assets/fonts/Open_Sans/OpenSans-Bold.ttf')
 }
 @font-face {
+    font-family: OpenSens-Light;
+    src: url('../assets/fonts/Open_Sans/OpenSans-Light.ttf')
+}
+@font-face {
     font-family: Nautilus;
     src: url('../assets/fonts/nautilus-pompilius/Nautilus.otf')
 }

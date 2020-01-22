@@ -168,6 +168,13 @@ div[class^="col-"] {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.82px;
+    color: #464457;
+}
+.heading-2-mb-lite-black {
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.82px;
     color: #1b1b1b;
 }
 .heading-22-mb-black {
@@ -176,6 +183,13 @@ div[class^="col-"] {
     line-height: 40px;
     letter-spacing: 0.82px;
     color: #1b1b1b;
+}
+.heading-25-mb-black {
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.69px;
+    color: #464457;
 }
 .heading-3-mb {
     font-family: Montserrat-Bold;
@@ -536,6 +550,13 @@ div[class^="col-"] {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.55px;
+    color: #464457;
+}
+.heading-3-osl {
+    font-family: OpenSens-Light;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.55px;
     color: #464457;
 }
 .heading-11-osr {

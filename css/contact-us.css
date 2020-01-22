@@ -4,6 +4,7 @@
 }
 .contact-us-banner {
     padding-bottom: 50px !important; 
+    margin-bottom: 60px;
 }
 .contact-us-banner .heading-15-meb{
     margin-bottom: 10px !important;
@@ -12,5 +13,132 @@
     max-width: 1031px;
 }
 /******************x***************end site-banner section******************x*************/
+/*********************************************contact-us-container****************************/
+.contact-us-container {
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.contact-info-wrapper p a:hover {
+    color: #464457;
+    text-decoration: underline;
+}
+.follow-us-wrapper .social-icons a {
+    color: black;
+    border-color: black;
+}
+.contact-us-title {
+    margin-bottom: 22px;
+}
+.contact-us-form {
+    max-width: 670px;
+}
+.contact-us-textarea {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #f3f3f4;
+}
+.contact-us-form input {
+    height: 50px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #f3f3f4;
+}
+.contact-us-form button {
+    height: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
 
+
+.contact-info-wrapper {
+    max-width: 570px;
+    padding: 24px;
+    padding-top: 20px;
+    margin-left: 117px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(27, 27, 27, 0.11);
+    background-color: #ffffff;
+}
+.contact-info-wrapper p {
+    margin: 0;
+    margin-bottom: 9px;
+}
+.contact-info-wrapper p:last-child {
+    margin: 0;
+}
+.follow-us-wrapper {
+    margin-top: 11px;
+}
+.follow-us-wrapper .social-icons {
+    margin-top: 9px;
+    margin-bottom: 16px;
+}
+/*********************************************end contact-us-container************************/
 /*************************************responsiveness*****************************************/
+@media (max-width: 1400px) {
+    .contact-info-wrapper {
+        margin-left: 0;
+    }
+}
+@media (max-width: 1210px) {
+    .contact-us-banner {
+        padding-bottom: 10px !important;
+        margin-bottom: 60px;
+    }
+    .contact-us-banner .heading-15-ossb-white {
+        line-height: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-us-form {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .contact-us-form button {
+        width: 100%;
+    }
+    .contact-info-wrapper {
+        margin: 0 auto;
+    }
+    .contact-us-banner .heading-15-meb {
+        margin-bottom: 0;
+        font-size: 34px !important;
+    }
+    .contact-us-banner .heading-15-ossb-white {
+        line-height: 30px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px) {
+
+    .contact-us-banner {
+        padding-bottom: 44px !important;
+    }
+
+}
+@media (max-width: 450px) {
+
+    .contact-us-banner {
+        padding-bottom: 18px !important;
+    }
+    .contact-us-banner {
+        margin-bottom: 30px;
+    }
+    .contact-us-title {
+        margin-bottom: 12px;
+    }
+    .contact-us-banner .heading-15-ossb-white {
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .contact-us-container {
+        margin-bottom: 60px;
+    }
+    .contact-info-wrapper .heading-3-osb-black {
+        font-size: 14px;
+    }
+    .contact-info-wrapper .heading-3-osl {
+        font-size: 14px;
+    }
+
+}

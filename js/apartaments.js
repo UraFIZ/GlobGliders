@@ -9,8 +9,6 @@ $(document).ready(function () {
         showOn: "button",
         buttonText: '<i class="far fa-calendar-alt mr-2"></i><span>24 July 2020</span>'
     });
-    getInitiationOwlCarousalForThingsToDo();
-    getInitiationOwlCarousalForTravelArticles();
 
 })
 
