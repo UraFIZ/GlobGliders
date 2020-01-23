@@ -92,16 +92,22 @@ $(document).ready(function(){
 })
 
 let nav_offset_top = $('header').height() + 50;
-function navbarFixed() {
+function navbarFixed(fn1, fn2) {
     if ($('header').length) {
         $(window).scroll(function () {
             let scroll = $(window).scrollTop();
             if (scroll >= nav_offset_top) {
                 $('header').addClass('navbar_fixed');
                 $("header").removeClass("header");
+                if(fn1) {
+                  fn1();
+                }
             } else {
                 $('.header').removeClass('navbar_fixed');
                 $("header").addClass("header");
+                if(fn2){
+                  fn2();
+                }
             }
         })
     }
