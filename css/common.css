@@ -3,6 +3,9 @@
 /* header, main, footer {
     max-width: 1920px;
 } */
+body {
+    overflow-x: hidden;
+}
 .main-container {
     max-width: 1920px;
     margin: 0 auto;
@@ -770,6 +773,19 @@ div[class^="col-"] {
     height: auto;
     color: white;
     transition: all 0.5s;
+}
+.fa-snowflake {
+	color: #fff;
+	position: absolute;
+	top: -20px;
+	animation: fall linear forwards;
+}
+
+
+@keyframes fall {
+	to {
+		transform: translateY(5100px);
+	}
 }
 /*****************************end inputs ********************************/
 /******************************margins***********************************/
