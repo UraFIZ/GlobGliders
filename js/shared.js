@@ -1,14 +1,14 @@
 $(document).ready(function(){
   isHiddenJoinBtn();  
-  setInterval(createSnowFlake, 50);
+  // setInterval(createSnowFlake, 50);
   if($(window).width()<= 992) {
-    $(".main-container").click(function(e){
-        if($(".navbar-collapse").hasClass("show") && !$(e.target).is(".navbar-toggler")) {
-          if($(e.target).is("#navbarSupportedContent")) {
+    var extendedMenu = $("#navbarSupportedContent");
+    console.log(extendedMenu)
+    $(document).on("click", function (e) {
+       if(!$("button.navbar-toggler").is(e.target) && $(extendedMenu).has(e.target).length === 0) {
             $(".navbar-collapse").removeClass("show");
             $(".navbar-toggler").attr("aria-expanded", false);
-          }
-        }
+       }
     })
 }
     var bigimage = $("#big");
@@ -123,20 +123,20 @@ function isHiddenJoinBtn() {
   }
 }
 
-const body = document.body;
+// const body = document.body;
 
-setInterval(createSnowFlake, 100);
+// setInterval(createSnowFlake, 100);
 
-function createSnowFlake() {
-    const snow_flake = document.createElement('i');
-  	snow_flake.classList.add(...['fas', 'fa-snowflake']);
-  	snow_flake.style.left = Math.random() * window.innerWidth + 'px';
-  	snow_flake.style.animationDuration = Math.random() * 30 + 3 + 's'; // between 2 - 5 seconds
-  	snow_flake.style.opacity = Math.random();
-  	snow_flake.style.fontSize = Math.random() * 10 + 10 + 'px';
-  	body.appendChild(snow_flake);
+// function createSnowFlake() {
+//     const snow_flake = document.createElement('i');
+//   	snow_flake.classList.add(...['fas', 'fa-snowflake']);
+//   	snow_flake.style.left = Math.random() * window.innerWidth + 'px';
+//   	snow_flake.style.animationDuration = Math.random() * 30 + 3 + 's'; // between 2 - 5 seconds
+//   	snow_flake.style.opacity = Math.random();
+//   	snow_flake.style.fontSize = Math.random() * 10 + 10 + 'px';
+//   	body.appendChild(snow_flake);
 	
-	setTimeout(() => {
-		snow_flake.remove();
-	}, 10000)
-}
+// 	setTimeout(() => {
+// 		snow_flake.remove();
+// 	}, 10000)
+// }
